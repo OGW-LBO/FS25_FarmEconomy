@@ -1,0 +1,2111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<modDesc descVersion="116" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
+    <author>OGW</author>
+    <version>1.1.0.0</version>
+
+    <title>
+        <de>Agrar-Ökonomie</de>
+        <en>Farm Economy</en>
+        <fr>Économie Agricole</fr>
+    </title>
+
+    <description>
+        <de><![CDATA[Im Grundspiel spielt Geld nach ein paar Ernten keine Rolle mehr. Die Erlöse sind hoch, und ein bezahlter Traktor kostet danach nur noch Diesel. Farm Economy dreht an beiden Enden.
+
+Feldfrüchte und Erzeugnisse aus Produktionen bringen weniger ein. Milch, Tiere, Holz, Ballen und Aufträge bleiben, wie sie sind. Wie stark gekürzt wird, kann eine Automatik übernehmen: Einmal im Spieljahr schaut sie, was dein Hof pro Hektar verdient hat, und stellt nach, bis es zur gewählten Schwierigkeit passt.
+
+Bei den Kosten zahlst du laufend für jedes eigene Fahrzeug und Gerät. Was im Abrechnungszeitraum nur herumstand oder in der Halle parkt, kommt günstiger weg. Reparaturen werden mit den Betriebsstunden teurer. Helfer gibt es in Lohnstufen, bei zu knappem Angebot sagen sie auch mal ab, und beim Festpreis zahlst du nur für fertige Arbeit. Pressen und Wickler brauchen mehr Garn, Netz und Folie. Wer mag, schaltet noch eine Grundsteuer auf gekauftes Land dazu.
+
+Ab Werk aus, aber dabei: Spritverbrauch stufenlos statt Wenig/Normal/Hoch, getrennt für Feld und Straße, auf Wunsch aus der Motorleistung gerechnet und im Tacho angezeigt. Guthabenzinsen auf Kontostand minus Kredit, gestaffelt, damit ein volles Konto nicht von allein wächst. Und eine Produktionsgeschwindigkeit für alle Produktionen oder einzelne Gebäude.
+
+Damit kein Spielstand kaputtgeht, gibt es eine Bremse. Die Mod darf pro Tag nur einen Teil der üblichen Einnahmen abbuchen, und unter einem Mindestkontostand zieht sie gar nichts mehr ab.
+
+Wohin das Geld fließt, zeigt das Kassenbuch: Strg+K öffnet es im Spiel, mit einer Rangliste der größten Posten und den letzten Buchungen, Monat für Monat und Jahr für Jahr. Die Buchungen dieses und des vorigen Spieljahres landen mit Spielmonat, Gruppe und Betrag in einer Datei im Ordner des Spielstands: als Tabelle für die Tabellenkalkulation und als fertige Seite mit Diagrammen, die sich im Browser öffnen lässt. Posten, die im Sekundentakt anfallen, etwa Sprit und laufende Kosten, stehen als Tagessumme darin, sonst wäre die Datei nach einer Stunde nicht mehr lesbar.
+
+Eingestellt wird im ESC-Menü unter Einstellungen, Reiter Agrar-Ökonomie, im Multiplayer nur von Admins. Die Hilfe im Spiel erklärt jeden Teil. Läuft auf jeder Karte, auch mit Früchten, die das Grundspiel nicht kennt. Zusammen mit der Mod Betriebsübersicht (Farm Overview) bekommst du außerdem einen Jahresvergleich deiner Finanzen.
+
+Nur PC/Mac.
+
+Changelog 1.1.0.0:
+- Kassenbuch: Strg+K zeigt im Spiel, wofür das Geld weggeht, als Rangliste mit Balken und mit den letzten Buchungen. Monate und Jahre lassen sich bis zum Anfang des vorigen Spieljahres zurückblättern, unten steht der Vergleich mit dem Monat davor oder dem Vorjahr. Grundsteuer und Fuhrpark-Steuer stehen als eigene Buchung drin. Im Spielstand-Ordner liegen dazu eine CSV-Tabelle und eine HTML-Seite mit Diagrammen. Der Konsolenbefehl aoKassenbuch schreibt sie sofort.
+- Sicherheitsbremse: Wenn Grundsteuer und Fuhrpark-Steuer am selben Tag fällig sind und das Budget nicht für beide reicht, werden beide um denselben Anteil gekürzt. Bisher bekam der Posten, der als zweiter abgerechnet wurde, oft gar nichts mehr ab. Eine Kürzung meldet die Mod jetzt oben rechts, aoStatus zeigt die letzte je Hof.
+- Produktionsgeschwindigkeit: Die laufenden Kosten haben drei Stufen statt an/aus: voll mit, Wurzel des Faktors oder gleich bleibend. Wer vorher an hatte, landet bei voll mit, aus wird zu gleich bleibend.
+- Hilfeseiten und Beschreibung sind überarbeitet.]]></de>
+        <en><![CDATA[In the base game, money stops mattering after a few harvests. Crops sell high, and a tractor you have paid off never costs you anything but diesel again. Farm Economy pushes back on both sides.
+
+You get less for your crops and for goods from your productions. Milk, animals, wood, bales and contracts are left alone. An optional automatic mode looks at what your farm earned per hectare once a year and nudges the price factor until it matches the difficulty you picked.
+
+On the cost side there is a fleet tax on every vehicle and implement you own, with a discount for machines that sat idle or are parked under a roof. Repairs get pricier as the hours pile up. Helpers come in wage tiers, may turn down an offer that is too low, and on a fixed price they only get paid for work they actually finished. Balers and wrappers go through more twine, net and film. If you want, add a property tax on the land you bought.
+
+Off by default but ready when you are: fuel use set freely instead of low/normal/high, separate for field work and road, optionally based on engine power and shown in the speedometer. Interest on savings, paid on your balance minus any loan and tiered so a big account does not grow on its own. And a production speed setting for all productions or single buildings.
+
+A safety brake makes sure none of this wrecks a save. What the mod charges per day is capped at a share of your usual income, and below a minimum balance it stops charging at all.
+
+Where the money goes is what the cash book shows: Ctrl+K opens it in the game, with a ranking of the largest items and the latest bookings, month by month or year by year. This year's and last year's bookings are written to a file in the savegame folder with game month, group and amount: as a table for your spreadsheet and as a finished page with charts that opens in the browser. Items that are booked every few seconds, such as fuel and running costs, appear as a daily sum, otherwise the file would be unreadable after an hour.
+
+You will find the settings in the ESC menu under Settings, tab Farm Economy. In multiplayer only admins can change them. The in-game help covers every part. Works on any map, including crops the base game does not know. Pair it with Farm Overview to get a year-on-year look at your finances.
+
+PC/Mac only.
+
+Changelog 1.1.0.0:
+- Cash book: press Ctrl+K to see where your money goes, as a ranking with bars plus the latest bookings. You can page back through months and years as far as the start of last game year, and the bottom line compares with the month before or with last year. Property tax and fleet tax appear as bookings of their own. The savegame folder also gets a CSV table and an HTML page with charts; the console command aoKassenbuch writes them right away.
+- Safety brake: when property tax and fleet tax fall on the same day and the daily budget cannot cover both, they are now cut by the same share. Before, whichever was billed second often got nothing at all. A cut now shows up as a notification in the top right, and aoStatus lists the last one per farm.
+- Production speed: running costs have three options instead of on/off: full, square root or unchanged. If you had it on, you get full; off becomes unchanged.
+- Help pages and store text reworked.]]></en>
+        <fr><![CDATA[Dans le jeu de base, l'argent ne compte plus après quelques récoltes. Économie Agricole rééquilibre les recettes et les dépenses.
+
+Les cultures et les produits de vos productions rapportent moins ; le lait, les animaux, le bois, les balles et les missions ne changent pas. Si vous le souhaitez, un mode automatique fait le point une fois par an sur ce que votre ferme gagne à l'hectare et ajuste le facteur de prix selon la difficulté choisie.
+
+Côté dépenses, chaque véhicule et outil que vous possédez coûte un peu chaque mois, moins s'il est resté à l'arrêt ou s'il est rangé sous un abri. Les réparations deviennent plus chères avec les heures de travail. Les ouvriers ont plusieurs niveaux de salaire, refusent parfois une offre trop basse et, au prix fixe, ne sont payés que pour un travail terminé. Presses et enrubanneuses consomment davantage de ficelle, de filet et de film. Un impôt foncier sur les terres achetées peut s'y ajouter.
+
+Désactivés par défaut : une consommation de carburant réglable librement, séparée entre travail et route, calculée si besoin à partir de la puissance du moteur et affichée au compteur ; des intérêts sur l'épargne, par paliers, sur le solde moins le prêt ; une vitesse de production pour toutes les productions ou par bâtiment.
+
+Un frein de sécurité évite de ruiner une partie : ce que le mod prélève par jour reste limité à une part des revenus habituels, et sous un solde minimum il ne prélève plus rien.
+
+Le livre de caisse montre où va l'argent : Ctrl+K l'ouvre dans le jeu, avec un classement des plus gros postes et les dernières opérations, mois par mois ou année par année. Les opérations de l'année de jeu en cours et de la précédente sont écrites dans un fichier du dossier de sauvegarde avec le mois de jeu, le groupe et le montant : sous forme de tableau pour le tableur et sous forme de page avec graphiques qui s'ouvre dans le navigateur. Les postes comptabilisés à chaque seconde, comme le carburant et les frais courants, y figurent comme somme journalière, sinon le fichier deviendrait illisible au bout d'une heure.
+
+Les réglages se trouvent dans le menu ESC, Paramètres, onglet Économie Agricole ; en multijoueur, seuls les administrateurs peuvent les modifier. L'aide du jeu décrit chaque module. Compatible avec toutes les cartes. Avec le mod Aperçu de l'exploitation (Farm Overview), vous obtenez aussi une comparaison annuelle de vos finances.
+
+PC/Mac uniquement.
+
+Changelog 1.1.0.0 :
+- Livre de caisse : Ctrl+K montre dans le jeu où part l'argent, avec un classement en barres et les dernières opérations. On remonte mois par mois ou année par année jusqu'au début de l'année de jeu précédente, et la ligne du bas compare avec le mois d'avant ou avec l'année précédente. L'impôt foncier et la taxe de flotte apparaissent comme des opérations à part. Le dossier de sauvegarde reçoit aussi un tableau CSV et une page HTML avec graphiques ; la commande aoKassenbuch les écrit tout de suite.
+- Frein de sécurité : quand l'impôt foncier et la taxe de flotte tombent le même jour et que le budget ne suffit pas, les deux sont réduits dans la même proportion. Avant, celui qui passait en second n'obtenait souvent plus rien. Une réduction s'affiche désormais en haut à droite, et aoStatus indique la dernière par exploitation.
+- Vitesse de production : les frais de fonctionnement proposent trois choix au lieu de oui/non : plein, racine du facteur ou inchangés. Activé devient plein, désactivé devient inchangés.
+- Pages d'aide et description retravaillées.]]></fr>
+    </description>
+
+    <iconFilename>icon_mod.dds</iconFilename>
+
+    <multiplayer supported="true"/>
+
+    <!-- als Spezialisierung geladen, deshalb nicht in extraSourceFiles -->
+    <specializations>
+        <specialization name="fuhrparkSteuerInfo" className="FuhrparkSteuerInfo" filename="FuhrparkSteuerInfo.lua"/>
+        <specialization name="reparaturOekonomie" className="ReparaturOekonomie" filename="ReparaturOekonomie.lua"/>
+    </specializations>
+
+    <extraSourceFiles>
+        <sourceFile filename="AgrarOekonomie.lua"/>
+        <sourceFile filename="AOSettings.lua"/>
+        <sourceFile filename="AOSettingsEvent.lua"/>
+        <sourceFile filename="AOProduktionEvent.lua"/>
+        <sourceFile filename="AONotifyEvent.lua"/>
+        <sourceFile filename="FuhrparkSteuerNotifyEvent.lua"/>
+        <sourceFile filename="HelferLohnNotifyEvent.lua"/>
+        <sourceFile filename="FuhrparkSteuer.lua"/>
+        <sourceFile filename="ReparaturOekonomieMain.lua"/>
+        <sourceFile filename="ReparaturOekonomieWorkshop.lua"/>
+        <sourceFile filename="HelferLohn.lua"/>
+        <sourceFile filename="HelferLohnDialog.lua"/>
+        <sourceFile filename="BindegarnFolieVerbrauch.lua"/>
+        <sourceFile filename="DieselVerbrauch.lua"/>
+        <sourceFile filename="AOGrundsteuer.lua"/>
+        <sourceFile filename="AOZins.lua"/>
+        <sourceFile filename="AOProduktion.lua"/>
+        <sourceFile filename="AOAutomatik.lua"/>
+        <sourceFile filename="AOBericht.lua"/>
+        <sourceFile filename="AOKassenbuchEvent.lua"/>
+        <sourceFile filename="AOKassenbuchSeite.lua"/>
+        <sourceFile filename="AOKassenbuch.lua"/>
+        <sourceFile filename="AOKassenbuchDialog.lua"/>
+        <sourceFile filename="AOBerichtEvent.lua"/>
+        <sourceFile filename="AOUIHelper.lua"/>
+        <sourceFile filename="AOSettingsPage.lua"/>
+        <sourceFile filename="AOMenuPage.lua"/>
+        <sourceFile filename="AOMod.lua"/>
+    </extraSourceFiles>
+
+    <actions>
+        <action name="HL_TOGGLE" axisType="BUTTON"/>
+        <action name="AO_BUCH" axisType="BUTTON"/>
+    </actions>
+
+    <inputBinding>
+        <actionBinding action="HL_TOGGLE">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lalt KEY_h"/>
+        </actionBinding>
+        <actionBinding action="AO_BUCH">
+            <binding device="KB_MOUSE_DEFAULT" input="KEY_lctrl KEY_k"/>
+        </actionBinding>
+    </inputBinding>
+
+    <helpLines>
+        <category title="$l10n_ao_help_category">
+            <page id="aoQuickStartHelp" title="$l10n_ao_help_startTitle" iconSliceId="firstSteps_howToStart">
+            <paragraph>
+            <text text="$l10n_ao_help_start" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_menuTitle" />
+            <text text="$l10n_ao_help_menu" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_kostenTitle" />
+            <text text="$l10n_ao_help_kosten" />
+            </paragraph>
+            </page>
+            <page id="aoSellingPricesHelp" title="$l10n_ao_help_preisTitle" iconSliceId="basicEconomy_makingMoney">
+            <paragraph>
+            <text text="$l10n_ao_help_preis" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_autoTitle" />
+            <text text="$l10n_ao_help_auto" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_stufenTitle" />
+            <text text="$l10n_ao_help_stufen" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_anzeigeTitle" />
+            <text text="$l10n_ao_help_anzeige" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_tippsTitle" />
+            <text text="$l10n_ao_help_tipps" />
+            </paragraph>
+            </page>
+            <page id="aoSafetyBrakeHelp" title="$l10n_ao_help_bremseTitle" iconSliceId="basicEconomy_spendingMoney">
+            <paragraph>
+            <text text="$l10n_ao_help_bremse" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_gsTitle" />
+            <text text="$l10n_ao_help_gs" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_verbrauchTitle" />
+            <text text="$l10n_ao_help_verbrauch" />
+            </paragraph>
+            </page>
+            <page id="aoFarmReportHelp" title="$l10n_ao_help_berichtTitle" iconSliceId="basicEconomy_makingMoney">
+            <paragraph>
+            <text text="$l10n_ao_help_bericht" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_berichtVglTitle" />
+            <text text="$l10n_ao_help_berichtVgl" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_buchTitle" />
+            <text text="$l10n_ao_help_buch" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_buchFensterTitle" />
+            <text text="$l10n_ao_help_buchFenster" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_buchDateiTitle" />
+            <text text="$l10n_ao_help_buchDatei" />
+            </paragraph>
+            </page>
+            <page id="fleetTaxHelp" title="$l10n_fs_help_pageTitle" iconSliceId="basicEconomy_spendingMoney">
+            <paragraph>
+            <text text="$l10n_fs_help_intro" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_fs_help_configTitle" />
+            <text text="$l10n_fs_help_config" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_fs_help_valuesTitle" />
+            <text text="$l10n_fs_help_values" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_fs_help_rabattTitle" />
+            <text text="$l10n_fs_help_rabatt" />
+            </paragraph>
+            </page>
+            <page id="aoFuelHelp" title="$l10n_ao_help_spritTitle" iconSliceId="basicEconomy_spendingMoney">
+            <paragraph>
+            <text text="$l10n_ao_help_sprit" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_spritRegTitle" />
+            <text text="$l10n_ao_help_spritReg" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_spritAnzTitle" />
+            <text text="$l10n_ao_help_spritAnz" />
+            </paragraph>
+            </page>
+            <page id="aoInterestHelp" title="$l10n_ao_help_zinsTitle" iconSliceId="basicEconomy_makingMoney">
+            <paragraph>
+            <text text="$l10n_ao_help_zins" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_zinsStaffelTitle" />
+            <text text="$l10n_ao_help_zinsStaffel" />
+            </paragraph>
+            </page>
+            <page id="aoProductionHelp" title="$l10n_ao_help_prodTitle" iconSliceId="basicEconomy_productionChains">
+            <paragraph>
+            <text text="$l10n_ao_help_prod" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ao_help_prodEinzelTitle" />
+            <text text="$l10n_ao_help_prodEinzel" />
+            </paragraph>
+            </page>
+            <page id="repairEconomicsHelp" title="$l10n_ro_help_pageTitle" iconSliceId="misc_loadingMachines">
+            <paragraph>
+            <text text="$l10n_ro_help_intro" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ro_help_configTitle" />
+            <text text="$l10n_ro_help_config" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ro_help_valuesTitle" />
+            <text text="$l10n_ro_help_values" />
+            </paragraph>
+            <paragraph>
+            <title text="$l10n_ro_help_noteTitle" />
+            <text text="$l10n_ro_help_note" />
+            </paragraph>
+            </page>
+            <page id="hwOverview" title="$l10n_hl_helpT1" iconSliceId="firstSteps_whatFarmer">
+            <paragraph><text text="$l10n_hl_helpP1" /></paragraph>
+            <paragraph><text text="$l10n_hl_helpP1b" /></paragraph>
+            </page>
+            <page id="hwMenu" title="$l10n_hl_helpT2" iconSliceId="firstSteps_howToStart">
+            <paragraph><text text="$l10n_hl_helpP2" /></paragraph>
+            <paragraph><text text="$l10n_hl_helpP2b" /></paragraph>
+            <paragraph><text text="$l10n_hl_helpP2c" /></paragraph>
+            </page>
+            <page id="hwPayment" title="$l10n_hl_helpT3" iconSliceId="basicEconomy_spendingMoney">
+            <paragraph><text text="$l10n_hl_helpP3" /></paragraph>
+            <paragraph><text text="$l10n_hl_helpP3b" /></paragraph>
+            <paragraph><text text="$l10n_hl_helpP3c" /></paragraph>
+            <paragraph><text text="$l10n_hl_helpP3d" /></paragraph>
+            </page>
+            <page id="hwMarket" title="$l10n_hl_helpT4" iconSliceId="firstSteps_aiWorker">
+            <paragraph><text text="$l10n_hl_helpP4" /></paragraph>
+            <paragraph><text text="$l10n_hl_helpP4b" /></paragraph>
+            <paragraph><text text="$l10n_hl_helpP4c" /></paragraph>
+            </page>
+        </category>
+    </helpLines>
+
+    <l10n>
+        <text name="ao_help_category">
+            <de>Agrar-Ökonomie</de>
+            <en>Farm Economy</en>
+            <fr>Économie Agricole</fr>
+        </text>
+        <text name="fs_meldungMonat">
+            <de>Fuhrpark-Steuer: %d Fahrzeuge, -%s (monatlich)</de>
+            <en>Fleet tax: %d vehicles, -%s (monthly)</en>
+            <fr>Taxe de flotte : %d véhicules, -%s (mensuel)</fr>
+        </text>
+        <text name="fs_meldungJahr">
+            <de>Fuhrpark-Steuer: %d Fahrzeuge, -%s (jährlich)</de>
+            <en>Fleet tax: %d vehicles, -%s (yearly)</en>
+            <fr>Taxe de flotte : %d véhicules, -%s (annuel)</fr>
+        </text>
+        <text name="fs_infoLabel">
+            <de>Steuer/Abgaben</de>
+            <en>Tax/fees</en>
+            <fr>Taxe/frais</fr>
+        </text>
+        <text name="fs_help_category">
+            <de>Fuhrpark-Steuer</de>
+            <en>Fleet Tax</en>
+            <fr>Taxe De Flotte</fr>
+        </text>
+        <text name="fs_help_pageTitle">
+            <de>Fuhrpark-Steuer</de>
+            <en>Fleet Tax</en>
+            <fr>Taxe De Flotte</fr>
+        </text>
+        <text name="fs_help_intro">
+            <de>Ein Traktor kostet nicht nur beim Kauf. Für jedes eigene Fahrzeug und Anbaugerät fallen laufende Kosten an, so wie im echten Leben KFZ-Steuer, Versicherung und Unterhalt. Abgebucht wird monatlich oder jährlich, die Höhe richtet sich nach dem Fahrzeugwert. Zu finden ist das in der Finanzübersicht.</de>
+            <en>Owning machinery costs money even after you've paid for it. Every vehicle and implement you own has running costs, like vehicle tax, insurance and upkeep in real life. They scale with the vehicle value, get charged monthly or yearly and show up in the finances overview.</en>
+            <fr>Un véhicule ou un outil vous appartenant coûte aussi après l'achat, à l'image de la taxe, de l'assurance et de l'entretien dans la vie réelle. Ces coûts récurrents dépendent de la valeur du véhicule, sont prélevés chaque mois ou chaque année et figurent dans le bilan financier.</fr>
+        </text>
+        <text name="fs_help_configTitle">
+            <de>Einstellungen</de>
+            <en>Configuration</en>
+            <fr>Configuration</fr>
+        </text>
+        <text name="fs_help_config">
+            <de>Am bequemsten im ESC-Menü unter Einstellungen, Reiter Agrar-Ökonomie. Es geht aber auch über die Datei modSettings/FS25_FarmEconomy/settings.xml oder im Spiel per Konsole: aoConfig fuhrpark.Name Wert. aoStatus zeigt die Übersicht, fsVehicle die Kosten des aktuellen Fahrzeugs. Was du änderst, gilt sofort, wird gespeichert und im Multiplayer verteilt.</de>
+            <en>Easiest is the ESC menu: Settings, Farm Economy tab. You can also edit modSettings/FS25_FarmEconomy/settings.xml or use the in-game console with aoConfig fuhrpark.Name Value. aoStatus gives you an overview, fsVehicle the cost of your current vehicle. Changes apply right away, are saved and get synced in multiplayer.</en>
+            <fr>Le plus simple : menu ESC, Paramètres, onglet Économie Agricole. Sinon, passez par le fichier modSettings/FS25_FarmEconomy/settings.xml ou par la console en jeu avec aoConfig fuhrpark.Nom Valeur. aoStatus donne un aperçu, fsVehicle le coût du véhicule actuel. Toute modification compte aussitôt, est enregistrée et partagée en multijoueur.</fr>
+        </text>
+        <text name="fs_help_valuesTitle">
+            <de>Wichtige Werte</de>
+            <en>Key settings</en>
+            <fr>Réglages principaux</fr>
+        </text>
+        <text name="fs_help_values">
+            <de>billingMode: 0 = monatlich, 1 = jährlich. taxRatePerYear und upkeepRatePerYear sind der Anteil vom Fahrzeugwert pro Jahr, 0.02 heißt 2 Prozent. ownedOnly nimmt geleaste Geräte aus, useResaleValue rechnet mit dem Restwert statt mit dem Neupreis. rabattRuhend und rabattUnterstand sind die Nachlässe für ruhende und für untergestellte Fahrzeuge, rabattMinAnteil der Mindestanteil trotz Nachlass. minCostPerVehicleMonth ist der Mindestbetrag je Fahrzeug.</de>
+            <en>billingMode: 0 = monthly, 1 = yearly. taxRatePerYear and upkeepRatePerYear are a share of the vehicle value per year, 0.02 = 2 percent. ownedOnly leaves leased equipment out, and useResaleValue works with the resale value instead of the purchase price. rabattRuhend and rabattUnterstand are the discounts for idle and sheltered vehicles, rabattMinAnteil the minimum share still due despite them. minCostPerVehicleMonth is the minimum cost per vehicle.</en>
+            <fr>billingMode : 0 = mensuel, 1 = annuel. taxRatePerYear et upkeepRatePerYear donnent la part de la valeur du véhicule par an, 0.02 = 2 pour cent. ownedOnly exclut le matériel en leasing ; avec useResaleValue, on part de la valeur de revente et non du prix d'achat. Les remises pour véhicules inutilisés ou sous abri s'appellent rabattRuhend et rabattUnterstand, et rabattMinAnteil fixe la part minimale due malgré elles. Enfin, minCostPerVehicleMonth est le coût minimum par véhicule.</fr>
+        </text>
+        <text name="fs_help_rabattTitle">
+            <de>Nachlässe: ruhende Maschinen und Unterstand</de>
+            <en>Discounts: Idle Machines and Shelter</en>
+            <fr>Remises : machines inutilisées et abri</fr>
+        </text>
+        <text name="fs_help_rabatt">
+            <de>Eine reine Besitzsteuer würde jeden bestrafen, der gern Maschinen sammelt. Dabei gehört eine volle Halle nun mal zum Hof. Deshalb zahlt weniger, was im Abrechnungszeitraum gar nicht gearbeitet hat, und ebenso, was in einer Halle oder unter einem Unterstand steht. Beide Nachlässe gelten zusammen. Einen einstellbaren Mindestanteil zahlst du aber immer. Ob eine Maschine gearbeitet hat, sieht die Mod an den Betriebsstunden, und beim Standort zählt der Zeitpunkt der Abrechnung. Was jeden Tag läuft, kostet weiter den vollen Satz. Dicke Technik für wenig Arbeit rechnet sich also immer noch nicht. Eine neue Halle dagegen senkt die laufenden Kosten auf Dauer.</de>
+            <en>A tax on simply owning things would punish anyone who likes collecting machines, and a packed shed is part of farm life. So a machine that didn't work at all during the billing period pays less, and so does one parked in a shed or under a carport. The two discounts stack, though an adjustable minimum share is always due. The mod looks at the operating hours to tell whether a machine worked; for the location, what counts is where it stands at billing time. Anything you use every day keeps paying the full rate. Big kit for a small workload is still a bad deal, while a new shed cuts your running costs for good.</en>
+            <fr>Pourquoi des remises ? Taxer la simple possession pénaliserait ceux qui collectionnent les machines, or un hangar bien rempli fait partie d'une ferme. Une machine qui n'a pas travaillé du tout pendant la période paie donc moins, tout comme celle garée dans un hangar ou sous un abri. Les deux remises se cumulent, mais une part minimale réglable reste toujours due. Le mod sait si une machine a travaillé grâce à ses heures de service ; pour l'emplacement, c'est le moment de la facturation qui compte. Un engin utilisé tous les jours paie toujours le taux plein. Du gros matériel pour peu de travail ne devient pas rentable pour autant, alors qu'un nouveau hangar fait baisser durablement les coûts récurrents.</fr>
+        </text>
+        <text name="ro_faktor">
+            <de>Reparaturfaktor</de>
+            <en>Repair factor</en>
+            <fr>Facteur de réparation</fr>
+        </text>
+        <text name="ro_reparatur">
+            <de>Reparatur</de>
+            <en>Repair</en>
+            <fr>Réparation</fr>
+        </text>
+        <text name="ro_bisher">
+            <de>Reparaturen bisher</de>
+            <en>Repairs so far</en>
+            <fr>Réparations effectuées</fr>
+        </text>
+        <text name="ro_stunden">
+            <de>Betriebsstunden</de>
+            <en>Operating hours</en>
+            <fr>Heures de service</fr>
+        </text>
+        <text name="ro_restwert">
+            <de>Restwert</de>
+            <en>Resale value</en>
+            <fr>Valeur de revente</fr>
+        </text>
+        <text name="ro_hinweis">
+            <de>Hinweis</de>
+            <en>Notice</en>
+            <fr>Avertissement</fr>
+        </text>
+        <text name="ro_teuer">
+            <de>Unterhalt wird teuer</de>
+            <en>Upkeep getting expensive</en>
+            <fr>Entretien de plus en plus cher</fr>
+        </text>
+        <text name="ro_unwirtschaftlich">
+            <de>Neukauf prüfen</de>
+            <en>Consider replacing</en>
+            <fr>Envisagez un remplacement</fr>
+        </text>
+        <text name="ro_meldungWarnung">
+            <de>%s: Der Unterhalt wird teuer.</de>
+            <en>%s: Upkeep is getting expensive.</en>
+            <fr>%s : l'entretien devient cher.</fr>
+        </text>
+        <text name="ro_meldungKritisch">
+            <de>%s: Die nächste Reparatur ist unwirtschaftlich. Neukauf prüfen.</de>
+            <en>%s: The next repair is uneconomical. Consider replacing.</en>
+            <fr>%s : la prochaine réparation n'est plus rentable. Envisagez un remplacement.</fr>
+        </text>
+        <text name="ro_werkstatt_kritisch">
+            <de>%s
+Die aufsummierten Reparaturkosten liegen bei %d %% des Fahrzeugwerts. Ein Neukauf ist wahrscheinlich günstiger als weiteres Reparieren.</de>
+            <en>%s
+Cumulative repair costs are at %d %% of the vehicle value. Replacing is likely cheaper than continuing to repair.</en>
+            <fr>%s
+Les coûts de réparation cumulés atteignent %d %% de la valeur du véhicule. Un remplacement est probablement moins cher que de continuer à réparer.</fr>
+        </text>
+        <text name="ro_help_category">
+            <de>Reparatur-Ökonomie</de>
+            <en>Repair Economics</en>
+            <fr>Économie De Réparation</fr>
+        </text>
+        <text name="ro_help_pageTitle">
+            <de>Reparatur-Ökonomie</de>
+            <en>Repair Economics</en>
+            <fr>Économie De Réparation</fr>
+        </text>
+        <text name="ro_help_intro">
+            <de>Je mehr ein Fahrzeug läuft, desto teurer wird die Reparatur. Es zählen die Betriebsstunden und wie oft schon repariert wurde. Lohnt sich ein Fahrzeug nicht mehr, sagt die Mod Bescheid, und zwar in der Info-Box, per Bildschirmmeldung und in der Werkstatt.</de>
+            <en>An old workhorse with lots of hours gets pricey to fix. The repair price goes up with operating hours and with every repair already done. Once a vehicle becomes uneconomical, you get a warning in the info box, an on-screen message and a note in the workshop.</en>
+            <fr>Plus un véhicule sert, plus sa réparation coûte cher : les heures de service comptent, tout comme le nombre de réparations déjà faites. Lorsqu'il n'est plus rentable, le mod vous prévient dans la boîte d'info, par un message à l'écran et à l'atelier.</fr>
+        </text>
+        <text name="ro_help_configTitle">
+            <de>Einstellungen</de>
+            <en>Configuration</en>
+            <fr>Configuration</fr>
+        </text>
+        <text name="ro_help_config">
+            <de>Eingestellt wird im ESC-Menü unter Einstellungen, Reiter Agrar-Ökonomie. Es geht aber auch über die Datei modSettings/FS25_FarmEconomy/settings.xml oder im laufenden Spiel per Konsole mit aoConfig reparatur.Name Wert. Die Werte des aktuellen Fahrzeugs zeigt roStatus.</de>
+            <en>You'll find the settings in the ESC menu: Settings, then the Farm Economy tab. You can also edit modSettings/FS25_FarmEconomy/settings.xml or type aoConfig reparatur.Name Value in the console while playing. roStatus lists the values of your current vehicle.</en>
+            <fr>Les réglages se trouvent dans le menu ESC, sous Paramètres, onglet Économie Agricole. Vous pouvez aussi passer par le fichier modSettings/FS25_FarmEconomy/settings.xml, ou en jeu par la console avec aoConfig reparatur.Nom Valeur. Pour le véhicule actuel, roStatus affiche ses valeurs.</fr>
+        </text>
+        <text name="ro_help_valuesTitle">
+            <de>Wichtige Werte</de>
+            <en>Key settings</en>
+            <fr>Réglages principaux</fr>
+        </text>
+        <text name="ro_help_values">
+            <de>Den Kostenanstieg über die Betriebsstunden steuern referenzStunden und faktorStunden. faktorProReparatur ist der Aufschlag je Reparatur, faktorMax der Deckel. tempoSchaden und tempoLack bestimmen das Verschleißtempo, warnStunden und kritischStunden, ab wann gewarnt wird.</de>
+            <en>referenzStunden and faktorStunden control how costs climb with operating hours. Each repair adds faktorProReparatur on top, and faktorMax caps the whole thing. tempoSchaden and tempoLack set the wear speed. warnStunden and kritischStunden decide when the warnings kick in.</en>
+            <fr>La hausse des coûts selon les heures de service dépend de referenzStunden et faktorStunden. faktorProReparatur fixe la hausse par réparation, faktorMax sert de plafond. tempoSchaden et tempoLack règlent la vitesse d'usure, tandis que warnStunden et kritischStunden déterminent les seuils des avertissements.</fr>
+        </text>
+        <text name="ro_help_noteTitle">
+            <de>Hinweis</de>
+            <en>Note</en>
+            <fr>Remarque</fr>
+        </text>
+        <text name="ro_help_note">
+            <de>Bitte keine zweite Mod dazunehmen, die Reparaturkosten oder Verschleißtempo ändert. Das beißt sich.</de>
+            <en>Running another mod that changes repair costs or wear speed at the same time? Better not.</en>
+            <fr>Évitez de l'associer à un autre mod qui modifie les coûts de réparation ou la vitesse d'usure.</fr>
+        </text>
+        <text name="hl_stufeAzubi">
+            <de>Azubi</de>
+            <en>Apprentice</en>
+            <fr>Apprenti</fr>
+        </text>
+        <text name="hl_stufeQuer">
+            <de>Quereinsteiger</de>
+            <en>Career changer</en>
+            <fr>Reconverti</fr>
+        </text>
+        <text name="hl_stufeAusgelernt">
+            <de>Ausgelernter</de>
+            <en>Qualified worker</en>
+            <fr>Qualifié</fr>
+        </text>
+        <text name="hl_stufeEigen">
+            <de>Eigener Lohn</de>
+            <en>Custom wage</en>
+            <fr>Salaire perso</fr>
+        </text>
+        <text name="hl_keineHelfer">
+            <de>Kein Helfer zu diesem Lohn verfügbar.</de>
+            <en>No helper available for this wage.</en>
+            <fr>Aucun ouvrier disponible à ce salaire.</fr>
+        </text>
+        <text name="hl_keineHelferFest">
+            <de>Kein Helfer für '%s' zu %s, gefordert sind etwa %s.</de>
+            <en>No helper for '%s' at %s, they want about %s.</en>
+            <fr>Aucun ouvrier pour '%s' à %s, il en demande environ %s.</fr>
+        </text>
+        <text name="hl_eingestelltFest">
+            <de>Helfer eingestellt: '%s' für %s.</de>
+            <en>Helper hired: '%s' for %s.</en>
+            <fr>Ouvrier engagé : '%s' pour %s.</fr>
+        </text>
+        <text name="hl_taskLeicht">
+            <de>Mähen/Schwaden</de>
+            <en>Mowing/raking</en>
+            <fr>Fauchage/andainage</fr>
+        </text>
+        <text name="hl_taskMittel">
+            <de>Säen/Düngen</de>
+            <en>Sowing/fertilizing</en>
+            <fr>Semis/fertilisation</fr>
+        </text>
+        <text name="hl_taskBoden">
+            <de>Bodenbearbeitung</de>
+            <en>Tillage</en>
+            <fr>Travail du sol</fr>
+        </text>
+        <text name="hl_taskPressen">
+            <de>Ballen pressen</de>
+            <en>Baling</en>
+            <fr>Pressage</fr>
+        </text>
+        <text name="hl_taskDreschen">
+            <de>Dreschen</de>
+            <en>Harvesting</en>
+            <fr>Récolte</fr>
+        </text>
+        <text name="hl_taskHaeckseln">
+            <de>Häckseln/Holzernte</de>
+            <en>Chopping/forestry</en>
+            <fr>Ensilage/foresterie</fr>
+        </text>
+        <text name="hl_taskStandard">
+            <de>Arbeit</de>
+            <en>Work</en>
+            <fr>Travail</fr>
+        </text>
+        <text name="input_HL_TOGGLE"><de>Helfer-Menü ein/aus</de><en>Helper menu on/off</en><fr>Menu ouvriers on/off</fr></text>
+        <text name="hl_menuTitle"><de>Helfer-Arbeitsmarkt</de><en>Helper Labor Market</en><fr>Marché des aides</fr></text>
+        <text name="hl_secPreise"><de>Üblicher Lohn je Arbeit  (nur bei festem Preis)</de><en>Usual pay per job  (fixed price only)</en><fr>Salaire habituel par travail  (prix fixe seulement)</fr></text>
+        <text name="hl_mAktiv"><de>Helfer-System einschalten</de><en>Enable helper system</en><fr>Activer le système d'ouvriers</fr></text>
+        <text name="hl_mModus"><de>Wie wird bezahlt?</de><en>How to pay?</en><fr>Comment payer ?</fr></text>
+        <text name="hl_mStunde"><de>Pro Stunde (läuft mit)</de><en>Per hour (ongoing)</en><fr>À l'heure (en continu)</fr></text>
+        <text name="hl_mFest"><de>Fester Preis pro Auftrag</de><en>Fixed price per job</en><fr>Prix fixe par mission</fr></text>
+        <text name="hl_mSchwierigkeit"><de>Preis-Niveau (Festpreis)</de><en>Price level (fixed price)</en><fr>Niveau de prix (prix fixe)</fr></text>
+        <text name="hl_diffAuto"><de>Auto (nach Spiel-Wirtschaft)</de><en>Auto (game economy)</en><fr>Auto (économie du jeu)</fr></text>
+        <text name="hl_diffLeicht"><de>Leicht (günstig)</de><en>Easy (cheap)</en><fr>Facile (bon marché)</fr></text>
+        <text name="hl_diffNormal"><de>Normal</de><en>Normal</en><fr>Normal</fr></text>
+        <text name="hl_diffSchwer"><de>Schwer (teuer)</de><en>Hard (expensive)</en><fr>Difficile (cher)</fr></text>
+        <text name="hl_diffEigen"><de>Eigen</de><en>Custom</en><fr>Perso</fr></text>
+        <text name="hl_mStufe"><de>Helfer-Können (nur bei Stundenlohn)</de><en>Helper skill (hourly only)</en><fr>Compétence (à l'heure seulement)</fr></text>
+        <text name="hl_mFestLohn"><de>Dein Angebot pro Auftrag</de><en>Your offer per job</en><fr>Votre offre par mission</fr></text>
+        <text name="hl_mZufall"><de>Helfer darf absagen (Zufall)</de><en>Helper may decline (random)</en><fr>L'ouvrier peut refuser (aléatoire)</fr></text>
+        <text name="hl_mNurErfolg"><de>Festpreis nur bei fertigem Auftrag</de><en>Fixed price only for finished jobs</en><fr>Prix fixe seulement si mission terminée</fr></text>
+        <text name="hl_mGratis"><de>Sprit und Material auch gratis</de><en>Fuel and supplies free too</en><fr>Carburant et intrants gratuits aussi</fr></text>
+        <text name="hl_mPreisLeicht"><de>Mähen / Schwaden / Wenden</de><en>Mowing / raking / tedding</en><fr>Fauchage / andainage / fanage</fr></text>
+        <text name="hl_mPreisMittel"><de>Säen / Düngen / Spritzen</de><en>Sowing / fertilizing / spraying</en><fr>Semis / fertilisation / pulvérisation</fr></text>
+        <text name="hl_mPreisBoden"><de>Pflügen / Grubbern</de><en>Plowing / cultivating</en><fr>Labour / décompactage</fr></text>
+        <text name="hl_mPreisPressen"><de>Ballen pressen</de><en>Baling</en><fr>Pressage de balles</fr></text>
+        <text name="hl_mPreisDreschen"><de>Dreschen (Mähdrescher)</de><en>Harvesting (combine)</en><fr>Récolte (moissonneuse)</fr></text>
+        <text name="hl_mPreisHaeckseln"><de>Häckseln / Holzernte</de><en>Chopping / forestry</en><fr>Ensilage / foresterie</fr></text>
+        <text name="hl_mAn"><de>An</de><en>On</en><fr>Oui</fr></text>
+        <text name="hl_mAus"><de>Aus</de><en>Off</en><fr>Non</fr></text>
+        <text name="hl_optAzubi"><de>Azubi (günstig)</de><en>Apprentice (cheap)</en><fr>Apprenti (bon marché)</fr></text>
+        <text name="hl_optQuer"><de>Quereinsteiger (normal)</de><en>Career changer (normal)</en><fr>Reconverti (normal)</fr></text>
+        <text name="hl_optAusgelernt"><de>Ausgelernter (teuer)</de><en>Qualified (expensive)</en><fr>Qualifié (cher)</fr></text>
+        <text name="hl_optEigen"><de>Eigener Wert</de><en>Custom value</en><fr>Valeur perso</fr></text>
+        <text name="hl_eingestelltStunde">
+            <de>Helfer eingestellt: %s (Stundenlohn x%.2f).</de>
+            <en>Helper hired: %s (hourly wage x%.2f).</en>
+            <fr>Ouvrier engagé : %s (salaire horaire x%.2f).</fr>
+        </text>
+        <text name="hl_bezahlt">
+            <de>Helfer bezahlt: %s.</de>
+            <en>Helper paid: %s.</en>
+            <fr>Ouvrier payé : %s.</fr>
+        </text>
+        <text name="hl_abgebrochen">
+            <de>Auftrag abgebrochen, es ist kein Lohn fällig.</de>
+            <en>Job cancelled, no wage is due.</en>
+            <fr>Mission interrompue, aucun salaire n'est dû.</fr>
+        </text>
+        <text name="hl_helpHeader">
+            <de>Helfer-Arbeitsmarkt</de>
+            <en>Helper Labor Market</en>
+            <fr>Marché des aides</fr>
+        </text>
+        <text name="hl_helpT1">
+            <de>Helfer: Überblick</de>
+            <en>Helpers: Overview</en>
+            <fr>Ouvriers : aperçu</fr>
+        </text>
+        <text name="hl_helpP1">
+            <de>Was soll dein Helfer verdienen? Das legst du hier selbst fest. Ob für das Geld dann auch jemand kommt, entscheidet der Arbeitsmarkt. Wer billig anheuert, wartet öfter, wer gut zahlt, zahlt eben mehr.</de>
+            <en>How much should a helper earn? You set that. Whether anyone actually turns up for the money is down to the labor market, so a cheap offer may mean waiting, while a generous one costs you.</en>
+            <fr>Vous fixez vous-même ce que gagne un ouvrier du jeu. Reste à savoir si quelqu'un accepte ce salaire, et ça, c'est le marché du travail qui le décide. À vous de choisir entre payer moins et attendre, ou payer plus pour avoir quelqu'un.</fr>
+        </text>
+        <text name="hl_helpP1b">
+            <de>Den normalen Helfer-Lohn des Spiels schaltet die Mod dafür ganz ab, abgerechnet wird nur noch nach deinen Einstellungen. Doppelt bezahlt wird also nichts. In der Finanzübersicht stehen die Kosten weiter bei den Lohnzahlungen.</de>
+            <en>The game's own helper wage is turned off entirely and replaced by yours, so you never pay twice. Costs still appear under wage payments in the finances overview.</en>
+            <fr>Le salaire normal des ouvriers du jeu est complètement coupé ; seul votre système compte, rien n'est donc prélevé deux fois. Dans les finances, les coûts restent rangés dans les salaires.</fr>
+        </text>
+        <text name="hl_helpT2">
+            <de>Helfer: Menü und Bedienung</de>
+            <en>Helpers: Menu and controls</en>
+            <fr>Ouvriers : menu et commandes</fr>
+        </text>
+        <text name="hl_helpP2">
+            <de>Die wichtigsten Schalter findest du im ESC-Menü, Reiter Agrar-Ökonomie, Abschnitt Helfer-Arbeitsmarkt. Mit Alt+H geht das komplette Helferfenster auf, dort stehen auch Dein Angebot pro Auftrag und die Richtpreise unter Üblicher Lohn je Arbeit. Passiert bei Alt+H nichts, hat wohl eine andere Mod die Taste schon belegt. Dann in den Spiel-Einstellungen unter Steuerung neu belegen (Suchbegriff Helfer) oder einfach hlMenu in die Konsole tippen.</de>
+            <en>Most switches sit in the ESC menu, Farm Economy tab, section Helper Job Market. Alt+H opens the full helper window, which also holds Your offer per job and the reference prices under Usual pay per job. Nothing happens on Alt+H? Then another mod has probably grabbed the key. Rebind it in the game's control settings (search for helper), or type hlMenu in the console.</en>
+            <fr>Les réglages essentiels sont dans le menu ESC, onglet Économie Agricole, section Marché du travail des ouvriers. Alt+H ouvre la fenêtre complète des ouvriers, avec Votre offre par mission et les prix indicatifs sous Salaire habituel par travail. Si la touche ne fait rien, un autre mod l'occupe sans doute déjà : réattribuez-la dans les paramètres de commandes (cherchez ouvriers) ou lancez la commande console hlMenu.</fr>
+        </text>
+        <text name="hl_helpP2b">
+            <de>Im Fenster klickst du entweder auf die Pfeile links und rechts neben einem Feld, oder du wählst mit den Pfeiltasten hoch und runter die Zeile und änderst mit links und rechts den Wert. Gespeichert wird sofort, im Multiplayer gleicht die Mod das direkt mit dem Server ab. Ändern dürfen dort aber nur Admins, für alle anderen bleibt das Fenster gesperrt.</de>
+            <en>Use the mouse on the left and right arrows of a field, or the keyboard: the up and down arrow keys pick a row, left and right change the value. Every change is saved right away and synced with the server in multiplayer, where only admins can edit. For everyone else the window is locked.</en>
+            <fr>À la souris, cliquez sur les flèches à gauche et à droite d'un champ. Au clavier, les flèches haut et bas choisissent la ligne, gauche et droite changent la valeur. Tout est enregistré aussitôt et, en multijoueur, synchronisé avec le serveur. Là, seuls les administrateurs peuvent modifier les valeurs ; pour les autres, la fenêtre reste verrouillée.</fr>
+        </text>
+        <text name="hl_helpP2c">
+            <de>Geht auch ohne Menü, per Konsole: hlMenu öffnet das Fenster, hlStatus listet alle Werte auf, mit hlConfig Name Wert änderst du eine Einstellung, und hlTest würfelt zur Probe zehnmal die Verfügbarkeit aus.</de>
+            <en>Prefer the console? hlStatus prints all values, hlConfig name value changes a setting, hlTest rolls availability ten times so you can see how it behaves, and hlMenu opens the window.</en>
+            <fr>Tout se fait aussi en console : hlMenu ouvre la fenêtre, hlStatus affiche toutes les valeurs, hlConfig nom valeur modifie un réglage et hlTest tire dix fois la disponibilité, pour essayer.</fr>
+        </text>
+        <text name="hl_helpT3">
+            <de>Helfer: Bezahlung</de>
+            <en>Helpers: Payment</en>
+            <fr>Ouvriers : paiement</fr>
+        </text>
+        <text name="hl_helpP3">
+            <de>Bezahlt wird auf eine von zwei Arten. Umstellen kannst du das im Reiter unter Abrechnung oder im Helferfenster unter Wie wird bezahlt?</de>
+            <en>You can pay helpers in two ways. Switch between them in the tab under Payment mode or in the helper window under How to pay?</en>
+            <fr>Il existe deux modes de paiement. Vous passez de l'un à l'autre dans l'onglet sous Mode de paiement, ou dans la fenêtre des ouvriers sous Comment payer ?</fr>
+        </text>
+        <text name="hl_helpP3b">
+            <de>Beim Stundenlohn läuft der Lohn während der Arbeit mit, so wie man es aus dem Spiel kennt. Wie hoch er ausfällt, hängt von der Lohnstufe ab, im Helferfenster heißt sie Helfer-Können (nur bei Stundenlohn). Ein Azubi ist mit etwa 0,6-fach günstig, ein Quereinsteiger kostet normal (1,0-fach), ein Ausgelernter ist mit etwa 1,6-fach teuer. Mit Eigener Wert, im Reiter Eigener Lohn, gibst du den Faktor selbst vor.</de>
+            <en>On hourly wage the pay keeps running while the helper works, just like in the base game. The amount depends on the Wage tier, called Helper skill (hourly only) in the helper window. An Apprentice comes cheap at about 0.6x, a Career changer is normal at 1.0x, and a Qualified helper (Fully trained in the tab) is expensive at about 1.6x. Custom value, or Custom wage in the tab, lets you use your own factor.</en>
+            <fr>En salaire horaire, la paie court pendant le travail, comme dans le jeu de base. Son montant dépend du Niveau de salaire, appelé Compétence (à l'heure seulement) dans la fenêtre des ouvriers. Un Apprenti revient bon marché, environ 0,6x ; un Reconverti coûte le prix normal, 1,0x ; un Qualifié est cher, environ 1,6x. Avec Valeur perso, Salaire personnalisé dans l'onglet, c'est votre propre facteur qui s'applique.</fr>
+        </text>
+        <text name="hl_helpP3c">
+            <de>Beim Festpreis gibt es keinen laufenden Lohn. Du zahlst einen festen Betrag, und der wird erst abgebucht, wenn der Auftrag zu Ende ist. Die Höhe stellst du unter Dein Angebot pro Auftrag ein. Beim Anheuern wird der Preis eingefroren. Stellst du danach etwas anderes ein, ändert das an diesem Auftrag nichts mehr.</de>
+            <en>With Fixed price per job there is no running wage. You pay one set amount, and it only leaves your account when the job ends. Set it under Your offer per job. The price is frozen the moment you hire, so changing the setting later won't touch that job.</en>
+            <fr>Avec Prix fixe par mission, plus de salaire courant : vous payez un montant fixe, prélevé seulement quand la mission se termine. Ce montant se règle sous Votre offre par mission. Le prix est figé au moment de l'embauche ; si vous modifiez le réglage ensuite, cette mission n'est pas concernée.</fr>
+        </text>
+        <text name="hl_helpP3d">
+            <de>Und wenn der Helfer mittendrin aufhört? Ist Festpreis nur bei fertigem Auftrag an, und das ist es ab Werk, zahlst du nur für erledigte Arbeit, also wenn das Feld fertig oder das Silo leer ist. Entlässt du den Helfer vorher, bleibt er hängen oder bricht er ab, weil etwa Sprit oder Saatgut ausgeht, kostet der Auftrag nichts. Du bekommst dann eine Meldung. Soll der Festpreis immer fällig werden, schalte die Option aus. Den Stundenlohn betrifft das nicht, der fällt während der Arbeit sowieso an.</de>
+            <en>What if the helper stops halfway? Fixed price only for finished jobs is on by default, and then you only pay once the work is done, meaning the field is finished or the silo is empty. If you dismiss the helper early, or the helper gets stuck or gives up because fuel or seed ran out, the job is free and a message lets you know. Rather pay the fixed price every time? Turn the option off. Hourly wages aren't affected; they accrue while the helper works.</en>
+            <fr>Et si l'ouvrier s'arrête en route ? L'option Prix fixe seulement si la mission est terminée, activée par défaut, fait que vous ne payez qu'un travail fini : champ terminé ou silo vide. Si vous le congédiez avant, s'il reste bloqué ou abandonne, faute de carburant ou de semences par exemple, la mission ne coûte rien et un message vous le signale. Pour payer le prix fixe dans tous les cas, désactivez l'option. Le salaire horaire n'est pas concerné, il court pendant le travail.</fr>
+        </text>
+        <text name="hl_helpT4">
+            <de>Helfer: Arbeitsmarkt und Extras</de>
+            <en>Helpers: Labor market and extras</en>
+            <fr>Ouvriers : marché et options</fr>
+        </text>
+        <text name="hl_helpP4">
+            <de>Mit Zufällige Verfügbarkeit, im Helferfenster Helfer darf absagen (Zufall), schwankt der Lohn, den ein Helfer verlangt. Liegt dein Angebot drüber, kommt einer. Liegt es drunter, ist gerade keiner zu haben. Wer knapp bietet, spart, muss aber öfter warten. Wer gut zahlt, bekommt fast immer jemanden, nur eben teurer.</de>
+            <en>Turn on Random availability, labelled Helper may decline (random) in the helper window, and the wage a helper asks for changes at random. Offer more than that and a helper shows up. Offer less and nobody is available right now. Low offers save money, but you'll wait more often; good offers almost always get you someone, at a higher price.</en>
+            <fr>Activez Disponibilité aléatoire, ou L'ouvrier peut refuser (aléatoire) dans la fenêtre des ouvriers, et le salaire demandé varie au hasard. Votre offre est au-dessus ? Un ouvrier arrive. En dessous, personne n'est disponible pour le moment. Une offre basse fait des économies mais vous fait souvent attendre ; une offre généreuse trouve presque toujours preneur, pour plus cher.</fr>
+        </text>
+        <text name="hl_helpP4b">
+            <de>Beim Festpreis kommt es auf die Arbeit an. Mähen oder Schwaden ist leicht und günstig, Dreschen oder Häckseln schwer und teuer. Angepasst wird das Ganze über Preis-Niveau (Festpreis). Auf Auto richtet es sich nach der Wirtschafts-Schwierigkeit deines Spiels, also leicht, normal oder schwer. Du kannst aber auch von Hand Leicht, Normal oder Schwer wählen, oder Eigen, wenn du die Richtpreise je Aufgabe selbst eintragen willst.</de>
+            <en>Under fixed price, what counts as fair depends on the task. Light work such as mowing or raking is cheap, heavy work like harvesting or chopping is expensive. Price level (fixed price) adjusts it all: Auto follows your game's economic difficulty, whether easy, normal or hard. Or pick Easy, Normal or Hard yourself, or Custom to set the reference prices per task on your own.</en>
+            <fr>En prix fixe, le juste prix dépend de la tâche. Fauchage ou andainage sont des travaux légers, donc bon marché ; récolte ou ensilage sont lourds et chers. Niveau de prix (prix fixe) ajuste le tout. Auto suit la difficulté économique de votre partie, facile, normal ou difficile. Sinon, choisissez Facile, Normal ou Difficile, ou bien Perso pour régler vous-même les prix par tâche.</fr>
+        </text>
+        <text name="hl_helpP4c">
+            <de>Wer mag, schaltet noch Betriebsmittel frei bei Helferarbeit ein, im Helferfenster heißt das Sprit und Material auch gratis. Solange ein Helfer arbeitet, kosten dann auch Kraftstoff und Betriebsmittel wie Saatgut oder Dünger nichts. Die ganze Mod läuft im Multiplayer. Maßgeblich ist der Server, er verteilt die Einstellungen an alle Mitspieler, und ändern dürfen nur Admins.</de>
+            <en>One more option: Free supplies during helper work, or Fuel and supplies free too in the helper window. While a helper is working, fuel and supplies like seeds or fertilizer cost nothing either. The whole mod works in multiplayer. The server has the final say and sends the settings to every player; only admins can change them.</en>
+            <fr>Encore une option : Consommables gratuits pendant le travail de l'ouvrier, ou Carburant et intrants gratuits aussi dans la fenêtre des ouvriers. Tant qu'un ouvrier travaille, le carburant et les intrants comme les semences ou l'engrais ne coûtent rien non plus. Le mod entier fonctionne en multijoueur : le serveur fait foi, il envoie les réglages à tous les joueurs, et seuls les administrateurs peuvent les modifier.</fr>
+        </text>
+        <text name="input_AO_BUCH">
+            <de>Kassenbuch öffnen</de>
+            <en>Open cash book</en>
+            <fr>Ouvrir le livre de caisse</fr>
+        </text>
+        <text name="ao_buch_zeitraum">
+            <de>Zeitraum</de>
+            <en>Period</en>
+            <fr>Période</fr>
+        </text>
+        <text name="ao_buch_ansicht">
+            <de>Ansicht</de>
+            <en>View</en>
+            <fr>Affichage</fr>
+        </text>
+        <text name="ao_buch_vonBis">
+            <de>%s bis %s</de>
+            <en>%s to %s</en>
+            <fr>%s à %s</fr>
+        </text>
+        <text name="ao_buch_ansMonat">
+            <de>Monat</de>
+            <en>Month</en>
+            <fr>Mois</fr>
+        </text>
+        <text name="ao_buch_ansJahr">
+            <de>Jahr</de>
+            <en>Year</en>
+            <fr>Année</fr>
+        </text>
+        <text name="ao_buch_vglMonat">
+            <de>Gegenüber %s: %s.</de>
+            <en>Compared with %s: %s.</en>
+            <fr>Par rapport à %s : %s.</fr>
+        </text>
+        <text name="ao_buch_vglJahr">
+            <de>Gegenüber denselben Monaten im %s: %s.</de>
+            <en>Compared with the same months of %s: %s.</en>
+            <fr>Par rapport aux mêmes mois de l'%s : %s.</fr>
+        </text>
+        <text name="ao_buch_vglEin">
+            <de>Einnahmen %s</de>
+            <en>income %s</en>
+            <fr>revenus %s</fr>
+        </text>
+        <text name="ao_buch_vglAus">
+            <de>Ausgaben %s</de>
+            <en>expenses %s</en>
+            <fr>dépenses %s</fr>
+        </text>
+        <text name="ao_buch_fussDatei">
+            <de>Die Buchungen dieses und des vorigen Spieljahres liegen mit Diagrammen auch als Datei im Ordner des Spielstands.</de>
+            <en>This year's and last year's bookings are also saved as a file with charts in the savegame folder.</en>
+            <fr>Les opérations de cette année et de l'année précédente sont aussi enregistrées, avec graphiques, dans un fichier du dossier de sauvegarde.</fr>
+        </text>
+        <text name="ao_buch_letzte">
+            <de>Letzte Buchungen</de>
+            <en>Latest bookings</en>
+            <fr>Dernières opérations</fr>
+        </text>
+        <text name="ao_buch_tagessumme">
+            <de>Tagessumme</de>
+            <en>daily sum</en>
+            <fr>somme du jour</fr>
+        </text>
+        <text name="ao_buch_unbekannt">
+            <de>Sonstiges</de>
+            <en>Other</en>
+            <fr>Divers</fr>
+        </text>
+        <text name="ao_buch_leer">
+            <de>Noch nichts gebucht. Sobald Geld fließt, steht es hier.</de>
+            <en>Nothing booked yet. As soon as money moves it appears here.</en>
+            <fr>Rien d'enregistré pour l'instant. Dès que l'argent bouge, cela apparaît ici.</fr>
+        </text>
+        <text name="ao_buch_titel">
+            <de>Kassenbuch</de>
+            <en>Cash Book</en>
+            <fr>Livre de caisse</fr>
+        </text>
+        <text name="ao_buch_saldo">
+            <de>Saldo</de>
+            <en>Balance</en>
+            <fr>Solde</fr>
+        </text>
+        <text name="ao_buch_ein">
+            <de>Einnahmen</de>
+            <en>Income</en>
+            <fr>Revenus</fr>
+        </text>
+        <text name="ao_buch_aus">
+            <de>Ausgaben</de>
+            <en>Expenses</en>
+            <fr>Dépenses</fr>
+        </text>
+        <text name="ao_buch_inv">
+            <de>Investitionen</de>
+            <en>Investments</en>
+            <fr>Investissements</fr>
+        </text>
+        <text name="ao_buch_buchungen">
+            <de>Buchungen</de>
+            <en>bookings</en>
+            <fr>opérations</fr>
+        </text>
+        <text name="ao_buch_jahr">
+            <de>Jahr %s</de>
+            <en>Year %s</en>
+            <fr>Année %s</fr>
+        </text>
+        <text name="ao_buch_monate">
+            <de>Monat für Monat</de>
+            <en>Month by month</en>
+            <fr>Mois par mois</fr>
+        </text>
+        <text name="ao_buch_monateHin">
+            <de>Investitionen stehen getrennt, damit ein Maschinenkauf nicht wie laufende Kosten aussieht.</de>
+            <en>Investments are kept separate so a machine purchase does not look like running costs.</en>
+            <fr>Les investissements sont séparés pour qu'un achat de machine ne ressemble pas aux frais courants.</fr>
+        </text>
+        <text name="ao_buch_saldoMon">
+            <de>Saldo je Monat</de>
+            <en>Balance per month</en>
+            <fr>Solde par mois</fr>
+        </text>
+        <text name="ao_buch_saldoHin">
+            <de>Einnahmen minus Ausgaben minus Investitionen.</de>
+            <en>Income minus expenses minus investments.</en>
+            <fr>Revenus moins dépenses moins investissements.</fr>
+        </text>
+        <text name="ao_buch_plus">
+            <de>Überschuss</de>
+            <en>Surplus</en>
+            <fr>Excédent</fr>
+        </text>
+        <text name="ao_buch_minus">
+            <de>Fehlbetrag</de>
+            <en>Shortfall</en>
+            <fr>Déficit</fr>
+        </text>
+        <text name="ao_buch_weg">
+            <de>Wofür das Geld weggeht</de>
+            <en>Where the money goes</en>
+            <fr>Où part l'argent</fr>
+        </text>
+        <text name="ao_buch_wegHin">
+            <de>Ausgaben und Investitionen nach Gruppe, größte zuerst.</de>
+            <en>Expenses and investments by group, largest first.</en>
+            <fr>Dépenses et investissements par groupe, les plus gros d'abord.</fr>
+        </text>
+        <text name="ao_buch_laufend">
+            <de>Laufende Ausgaben</de>
+            <en>Running expenses</en>
+            <fr>Dépenses courantes</fr>
+        </text>
+        <text name="ao_buch_her">
+            <de>Woher das Geld kommt</de>
+            <en>Where the money comes from</en>
+            <fr>D'où vient l'argent</fr>
+        </text>
+        <text name="ao_buch_herHin">
+            <de>Einnahmen nach Gruppe.</de>
+            <en>Income by group.</en>
+            <fr>Revenus par groupe.</fr>
+        </text>
+        <text name="ao_buch_konto">
+            <de>Kontostand</de>
+            <en>Account balance</en>
+            <fr>Solde du compte</fr>
+        </text>
+        <text name="ao_buch_kontoHin">
+            <de>Stand nach jeder Einzelbuchung, in der Reihenfolge der Datei.</de>
+            <en>Balance after each single booking, in the order of the file.</en>
+            <fr>Solde après chaque opération, dans l'ordre du fichier.</fr>
+        </text>
+        <text name="ao_buch_topAus">
+            <de>Die größten Ausgaben</de>
+            <en>The largest expenses</en>
+            <fr>Les plus grosses dépenses</fr>
+        </text>
+        <text name="ao_buch_topEin">
+            <de>Die größten Einnahmen</de>
+            <en>The largest income</en>
+            <fr>Les plus gros revenus</fr>
+        </text>
+        <text name="ao_buch_topHin">
+            <de>Einzelbuchungen, keine Tagessummen.</de>
+            <en>Single bookings, no daily sums.</en>
+            <fr>Opérations individuelles, pas de sommes journalières.</fr>
+        </text>
+        <text name="ao_buch_alle">
+            <de>Alle Zahlen als Tabelle (Gruppe je Monat)</de>
+            <en>All figures as a table (group per month)</en>
+            <fr>Tous les chiffres en tableau (groupe par mois)</fr>
+        </text>
+        <text name="ao_buch_spZeit">
+            <de>Zeitpunkt</de>
+            <en>Time</en>
+            <fr>Moment</fr>
+        </text>
+        <text name="ao_buch_spGruppe">
+            <de>Gruppe</de>
+            <en>Group</en>
+            <fr>Groupe</fr>
+        </text>
+        <text name="ao_buch_spKat">
+            <de>Kategorie des Spiels</de>
+            <en>Game category</en>
+            <fr>Catégorie du jeu</fr>
+        </text>
+        <text name="ao_buch_spBetrag">
+            <de>Betrag</de>
+            <en>Amount</en>
+            <fr>Montant</fr>
+        </text>
+        <text name="ao_buch_spGesamt">
+            <de>Gesamt</de>
+            <en>Total</en>
+            <fr>Total</fr>
+        </text>
+        <text name="ao_buch_fuss">
+            <de>Erzeugt von Farm Economy. Tagessummen fassen Sprit, Saatgut, Dünger und laufende Kosten eines Spieltags zusammen; welche Ware verkauft wurde, gibt das Spiel beim Buchen nicht her.</de>
+            <en>Created by Farm Economy. Daily sums combine fuel, seeds, fertiliser and the running costs of one game day; which goods were sold is not passed on by the game when money is booked.</en>
+            <fr>Généré par Économie Agricole. Les sommes journalières regroupent carburant, semences, engrais et frais courants d'une journée de jeu ; le jeu ne transmet pas quelle marchandise a été vendue.</fr>
+        </text>
+        <text name="ao_sec_buch">
+            <de>Agrar-Ökonomie: Kassenbuch</de>
+            <en>Farm Economy: Cash Book</en>
+            <fr>Économie Agricole : livre de caisse</fr>
+        </text>
+        <text name="ao_ui_buchAktiv">
+            <de>Kassenbuch in eine Datei schreiben</de>
+            <en>Write cash book to a file</en>
+            <fr>Écrire le livre de caisse dans un fichier</fr>
+        </text>
+        <text name="ao_ui_buchAktiv_t">
+            <de>An: jede Geldbewegung landet in einer Datei im Ordner des Spielstands, neben farms.xml.</de>
+            <en>On: every money movement is written to a file in the savegame folder, next to farms.xml.</en>
+            <fr>Activé : chaque mouvement d'argent est écrit dans un fichier du dossier de sauvegarde, à côté de farms.xml.</fr>
+        </text>
+        <text name="ao_ui_buchSchwelle">
+            <de>Eigene Zeile ab</de>
+            <en>Own line from</en>
+            <fr>Ligne propre à partir de</fr>
+        </text>
+        <text name="ao_ui_buchSchwelle_t">
+            <de>Kleinere Beträge stehen als Summe pro Spieltag und Kategorie in der Datei. 0 schreibt jede Buchung einzeln.</de>
+            <en>Smaller amounts appear as one sum per game day and category. 0 writes every booking on its own line.</en>
+            <fr>Les montants plus petits apparaissent comme une somme par jour de jeu et catégorie. 0 écrit chaque opération séparément.</fr>
+        </text>
+        <text name="ao_buch_kredit">
+            <de>Kredit</de>
+            <en>Loan</en>
+            <fr>Prêt</fr>
+        </text>
+        <text name="ao_help_buchTitle">
+            <de>Kassenbuch als Datei</de>
+            <en>Cash book as a file</en>
+            <fr>Le livre de caisse comme fichier</fr>
+        </text>
+        <text name="ao_help_buch">
+            <de>Die Monatssummen reichen dir nicht? Die Mod schreibt jede Geldbewegung auch einzeln mit: Spielmonat, Tag, Uhrzeit, Hof, die Gruppe wie Ernteerlös, Betriebsmittel oder Fahrzeugkauf, die Kategorie des Spiels, den Betrag und den Kontostand danach. Verkäufe, Einkäufe, Investitionen, Löhne und Steuern findest du Buchung für Buchung. Anders sieht es bei Sprit, Saatgut, Dünger, laufenden Fahrzeug- und Gebäudekosten und den stündlichen Einnahmen aus Gebäuden aus. Die bucht das Spiel fortlaufend, einzeln wären das tausende Zeilen pro Spielstunde. Darum stehen sie als eine Summe pro Spieltag und Kategorie in der Datei. Auch alles unter der eingestellten Schwelle landet in dieser Tagessumme. Welche Ware du verkauft hast, steht nirgends drin. Das Spiel gibt beim Buchen nur Betrag, Hof und Kategorie weiter, weder die Frucht noch die Verkaufsstelle.</de>
+            <en>The monthly sums are only half of it. The mod also logs every money movement on its own line with game month, day, time, farm, a group such as harvest income, supplies or vehicle purchase, the game's own category, the amount and the balance afterwards. Sales, purchases, investments, wages and taxes each get their own entry. Fuel, seeds, fertiliser, the running costs of vehicles and buildings and the hourly income from buildings are a different story. The game books those continuously, and listing them one by one would add thousands of lines per game hour, so you get one sum per game day and category instead. Anything below the threshold you set ends up in that daily sum too. One thing the file can't tell you is which goods you sold. When money is booked the game only hands over the amount, the farm and the category. No crop, no selling point.</en>
+            <fr>En plus des sommes mensuelles, le mod note chaque mouvement d'argent séparément. Une ligne contient le mois de jeu, le jour, l'heure, l'exploitation, le groupe, par exemple recette de récolte, consommables ou achat de véhicule, puis la catégorie du jeu, le montant et le solde qui en résulte. Ventes, achats, investissements, salaires et taxes apparaissent opération par opération. Pour le carburant, les semences, l'engrais, les frais courants des véhicules et des bâtiments et les revenus horaires des bâtiments, c'est différent : le jeu les comptabilise en continu. Ligne par ligne, cela ferait des milliers de lignes par heure de jeu, alors le fichier n'en garde qu'une somme par jour de jeu et par catégorie. Les montants sous le seuil que vous avez réglé y passent aussi. Quelle marchandise a été vendue, le fichier ne peut pas le dire. Le jeu ne transmet que le montant, l'exploitation et la catégorie, ni la culture ni le point de vente.</fr>
+        </text>
+        <text name="ao_help_buchFensterTitle">
+            <de>Das Fenster im Spiel</de>
+            <en>The window in the game</en>
+            <fr>La fenêtre dans le jeu</fr>
+        </text>
+        <text name="ao_help_buchFenster">
+            <de>Keine Lust, im Spielstand-Ordner nach der Datei zu suchen? Strg+K öffnet das Kassenbuch direkt im Spiel. In der ersten Zeile wählst du, ob du Monate oder Jahre sehen willst, in der zweiten blätterst du mit den Pfeilen zurück, bis zum Anfang des vorigen Spieljahres. Oben stehen Einnahmen, Ausgaben, Investitionen und der Saldo für den gewählten Zeitraum. Links darunter zeigt eine Rangliste mit Balken, wofür das Geld weggeht. Der größte Posten steht oben, Investitionen sind grün, laufende Kosten orange. Rechts stehen die letzten Buchungen mit Uhrzeit, Gruppe und Betrag, Grundsteuer und Fuhrpark-Steuer unter ihrem eigenen Namen. Die Zeile ganz unten vergleicht mit dem Monat davor, beim laufenden Jahr mit denselben Monaten des Vorjahres. Im Mehrspieler bekommt jeder die Zahlen seines eigenen Hofes zu sehen. Gerechnet wird auf dem Server, der Client fragt beim Öffnen dort nach. Die Taste kannst du in den Spieleinstellungen umlegen.</de>
+            <en>Ctrl+K brings up the cash book in the game, so there's no need to dig through the savegame folder. The first row switches between months and years, the second lets you page back with the arrows, as far as the start of last game year. At the top you see income, expenses, investments and the balance for that period. Bottom left is a bar ranking of where your money goes, biggest item first, with investments in green and running costs in orange. On the right you get the latest bookings with time, group and amount, and property tax and fleet tax show up under their own names. The line at the very bottom compares with the month before, or for the current year with the same months of last year. In multiplayer each player sees their own farm's figures. The server does the maths and the client asks for them when the window opens. You can rebind the key in the game settings.</en>
+            <fr>Pas besoin de connaître le dossier de sauvegarde : Ctrl+K ouvre le livre de caisse en plein jeu. La première ligne choisit entre mois et années, la seconde permet de remonter avec les flèches jusqu'au début de l'année de jeu précédente. En haut figurent les revenus, les dépenses, les investissements et le solde de la période choisie. En bas à gauche, un classement en barres montre où part l'argent, le poste le plus lourd en premier ; les investissements sont en vert, les frais courants en orange. La partie droite liste les dernières opérations avec l'heure, le groupe et le montant, l'impôt foncier et la taxe de flotte sous leur propre nom. Tout en bas, la fenêtre compare avec le mois précédent, ou pour l'année en cours avec les mêmes mois de l'année d'avant. En multijoueur, chacun ne voit que les chiffres de sa propre exploitation : le serveur fait le calcul et le client le lui demande à l'ouverture. La touche se change dans les réglages du jeu.</fr>
+        </text>
+        <text name="ao_help_buchDateiTitle">
+            <de>Wo die Datei liegt</de>
+            <en>Where the file is</en>
+            <fr>Où se trouve le fichier</fr>
+        </text>
+        <text name="ao_help_buchDatei">
+            <de>Die Dateien liegen im Ordner des Spielstands neben der farms.xml, auf einem Server holst du sie also per FTP. Es sind drei, alle heißen FS25_FarmEconomy_Kassenbuch und enthalten die Buchungen des laufenden und des vorigen Spieljahres, höchstens 2000. Was älter ist, fällt beim Jahreswechsel heraus. Die .html ist eine fertige Seite mit Diagrammen, ein Doppelklick öffnet sie im Browser. Die .csv ist dieselbe Liste für Excel oder LibreOffice, mit Semikolon als Trennzeichen und Komma als Dezimalzeichen. Die .xml ist für die Mod selbst, daraus holt sie beim Laden ihren Stand zurück. Geschrieben wird eine Minute nach einer neuen Buchung, beim Tageswechsel und bei jedem Speichern. Sofort geht es mit aoKassenbuch in der Konsole, der Befehl nennt auch beide Pfade.</de>
+            <en>Look in the savegame folder, right next to farms.xml; on a server you can grab the files by FTP. There are three of them, all called FS25_FarmEconomy_Kassenbuch and holding the bookings of this game year and the one before, up to 2000. Anything older is dropped when the year changes. Double-click the .html and your browser shows a finished page with charts. The .csv has the same list for Excel or LibreOffice, with semicolons as separators and a comma as the decimal mark. The .xml is for the mod itself, it reads its state back from there on load. They get written a minute after a new booking, at every change of day and whenever you save. The console command aoKassenbuch writes them right away and names both paths.</en>
+            <fr>Trois fichiers, tous nommés FS25_FarmEconomy_Kassenbuch, se trouvent dans le dossier de la sauvegarde, à côté de farms.xml. Sur un serveur, vous les récupérez donc par FTP. Ils contiennent les opérations de l'année de jeu en cours et de la précédente, 2000 au plus ; ce qui est plus ancien disparaît au changement d'année. Le .html est une page toute prête avec graphiques, qu'un double clic ouvre dans le navigateur. Le .csv reprend la même liste pour Excel ou LibreOffice, avec le point-virgule comme séparateur et la virgule pour les décimales. Quant au .xml, c'est là que le mod retrouve son état au chargement. L'écriture a lieu une minute après une nouvelle opération, à chaque changement de jour et à chaque sauvegarde. Pressé ? La commande console aoKassenbuch écrit tout de suite et indique les deux chemins.</fr>
+        </text>
+        <text name="ao_sec_preise">
+            <de>Agrar-Ökonomie: Verkaufspreise</de>
+            <en>Farm Economy: Selling Prices</en>
+            <fr>Économie Agricole : prix de vente</fr>
+        </text>
+        <text name="ao_sec_bremse">
+            <de>Agrar-Ökonomie: Sicherheitsbremse</de>
+            <en>Farm Economy: Safety Brake</en>
+            <fr>Économie Agricole : frein de sécurité</fr>
+        </text>
+        <text name="ao_sec_fuhrpark">
+            <de>Fuhrpark-Steuer</de>
+            <en>Fleet Tax</en>
+            <fr>Taxe de flotte</fr>
+        </text>
+        <text name="ao_sec_grundsteuer">
+            <de>Grundsteuer</de>
+            <en>Property Tax</en>
+            <fr>Impôt foncier</fr>
+        </text>
+        <text name="ao_sec_reparatur">
+            <de>Reparatur-Ökonomie</de>
+            <en>Repair Economics</en>
+            <fr>Économie de réparation</fr>
+        </text>
+        <text name="ao_sec_helfer">
+            <de>Helfer-Arbeitsmarkt</de>
+            <en>Helper Job Market</en>
+            <fr>Marché du travail des ouvriers</fr>
+        </text>
+        <text name="ao_sec_verbrauch">
+            <de>Verbrauch Bindegarn, Netz und Folie</de>
+            <en>Twine, Net and Wrap Usage</en>
+            <fr>Consommation ficelle, filet et film</fr>
+        </text>
+        <text name="ao_opt_aus">
+            <de>Aus</de>
+            <en>Off</en>
+            <fr>Désactivé</fr>
+        </text>
+        <text name="ao_opt_an">
+            <de>An</de>
+            <en>On</en>
+            <fr>Activé</fr>
+        </text>
+        <text name="ao_opt_monatlich">
+            <de>monatlich</de>
+            <en>monthly</en>
+            <fr>mensuel</fr>
+        </text>
+        <text name="ao_opt_jaehrlich">
+            <de>jährlich</de>
+            <en>yearly</en>
+            <fr>annuel</fr>
+        </text>
+        <text name="ao_opt_azubi">
+            <de>Azubi</de>
+            <en>Apprentice</en>
+            <fr>Apprenti</fr>
+        </text>
+        <text name="ao_opt_quer">
+            <de>Quereinsteiger</de>
+            <en>Career changer</en>
+            <fr>Reconversion</fr>
+        </text>
+        <text name="ao_opt_ausgelernt">
+            <de>Ausgelernt</de>
+            <en>Fully trained</en>
+            <fr>Qualifié</fr>
+        </text>
+        <text name="ao_opt_eigen">
+            <de>Eigener Lohn</de>
+            <en>Custom wage</en>
+            <fr>Salaire personnalisé</fr>
+        </text>
+        <text name="ao_opt_auto">
+            <de>Automatisch</de>
+            <en>Automatic</en>
+            <fr>Automatique</fr>
+        </text>
+        <text name="ao_opt_leicht">
+            <de>Leicht</de>
+            <en>Easy</en>
+            <fr>Facile</fr>
+        </text>
+        <text name="ao_opt_normal">
+            <de>Normal</de>
+            <en>Normal</en>
+            <fr>Normal</fr>
+        </text>
+        <text name="ao_opt_schwer">
+            <de>Schwer</de>
+            <en>Hard</en>
+            <fr>Difficile</fr>
+        </text>
+        <text name="ao_opt_eigenePreise">
+            <de>Eigene Preise</de>
+            <en>Custom prices</en>
+            <fr>Prix personnalisés</fr>
+        </text>
+        <text name="ao_opt_stundenlohn">
+            <de>Stundenlohn</de>
+            <en>Hourly wage</en>
+            <fr>Salaire horaire</fr>
+        </text>
+        <text name="ao_opt_festpreis">
+            <de>Festpreis</de>
+            <en>Fixed price</en>
+            <fr>Prix fixe</fr>
+        </text>
+        <text name="ao_ui_preiseAktiv">
+            <de>Verkaufspreise anpassen</de>
+            <en>Adjust selling prices</en>
+            <fr>Ajuster les prix de vente</fr>
+        </text>
+        <text name="ao_ui_preiseAktiv_t">
+            <de>Schaltet die Preisanpassung für Feldfrüchte und Produktionserzeugnisse ein.</de>
+            <en>Enables price scaling for crops and production output.</en>
+            <fr>Active l'ajustement des prix pour les cultures et les produits de production.</fr>
+        </text>
+        <text name="ao_ui_preisFruechte">
+            <de>Faktor Feldfrüchte</de>
+            <en>Crop price factor</en>
+            <fr>Facteur prix des cultures</fr>
+        </text>
+        <text name="ao_ui_preisFruechte_t">
+            <de>Erlös beim Verkauf von Ernte. 1.00 = unverändert, 0.75 = ein Viertel weniger. Bei eingeschalteter Automatik stellt die Mod den Wert jährlich selbst nach.</de>
+            <en>Revenue when selling harvested crops. 1.00 = unchanged, 0.75 = a quarter less. With automatic balancing on, the mod adjusts this value itself every year.</en>
+            <fr>Revenu lors de la vente des récoltes. 1.00 = inchangé, 0.75 = un quart de moins. Avec l'équilibrage automatique actif, le mod ajuste lui-même cette valeur chaque année.</fr>
+        </text>
+        <text name="ao_ui_preisProdukte">
+            <de>Faktor Produktionserzeugnisse</de>
+            <en>Production output factor</en>
+            <fr>Facteur produits de production</fr>
+        </text>
+        <text name="ao_ui_preisProdukte_t">
+            <de>Erlös aus Produktionen. Tierprodukte, BGA-Strom und Holz bleiben unberührt. Bei eingeschalteter Automatik stellt die Mod den Wert jährlich selbst nach.</de>
+            <en>Revenue from production points. Animal products, biogas power and wood stay untouched. With automatic balancing on, the mod adjusts this value itself every year.</en>
+            <fr>Revenu des sites de production. Produits animaux, électricité du biogaz et bois non affectés. Avec l'équilibrage automatique actif, le mod ajuste lui-même cette valeur chaque année.</fr>
+        </text>
+        <text name="ao_ui_bremseAktiv">
+            <de>Sicherheitsbremse</de>
+            <en>Safety brake</en>
+            <fr>Frein de sécurité</fr>
+        </text>
+        <text name="ao_ui_bremseAktiv_t">
+            <de>Begrenzt alle Abbuchungen dieser Mod, damit sie den Betrieb nie erdrücken können.</de>
+            <en>Caps all charges from this mod so they can never crush the farm.</en>
+            <fr>Plafonne tous les prélèvements de ce mod pour qu'ils n'étouffent jamais l'exploitation.</fr>
+        </text>
+        <text name="ao_ui_bremseAnteil">
+            <de>Kostendeckel je Spieltag</de>
+            <en>Cost cap per day</en>
+            <fr>Plafond de coûts par jour</fr>
+        </text>
+        <text name="ao_ui_bremseAnteil_t">
+            <de>Höchstanteil der mittleren Tageseinnahmen, den die Mod pro Spieltag abbuchen darf.</de>
+            <en>Maximum share of average daily income the mod may charge per day.</en>
+            <fr>Part maximale du revenu journalier moyen que le mod peut prélever par jour.</fr>
+        </text>
+        <text name="ao_ui_notbremseKonto">
+            <de>Notbremse ab Kontostand</de>
+            <en>Emergency stop below balance</en>
+            <fr>Arrêt d'urgence sous le solde</fr>
+        </text>
+        <text name="ao_ui_notbremseKonto_t">
+            <de>Unter diesem Kontostand bucht die Mod gar nichts mehr ab.</de>
+            <en>Below this balance the mod stops charging entirely.</en>
+            <fr>En dessous de ce solde, le mod ne prélève plus rien.</fr>
+        </text>
+        <text name="ao_ui_karenzMonate">
+            <de>Karenz für Neufahrzeuge (Monate)</de>
+            <en>Grace period for new vehicles (months)</en>
+            <fr>Délai de grâce véhicules neufs (mois)</fr>
+        </text>
+        <text name="ao_ui_karenzMonate_t">
+            <de>So viele Spielmonate bleibt ein frisch gekauftes Fahrzeug steuerfrei. Das entlastet Käufe auf Kredit.</de>
+            <en>How many in-game months a newly bought vehicle stays tax free. Helps when you buy on credit.</en>
+            <fr>Nombre de mois de jeu pendant lesquels un véhicule neuf reste exonéré. Cela soulage les achats à crédit.</fr>
+        </text>
+        <text name="ao_unit_monate">
+            <de>Mon.</de>
+            <en>mo.</en>
+            <fr>mois</fr>
+        </text>
+        <text name="ao_ui_fsEnabled">
+            <de>Fuhrpark-Steuer</de>
+            <en>Fleet tax</en>
+            <fr>Taxe de flotte</fr>
+        </text>
+        <text name="ao_ui_fsEnabled_t">
+            <de>Laufende Kosten je eigenem Fahrzeug und Anbaugerät.</de>
+            <en>Recurring costs per owned vehicle and implement.</en>
+            <fr>Coûts récurrents par véhicule et outil possédé.</fr>
+        </text>
+        <text name="ao_ui_fsTax">
+            <de>Steuersatz pro Jahr</de>
+            <en>Tax rate per year</en>
+            <fr>Taux de taxe par an</fr>
+        </text>
+        <text name="ao_ui_fsTax_t">
+            <de>Anteil des Fahrzeugwerts, der jährlich als Steuer anfällt.</de>
+            <en>Share of the vehicle value charged as tax each year.</en>
+            <fr>Part de la valeur du véhicule prélevée comme taxe chaque année.</fr>
+        </text>
+        <text name="ao_ui_fsUpkeep">
+            <de>Unterhalt pro Jahr</de>
+            <en>Upkeep per year</en>
+            <fr>Entretien par an</fr>
+        </text>
+        <text name="ao_ui_fsUpkeep_t">
+            <de>Anteil des Fahrzeugwerts für Versicherung, Wartung und Unterstellung.</de>
+            <en>Share of the vehicle value for insurance, servicing and storage.</en>
+            <fr>Part de la valeur du véhicule pour l'assurance, l'entretien et le remisage.</fr>
+        </text>
+        <text name="ao_ui_fsOwned">
+            <de>Nur eigene Fahrzeuge</de>
+            <en>Owned vehicles only</en>
+            <fr>Véhicules possédés uniquement</fr>
+        </text>
+        <text name="ao_ui_fsOwned_t">
+            <de>Geleaste Geräte bleiben steuerfrei.</de>
+            <en>Leased equipment stays tax free.</en>
+            <fr>Le matériel en leasing reste exonéré.</fr>
+        </text>
+        <text name="ao_sec_sprit">
+            <de>Spritverbrauch</de>
+            <en>Fuel consumption</en>
+            <fr>Consommation de carburant</fr>
+        </text>
+        <text name="ao_ui_spAktiv">
+            <de>Spritverbrauch anpassen</de>
+            <en>Adjust fuel consumption</en>
+            <fr>Ajuster la consommation</fr>
+        </text>
+        <text name="ao_ui_spAktiv_t">
+            <de>Schaltet die Regler darunter ein. Ist dies aus, gilt allein die Einstellung des Spiels.</de>
+            <en>Enables the settings below. While this is off, only the game's own setting applies.</en>
+            <fr>Active les réglages ci-dessous. Désactivé, seul le réglage du jeu s'applique.</fr>
+        </text>
+        <text name="ao_ui_spFaktor">
+            <de>Verbrauchsfaktor Arbeit</de>
+            <en>Consumption factor at work</en>
+            <fr>Facteur de consommation au travail</fr>
+        </text>
+        <text name="ao_ui_spFaktor_t">
+            <de>Gilt, solange gearbeitet wird: ein Gerät bearbeitet Fläche oder ist eingeschaltet. Ersetzt die drei Stufen des Spiels durch einen frei wählbaren Wert. 1,0 entspricht „niedrig“, 1,5 „normal“ und 2,5 „hoch“. Die Einstellung des Spiels wird dabei herausgerechnet.</de>
+            <en>Applies while working: an implement is processing an area or is turned on. Replaces the game's three steps with a freely chosen value. 1.0 matches "low", 1.5 "normal" and 2.5 "high". The game's own setting is cancelled out.</en>
+            <fr>S'applique pendant le travail : un outil travaille une surface ou est en marche. Remplace les trois niveaux du jeu par une valeur libre. 1,0 correspond à « faible », 1,5 à « normal » et 2,5 à « élevé ». Le réglage du jeu est neutralisé.</fr>
+        </text>
+        <text name="ao_ui_spKwh">
+            <de>Liter je kWh</de>
+            <en>Litres per kWh</en>
+            <fr>Litres par kWh</fr>
+        </text>
+        <text name="ao_ui_spKwh_t">
+            <de>Rechnet den Verbrauch aus der Nennleistung des Motors: Liter je Stunde bei Volllast = Leistung in kW mal diesem Wert. 0,25 entspricht einem modernen Dieselmotor. Bei 0 bleibt der Wert aus der Fahrzeugdatei stehen, der je nach Modder stark schwankt.</de>
+            <en>Derives consumption from the engine's rated power: litres per hour at full load = power in kW times this value. 0.25 matches a modern diesel engine. At 0 the value from the vehicle file is kept, which varies a lot between modders.</en>
+            <fr>Calcule la consommation à partir de la puissance nominale : litres par heure à pleine charge = puissance en kW multipliée par cette valeur. 0,25 correspond à un moteur diesel moderne. À 0, la valeur du fichier du véhicule est conservée.</fr>
+        </text>
+        <text name="ao_ui_spKurve">
+            <de>Eigene Lastkurve</de>
+            <en>Own load curve</en>
+            <fr>Courbe de charge propre</fr>
+        </text>
+        <text name="ao_ui_spKurve_t">
+            <de>Rechnet mit der tatsächlich abgegebenen Leistung statt mit der geglätteten Lastanzeige und berücksichtigt den Wirkungsgrad: unter 75 Prozent der Nenndrehzahl und oberhalb der Nenndrehzahl steigt der Verbrauch. Niedertouriges Schuften ist damit nicht mehr umsonst.</de>
+            <en>Uses the power actually delivered instead of the smoothed load reading and takes efficiency into account: below 75 percent of rated speed and above rated speed consumption rises. Lugging the engine is no longer free.</en>
+            <fr>Utilise la puissance réellement fournie au lieu de la charge lissée et tient compte du rendement : en dessous de 75 pour cent du régime nominal et au-dessus, la consommation augmente.</fr>
+        </text>
+        <text name="ao_ui_spFahrt">
+            <de>Verbrauchsfaktor Fahrt</de>
+            <en>Consumption factor while driving</en>
+            <fr>Facteur de consommation en déplacement</fr>
+        </text>
+        <text name="ao_ui_spFahrt_t">
+            <de>Gilt für Fahrten ohne Arbeit. Das Spiel lässt den Motor auf der Straße bei Höchstgeschwindigkeit oft mit über 80 Prozent Last laufen; ein Wert unter 1,0 gleicht das aus. Nach dem letzten Arbeitsschritt gilt noch fünf Sekunden lang der Faktor für die Arbeit, damit das Wenden am Vorgewende nicht als Fahrt zählt.</de>
+            <en>Applies to driving without work. On the road at top speed the game often runs the engine at over 80 percent load; a value below 1.0 compensates for that. After the last work step the work factor stays active for five seconds so that turning at the headland does not count as driving.</en>
+            <fr>S'applique aux déplacements sans travail. Sur route à vitesse maximale, le jeu fait souvent tourner le moteur à plus de 80 pour cent de charge ; une valeur inférieure à 1,0 le compense. Après le dernier travail, le facteur de travail reste actif cinq secondes pour que le demi-tour en bout de champ ne compte pas comme déplacement.</fr>
+        </text>
+        <text name="ao_ui_spKwhAus">
+            <de>aus (Wert aus Datei)</de>
+            <en>off (value from file)</en>
+            <fr>désactivé (valeur du fichier)</fr>
+        </text>
+        <text name="ao_hud_spArbeit">
+            <de>Arbeit</de>
+            <en>Work</en>
+            <fr>Travail</fr>
+        </text>
+        <text name="ao_hud_spFahrt">
+            <de>Fahrt</de>
+            <en>Driving</en>
+            <fr>Route</fr>
+        </text>
+        <text name="ao_help_spritTitle">
+            <de>Spritverbrauch</de>
+            <en>Fuel consumption</en>
+            <fr>Consommation de carburant</fr>
+        </text>
+        <text name="ao_help_sprit">
+            <de>Beim Spritverbrauch bietet das Spiel nur drei Stufen: niedrig, normal und hoch. Wie viel ein Fahrzeug schluckt, steht in seiner Fahrzeugdatei, und die Werte darin gehen je nach Modder weit auseinander. Beides kannst du im Abschnitt Spritverbrauch der Agrar-Ökonomie-Einstellungen ersetzen. Ab Werk ist das Modul aus.</de>
+            <en>Low, normal or high: that's all the game offers for fuel consumption, and the actual figure comes from the vehicle file, which varies a lot from one modder to the next. The Fuel consumption section of the Farm Economy settings replaces both. The module ships switched off.</en>
+            <fr>Pour la consommation de carburant, le jeu se limite à trois niveaux, faible, normal et élevé, et lit la valeur dans le fichier du véhicule. Or celle-ci varie beaucoup d'un moddeur à l'autre. Dans les réglages Économie Agricole, la section Consommation de carburant remplace les deux. Par défaut, le module est désactivé.</fr>
+        </text>
+        <text name="ao_help_spritRegTitle">
+            <de>Die Regler</de>
+            <en>The settings</en>
+            <fr>Les réglages</fr>
+        </text>
+        <text name="ao_help_spritReg">
+            <de>Verbrauchsfaktor Arbeit und Verbrauchsfaktor Fahrt treten an die Stelle der Spielstufe. 1,0 entspricht niedrig, 1,5 normal und 2,5 hoch. Gearbeitet wird, sobald ein Gerät Fläche bearbeitet oder eingeschaltet ist. Danach bleibt der Arbeitsfaktor noch fünf Sekunden aktiv, damit das Wenden am Vorgewende nicht als Fahrt zählt. Liter je kWh rechnet den Verbrauch aus der Motorleistung, 0,25 passt zu einem modernen Dieselmotor. Der Schalter Eigene Lastkurve bezieht den Wirkungsgrad mit ein, schwere Arbeit bei niedriger Drehzahl kostet dann mehr. Steht Liter je kWh auf aus, gilt der Verbrauch aus der Fahrzeugdatei. Zum Einstieg taugt Arbeit 1,0 und Fahrt 0,8. Auf der Straße rechnet das Spiel nämlich mit zu viel Motorlast, und der kleinere Fahrtfaktor fängt das ab.</de>
+            <en>Consumption factor at work and Consumption factor while driving take over from the game's step. For reference, 1.0 is low, 1.5 normal and 2.5 high. You count as working whenever an implement is processing an area or is turned on, and the work factor hangs on for five more seconds so turning at the headland isn't counted as driving. Litres per kWh works consumption out from engine power; 0.25 matches a modern diesel engine. Own load curve brings efficiency into it, so heavy work at low engine speed costs more. If Litres per kWh is set to off, the consumption from the vehicle file applies. Not sure where to start? Try work 1.0 and driving 0.8. The game puts too much engine load on the road, and the lower driving factor evens that out.</en>
+            <fr>Le Facteur de consommation au travail et le Facteur de consommation en déplacement remplacent le niveau du jeu ; 1,0 vaut faible, 1,5 normal et 2,5 élevé. Un outil qui travaille une surface ou qui est en marche, c'est du travail. Le facteur de travail tient encore cinq secondes après, sinon chaque demi-tour en bout de champ compterait comme déplacement. Litres par kWh calcule la consommation d'après la puissance du moteur : 0,25 correspond à un moteur diesel moderne. Courbe de charge propre fait intervenir le rendement, si bien qu'un travail lourd à bas régime coûte davantage. Lorsque Litres par kWh est désactivé, c'est la consommation du fichier du véhicule qui s'applique. Pour commencer, essayez travail 1,0 et déplacement 0,8. Sur la route, le jeu calcule avec une charge moteur trop élevée, ce que le facteur de déplacement plus bas compense.</fr>
+        </text>
+        <text name="ao_ui_spAnzeige">
+            <de>Verbrauch im Tacho anzeigen</de>
+            <en>Show consumption in the speedometer</en>
+            <fr>Afficher la consommation dans le compteur</fr>
+        </text>
+        <text name="ao_ui_spAnzeige_t">
+            <de>Zeigt im Tacho unter der Geschwindigkeit den aktuellen Dieselverbrauch in Litern je Stunde und ob gerade gearbeitet oder gefahren wird. Erscheint nur, wenn der Spritverbrauch angepasst wird.</de>
+            <en>Shows the current diesel consumption in litres per hour in the speedometer below the speed, and whether you are working or driving. Only appears while fuel consumption is being adjusted.</en>
+            <fr>Affiche dans le compteur, sous la vitesse, la consommation actuelle de diesel en litres par heure et indique si l'on travaille ou si l'on roule. N'apparaît que lorsque la consommation est ajustée.</fr>
+        </text>
+        <text name="ao_help_spritAnzTitle">
+            <de>Anzeige im Tacho</de>
+            <en>Display in the speedometer</en>
+            <fr>Affichage dans le compteur</fr>
+        </text>
+        <text name="ao_help_spritAnz">
+            <de>Wie viel zieht der Traktor gerade? Im Tacho unter der Geschwindigkeit steht der aktuelle Verbrauch in Litern je Stunde, dazu ob gearbeitet oder gefahren wird. Das ist genau die Menge, die aus dem Tank geht. Die Anzeige erscheint nur, wenn Spritverbrauch anpassen eingeschaltet ist, und lässt sich in den Einstellungen abschalten. Im Multiplayer gilt für alle Spieler die Einstellung des Servers. Konsole: aoSprit zeigt die Werte des aktuellen Fahrzeugs, aoSpritMessen misst den Verbrauch am Tank, dafür zweimal aufrufen.</de>
+            <en>Below the speed in the speedometer you'll see the current consumption in litres per hour, plus whether you're working or driving. That number is what really leaves the tank. It only shows up while Adjust fuel consumption is on, and you can turn the display off in the settings. In multiplayer the server's setting counts for all players. On the console, aoSprit shows the values of the current vehicle and aoSpritMessen measures consumption at the tank; call it twice.</en>
+            <fr>Le compteur affiche sous la vitesse la consommation actuelle en litres par heure, avec la mention travail ou route. C'est ce qui sort réellement du réservoir. Cet affichage n'apparaît que si Ajuster la consommation est activé, et vous pouvez le désactiver dans les réglages. En multijoueur, c'est le réglage du serveur qui vaut pour tous les joueurs. Côté console, aoSprit donne les valeurs du véhicule actuel et aoSpritMessen mesure la consommation au réservoir ; lancez cette commande deux fois.</fr>
+        </text>
+        <text name="ao_finance_zins">
+            <de>Guthabenzinsen</de>
+            <en>Interest on savings</en>
+            <fr>Intérêts créditeurs</fr>
+        </text>
+        <text name="ao_sec_zins">
+            <de>Guthabenzins</de>
+            <en>Interest on savings</en>
+            <fr>Intérêts sur l'épargne</fr>
+        </text>
+        <text name="ao_ui_zinsAktiv">
+            <de>Guthabenzins zahlen</de>
+            <en>Pay interest on savings</en>
+            <fr>Verser des intérêts</fr>
+        </text>
+        <text name="ao_ui_zinsAktiv_t">
+            <de>An: Jeden Spielmonat gibt es Zinsen auf Kontostand minus Kredit.</de>
+            <en>On: every game month you get interest on your balance minus loan.</en>
+            <fr>Activé : chaque mois de jeu, des intérêts sont versés sur le solde moins le prêt.</fr>
+        </text>
+        <text name="ao_ui_zinsSatz">
+            <de>Zinssatz pro Jahr</de>
+            <en>Interest rate per year</en>
+            <fr>Taux annuel</fr>
+        </text>
+        <text name="ao_ui_zinsSatz_t">
+            <de>Gilt bis Grenze 1 voll und bis Grenze 2 zur Hälfte. Ausgezahlt wird jeden Monat ein Zwölftel.</de>
+            <en>Applies in full up to limit 1 and at half up to limit 2. One twelfth is paid every month.</en>
+            <fr>S'applique en entier jusqu'à la limite 1 et à moitié jusqu'à la limite 2. Un douzième est versé chaque mois.</fr>
+        </text>
+        <text name="ao_ui_zinsGrenze1">
+            <de>Voller Zins bis</de>
+            <en>Full rate up to</en>
+            <fr>Taux plein jusqu'à</fr>
+        </text>
+        <text name="ao_ui_zinsGrenze1_t">
+            <de>Bis zu diesem Guthaben gilt der volle Zinssatz.</de>
+            <en>Up to this balance the full rate applies.</en>
+            <fr>Jusqu'à ce solde, le taux plein s'applique.</fr>
+        </text>
+        <text name="ao_ui_zinsGrenze2">
+            <de>Halber Zins bis</de>
+            <en>Half rate up to</en>
+            <fr>Demi-taux jusqu'à</fr>
+        </text>
+        <text name="ao_ui_zinsGrenze2_t">
+            <de>Zwischen Grenze 1 und diesem Betrag gilt der halbe Satz, darüber gibt es keine Zinsen.</de>
+            <en>Between limit 1 and this amount half the rate applies, above it there is no interest.</en>
+            <fr>Entre la limite 1 et ce montant, le demi-taux s'applique ; au-delà, aucun intérêt.</fr>
+        </text>
+        <text name="ao_sec_produktion">
+            <de>Produktionsgeschwindigkeit</de>
+            <en>Production speed</en>
+            <fr>Vitesse de production</fr>
+        </text>
+        <text name="ao_ui_prodAktiv">
+            <de>Produktionsgeschwindigkeit anpassen</de>
+            <en>Adjust production speed</en>
+            <fr>Ajuster la vitesse de production</fr>
+        </text>
+        <text name="ao_ui_prodAktiv_t">
+            <de>An: Produktionen laufen mit den Faktoren unten. Aus: Werte des Spiels.</de>
+            <en>On: productions run with the factors below. Off: game values.</en>
+            <fr>Activé : les productions tournent avec les facteurs ci-dessous. Désactivé : valeurs du jeu.</fr>
+        </text>
+        <text name="ao_ui_prodFaktor">
+            <de>Faktor für alle Produktionen</de>
+            <en>Factor for all productions</en>
+            <fr>Facteur pour toutes les productions</fr>
+        </text>
+        <text name="ao_ui_prodFaktor_t">
+            <de>x2,00 heißt doppelt so viele Zyklen: doppelter Verbrauch und doppelte Erzeugnisse je Stunde.</de>
+            <en>x2.00 means twice as many cycles: twice the input and twice the output per hour.</en>
+            <fr>x2,00 signifie deux fois plus de cycles : deux fois plus d'intrants et de produits par heure.</fr>
+        </text>
+        <text name="ao_ui_prodKosten">
+            <de>Laufende Kosten</de>
+            <en>Running costs</en>
+            <fr>Frais de fonctionnement</fr>
+        </text>
+        <text name="ao_ui_prodKosten_t">
+            <de>Was eine schnellere Produktion pro Stunde kostet. Voll mit: Kosten je Stück bleiben gleich. Wurzel: bei x4 doppelte Kosten, schneller wird also günstiger je Stück. Gleich bleibend: Kosten pro Stunde wie im Spiel.</de>
+            <en>What a faster production costs per hour. Full: the cost per unit stays the same. Square root: x4 speed costs twice as much, so speeding up makes each unit cheaper. Unchanged: hourly costs as in the base game.</en>
+            <fr>Ce que coûte une production accélérée par heure. Plein : le coût par unité ne bouge pas. Racine : à x4, les frais doublent seulement, chaque unité revient donc moins cher. Inchangés : frais horaires du jeu de base.</fr>
+        </text>
+        <text name="ao_opt_kostenGleich">
+            <de>gleich bleibend</de>
+            <en>unchanged</en>
+            <fr>inchangés</fr>
+        </text>
+        <text name="ao_opt_kostenWurzel">
+            <de>Wurzel des Faktors</de>
+            <en>square root</en>
+            <fr>racine du facteur</fr>
+        </text>
+        <text name="ao_opt_kostenVoll">
+            <de>voll mit</de>
+            <en>full</en>
+            <fr>plein</fr>
+        </text>
+        <text name="ao_ui_prodEinzel_t">
+            <de>Eigener Faktor für dieses Gebäude. wie alle = Faktor oben.</de>
+            <en>Own factor for this building. same as all = factor above.</en>
+            <fr>Facteur propre à ce bâtiment. comme tous = facteur ci-dessus.</fr>
+        </text>
+        <text name="ao_opt_wieAlle">
+            <de>wie alle</de>
+            <en>same as all</en>
+            <fr>comme tous</fr>
+        </text>
+        <text name="ao_help_zinsTitle">
+            <de>Guthabenzins</de>
+            <en>Interest on savings</en>
+            <fr>Intérêts sur l'épargne</fr>
+        </text>
+        <text name="ao_help_zins">
+            <de>Zinsen aufs Ersparte gibt es erst, wenn du Guthabenzins zahlen einschaltest, ab Werk ist das aus. Dann bekommt jeder Hof einmal im Spielmonat Zinsen auf sein Geld, berechnet auf den Kontostand minus Kredit. Am geliehenen Geld verdienst du also nichts. Die Gutschrift landet in der Finanzübersicht unter Sonstiges und wird kurz als Betrag Guthabenzinsen eingeblendet.</de>
+            <en>Interest is off by default. Once Pay interest on savings is on, each farm gets interest on its money once per game month. It is worked out on your balance minus the loan, so borrowed money earns you nothing. You'll find the credit in the finances under Other, and it briefly pops up as Interest on savings.</en>
+            <fr>Les intérêts sont désactivés par défaut. Activez Verser des intérêts et chaque ferme touche, une fois par mois de jeu, des intérêts sur son argent. Le calcul se fait sur le solde moins le prêt : l'argent emprunté ne vous rapporte donc rien. Le montant apparaît dans les finances sous Autres et s'affiche un instant comme Intérêts créditeurs.</fr>
+        </text>
+        <text name="ao_help_zinsStaffelTitle">
+            <de>So wird gerechnet</de>
+            <en>How it is calculated</en>
+            <fr>Mode de calcul</fr>
+        </text>
+        <text name="ao_help_zinsStaffel">
+            <de>Wie viel kommt rein? Bis Grenze 1 gilt der volle Zinssatz, ab Werk 2 Prozent im Jahr. Grenze 1 heißt im Menü Voller Zins bis und steht standardmäßig auf 500.000. Zwischen Grenze 1 und Grenze 2 (Halber Zins bis, Standard 2 Mio.) gibt es nur den halben Satz, darüber nichts mehr. Ausgezahlt wird jeden Monat ein Zwölftel. Beispiel: 1 Mio. auf dem Konto, kein Kredit. Das ergibt 500.000 x 2 % plus 500.000 x 1 %, also 15.000 im Jahr oder 1.250 im Monat. Weder die Sicherheitsbremse noch die Automatik zählen den Zins als Einnahme.</de>
+            <en>By default the first 500,000 earn the full rate of 2 percent per year. That is limit 1, shown as Full rate up to. From limit 1 to limit 2 (Half rate up to, default 2 million) you get half the rate, and anything above earns nothing. One twelfth is paid out every month. Say you have 1 million and no loan: 500,000 x 2 % plus 500,000 x 1 % makes 15,000 a year, or 1,250 a month. The safety brake and the automatic balancing don't count the interest as income.</en>
+            <fr>Le taux plein, 2 pour cent par an par défaut, vaut jusqu'à la limite 1, appelée Taux plein jusqu'à dans le menu (500 000 par défaut). Entre la limite 1 et la limite 2, Demi-taux jusqu'à, fixée à 2 millions par défaut, on passe à la moitié ; au-delà, plus rien. Chaque mois, un douzième est versé. Prenons 1 million sans prêt : 500 000 x 2 % plus 500 000 x 1 %, cela fait 15 000 par an, soit 1 250 par mois. Pour le frein de sécurité comme pour l'équilibrage automatique, ces intérêts ne sont pas un revenu.</fr>
+        </text>
+        <text name="ao_help_prodTitle">
+            <de>Produktionsgeschwindigkeit</de>
+            <en>Production speed</en>
+            <fr>Vitesse de production</fr>
+        </text>
+        <text name="ao_help_prod">
+            <de>Ab Werk aus. Schaltest du Produktionsgeschwindigkeit anpassen ein, laufen alle Produktionen mit dem Faktor für alle Produktionen. Bei Faktor 2 schafft eine Produktion doppelt so viele Zyklen pro Stunde, braucht also doppelt so viel und liefert doppelt so viel. Was das kostet, legst du unter Laufende Kosten fest. Mit voll mit, dem Standard, steigen die Kosten pro Stunde im selben Verhältnis, Faktor 2 heißt doppelte Kosten pro Stunde. Je Erzeugnis bleibt es dann gleich teuer. Bei Wurzel des Faktors wachsen die Kosten nur mit der Wurzel: Faktor 4 kostet doppelt so viel pro Stunde, Faktor 2 etwa das 1,41-fache. Schneller wird damit je Stück günstiger, aber nur mäßig. Und mit gleich bleibend kostet die Stunde so viel wie im Spiel, jedes Stück wird bei schnellerer Produktion entsprechend billiger. Mehr Erzeugnisse bringen mehr Erlös, den rechnet die Automatik in ihre Jahresbilanz ein.</de>
+            <en>Off by default. Turn on Adjust production speed and every production runs at the Factor for all productions. Factor 2 means twice the cycles per hour, so twice the input and twice the output. How the cost side behaves is up to Running costs. The default is full: hourly costs rise in the same ratio, so factor 2 doubles the cost per hour, and the cost per product stays where it was. Pick square root and costs only grow with the square root of the factor. Factor 4 doubles the hourly cost, factor 2 comes to roughly 1.41 times. Going faster then makes each unit somewhat cheaper, though not by much. With unchanged you pay the base game's hourly costs, so a faster production makes every unit cheaper by the same ratio. The extra output brings extra revenue, and the automatic balancing counts it in its yearly result.</en>
+            <fr>Désactivée par défaut. Une fois Ajuster la vitesse de production activé, toutes les productions tournent avec le Facteur pour toutes les productions. Au facteur 2, il y a deux fois plus de cycles par heure : la production consomme le double et livre le double. Côté coûts, c'est le réglage Frais de fonctionnement qui décide. Avec plein, la valeur par défaut, les frais horaires suivent dans la même proportion, ils doublent donc au facteur 2, et le coût par produit ne bouge pas. Avec racine du facteur, ils n'augmentent que selon la racine : au facteur 4 les frais horaires doublent, au facteur 2 ils font environ 1,41 fois. Accélérer rend alors chaque unité un peu moins chère, sans plus. Avec inchangés, vous payez l'heure comme dans le jeu de base, et chaque unité devient moins chère d'autant. Plus de produits, c'est plus de recettes ; l'équilibrage automatique l'intègre à son bilan annuel.</fr>
+        </text>
+        <text name="ao_help_prodEinzelTitle">
+            <de>Einzelne Produktionen</de>
+            <en>Individual productions</en>
+            <fr>Productions individuelles</fr>
+        </text>
+        <text name="ao_help_prodEinzel">
+            <de>Unter den Reglern steht jedes Produktionsgebäude deines Hofs mit einer eigenen Auswahl. Steht dort wie alle, gilt der gemeinsame Faktor. Jeder andere Wert gilt nur für dieses eine Gebäude. Gespeichert wird das im Spielstand, im Multiplayer kann nur ein Admin umstellen. Zyklen und Kosten deiner Produktionen zeigt dir der Konsolenbefehl aoProdDump. Andere Mods, die ebenfalls an der Produktionsgeschwindigkeit drehen, bitte nicht dazunehmen.</de>
+            <en>Want one building faster than the rest? Below the controls, every production building on your farm has its own selection. Leave it on same as all to use the common factor; any other value applies to that building alone. The setting is stored in the savegame, and in multiplayer only an admin can change it. Run aoProdDump in the console to see cycles and costs of your productions. Don't combine this with another mod that changes production speed.</en>
+            <fr>Sous les réglages figure chaque bâtiment de production de votre ferme, avec sa propre sélection. Laissez comme tous pour reprendre le facteur commun ; toute autre valeur ne concerne que ce bâtiment. Le choix est enregistré dans la sauvegarde et, en multijoueur, seul un administrateur peut le changer. Pour voir les cycles et les coûts de vos productions, tapez la commande console aoProdDump. Évitez tout autre mod qui touche à la vitesse de production.</fr>
+        </text>
+        <text name="ao_ui_nurAdmin">
+            <de>nur für Admins änderbar</de>
+            <en>admins only</en>
+            <fr>réservé aux administrateurs</fr>
+        </text>
+        <text name="ao_ui_fsRuhend">
+            <de>Nachlass für ruhende Maschinen</de>
+            <en>Discount for idle machines</en>
+            <fr>Remise pour machines inutilisées</fr>
+        </text>
+        <text name="ao_ui_fsRuhend_t">
+            <de>Was im Abrechnungszeitraum nicht gearbeitet hat, zahlt nur den verbleibenden Anteil. So kostet eine volle Halle nicht so viel wie ein voll ausgelasteter Fuhrpark.</de>
+            <en>Anything that did not work during the billing period pays only the remaining share. A full shed therefore costs less than a fleet in daily use.</en>
+            <fr>Ce qui n'a pas travaillé pendant la période ne paie que la part restante. Un hangar plein coûte ainsi moins qu'un parc utilisé chaque jour.</fr>
+        </text>
+        <text name="ao_ui_fsDach">
+            <de>Nachlass unter Dach</de>
+            <en>Discount under a roof</en>
+            <fr>Remise sous abri</fr>
+        </text>
+        <text name="ao_ui_fsDach_t">
+            <de>Fahrzeuge, die in einer Halle oder einem Unterstand parken, zahlen weniger. Gezählt wird der Standort zum Zeitpunkt der Abrechnung.</de>
+            <en>Vehicles parked in a shed or carport pay less. What counts is where they stand at billing time.</en>
+            <fr>Les véhicules garés dans un hangar ou sous un abri paient moins. C'est l'emplacement au moment de la facturation qui compte.</fr>
+        </text>
+        <text name="ao_ui_fsRabattMin">
+            <de>Mindestanteil trotz Nachlass</de>
+            <en>Minimum share despite discounts</en>
+            <fr>Part minimale malgré les remises</fr>
+        </text>
+        <text name="ao_ui_fsRabattMin_t">
+            <de>Beide Nachlässe greifen zusammen. Dieser Anteil des vollen Satzes bleibt aber immer fällig, damit ein großer Fuhrpark nicht kostenlos wird.</de>
+            <en>Both discounts apply together. This share of the full rate always remains due, so a large fleet never becomes free.</en>
+            <fr>Les deux remises se cumulent. Cette part du taux plein reste toujours due, afin qu'un grand parc ne devienne jamais gratuit.</fr>
+        </text>
+        <text name="ao_ui_fsBilling">
+            <de>Abbuchung</de>
+            <en>Billing</en>
+            <fr>Prélèvement</fr>
+        </text>
+        <text name="ao_ui_fsBilling_t">
+            <de>Monatlich verteilt die Last, jährlich kommt sie als ein Betrag.</de>
+            <en>Monthly spreads the load, yearly comes as a single amount.</en>
+            <fr>Mensuel répartit la charge, annuel arrive en un seul montant.</fr>
+        </text>
+        <text name="ao_ui_gsAktiv">
+            <de>Grundsteuer</de>
+            <en>Property tax</en>
+            <fr>Impôt foncier</fr>
+        </text>
+        <text name="ao_ui_gsAktiv_t">
+            <de>Laufende Kosten auf gekauftes Land. Als einziger Posten wächst er mit der Fläche.</de>
+            <en>Recurring costs on owned land. It is the only item that grows with acreage.</en>
+            <fr>Coûts récurrents sur les terres achetées. C'est le seul poste qui croît avec la surface.</fr>
+        </text>
+        <text name="ao_ui_gsSatz">
+            <de>Satz pro Jahr</de>
+            <en>Rate per year</en>
+            <fr>Taux par an</fr>
+        </text>
+        <text name="ao_ui_gsSatz_t">
+            <de>Anteil des Landwerts, der jährlich fällig wird.</de>
+            <en>Share of the land value due each year.</en>
+            <fr>Part de la valeur des terres due chaque année.</fr>
+        </text>
+        <text name="ao_ui_roGrund">
+            <de>Grundfaktor Reparatur</de>
+            <en>Repair base factor</en>
+            <fr>Facteur de base réparation</fr>
+        </text>
+        <text name="ao_ui_roGrund_t">
+            <de>Multiplikator auf die Reparaturkosten des Basisspiels.</de>
+            <en>Multiplier on the base game repair costs.</en>
+            <fr>Multiplicateur sur les coûts de réparation du jeu de base.</fr>
+        </text>
+        <text name="ao_ui_roStunden">
+            <de>Aufschlag je Betriebsstunden</de>
+            <en>Surcharge per operating hours</en>
+            <fr>Supplément selon heures de service</fr>
+        </text>
+        <text name="ao_ui_roStunden_t">
+            <de>Wie stark die Kosten mit der Nutzung steigen.</de>
+            <en>How steeply costs rise with usage.</en>
+            <fr>À quel point les coûts augmentent avec l'utilisation.</fr>
+        </text>
+        <text name="ao_ui_roMax">
+            <de>Obergrenze</de>
+            <en>Cap</en>
+            <fr>Plafond</fr>
+        </text>
+        <text name="ao_ui_roMax_t">
+            <de>Höchster Multiplikator, den ein Fahrzeug erreichen kann.</de>
+            <en>Highest multiplier a vehicle can reach.</en>
+            <fr>Multiplicateur maximal qu'un véhicule peut atteindre.</fr>
+        </text>
+        <text name="ao_ui_roTempo">
+            <de>Tempo des Verschleißes</de>
+            <en>Wear speed</en>
+            <fr>Vitesse d'usure</fr>
+        </text>
+        <text name="ao_ui_roTempo_t">
+            <de>Wie schnell Fahrzeuge überhaupt Schaden ansammeln.</de>
+            <en>How quickly vehicles accumulate damage at all.</en>
+            <fr>À quelle vitesse les véhicules accumulent des dommages.</fr>
+        </text>
+        <text name="ao_ui_hlAktiv">
+            <de>Helfer-Arbeitsmarkt</de>
+            <en>Helper job market</en>
+            <fr>Marché du travail des ouvriers</fr>
+        </text>
+        <text name="ao_ui_hlAktiv_t">
+            <de>Lohnstufen und Verfügbarkeit statt pauschalem Helferlohn.</de>
+            <en>Wage tiers and availability instead of a flat helper wage.</en>
+            <fr>Niveaux de salaire et disponibilité au lieu d'un salaire forfaitaire.</fr>
+        </text>
+        <text name="ao_ui_hlStufe">
+            <de>Lohnstufe</de>
+            <en>Wage tier</en>
+            <fr>Niveau de salaire</fr>
+        </text>
+        <text name="ao_ui_hlStufe_t">
+            <de>Bessere Helfer arbeiten zuverlässiger, kosten aber mehr.</de>
+            <en>Better helpers work more reliably but cost more.</en>
+            <fr>De meilleurs ouvriers travaillent plus sûrement mais coûtent plus cher.</fr>
+        </text>
+        <text name="ao_ui_hlNiveau">
+            <de>Preisniveau der Löhne</de>
+            <en>Wage price level</en>
+            <fr>Niveau des salaires</fr>
+        </text>
+        <text name="ao_ui_hlNiveau_t">
+            <de>Automatisch richtet sich nach der Wirtschaftsschwierigkeit und überschreibt die Lohnbeträge bei jedem Start. Eigene Preise lässt sie unangetastet.</de>
+            <en>Automatic follows the economic difficulty and overwrites the wage amounts on every start. Custom prices leaves them untouched.</en>
+            <fr>Automatique suit la difficulté économique et écrase les montants à chaque démarrage. Prix personnalisés les laisse intacts.</fr>
+        </text>
+        <text name="ao_ui_hlModus">
+            <de>Abrechnung</de>
+            <en>Payment mode</en>
+            <fr>Mode de paiement</fr>
+        </text>
+        <text name="ao_ui_hlModus_t">
+            <de>Stundenlohn läuft mit, Festpreis wird am Ende des Auftrags fällig.</de>
+            <en>Hourly wage runs along, fixed price is due when the job ends.</en>
+            <fr>Le salaire horaire court en continu, le prix fixe est dû à la fin de la mission.</fr>
+        </text>
+        <text name="ao_ui_hlNurErfolg">
+            <de>Festpreis nur bei fertigem Auftrag</de>
+            <en>Fixed price only for finished jobs</en>
+            <fr>Prix fixe seulement si la mission est terminée</fr>
+        </text>
+        <text name="ao_ui_hlNurErfolg_t">
+            <de>An: Wird der Helfer entlassen, bleibt er hängen oder bricht ab, kostet der Auftrag nichts.</de>
+            <en>On: if the helper is dismissed, gets stuck or aborts, the job costs nothing.</en>
+            <fr>Activé : si l'ouvrier est congédié, reste bloqué ou abandonne, la mission ne coûte rien.</fr>
+        </text>
+        <text name="ao_ui_hlGratis">
+            <de>Betriebsmittel frei bei Helferarbeit</de>
+            <en>Free supplies during helper work</en>
+            <fr>Consommables gratuits pendant le travail de l'ouvrier</fr>
+        </text>
+        <text name="ao_ui_hlGratis_t">
+            <de>An: während ein Helfer arbeitet, kosten Sprit, Saatgut und Dünger nichts.</de>
+            <en>On: while a helper works, fuel, seeds and fertilizer are free.</en>
+            <fr>Activé : pendant qu'un ouvrier travaille, carburant, semences et engrais sont gratuits.</fr>
+        </text>
+        <text name="ao_ui_hlZufall">
+            <de>Zufällige Verfügbarkeit</de>
+            <en>Random availability</en>
+            <fr>Disponibilité aléatoire</fr>
+        </text>
+        <text name="ao_ui_hlZufall_t">
+            <de>Nicht zu jedem Lohn ist sofort ein Helfer zu bekommen.</de>
+            <en>Not every wage gets you a helper right away.</en>
+            <fr>Un ouvrier n'est pas disponible immédiatement à n'importe quel salaire.</fr>
+        </text>
+        <text name="ao_ui_vTwine">
+            <de>Bindegarn (Quaderballen)</de>
+            <en>Twine (square bales)</en>
+            <fr>Ficelle (balles carrées)</fr>
+        </text>
+        <text name="ao_ui_vTwine_t">
+            <de>Multiplikator auf den Bindegarnverbrauch der Pressen.</de>
+            <en>Multiplier on the twine usage of balers.</en>
+            <fr>Multiplicateur sur la consommation de ficelle des presses.</fr>
+        </text>
+        <text name="ao_ui_vNet">
+            <de>Netz (Rundballen)</de>
+            <en>Net (round bales)</en>
+            <fr>Filet (balles rondes)</fr>
+        </text>
+        <text name="ao_ui_vNet_t">
+            <de>Multiplikator auf den Netzverbrauch der Pressen.</de>
+            <en>Multiplier on the net usage of balers.</en>
+            <fr>Multiplicateur sur la consommation de filet des presses.</fr>
+        </text>
+        <text name="ao_ui_vWrap">
+            <de>Wickelfolie</de>
+            <en>Wrapping film</en>
+            <fr>Film d'enrubannage</fr>
+        </text>
+        <text name="ao_ui_vWrap_t">
+            <de>Multiplikator auf den Folienverbrauch der Wickler. Wirkt beim nächsten Laden.</de>
+            <en>Multiplier on the wrap usage of wrappers. Applies the next time one is loaded.</en>
+            <fr>Multiplicateur sur la consommation de film des enrubanneuses. Effectif au prochain chargement.</fr>
+        </text>
+        <text name="ao_tabTitle">
+            <de>Agrar-Ökonomie</de>
+            <en>Farm Economy</en>
+            <fr>Économie Agricole</fr>
+        </text>
+        <text name="ao_ui_vNurEigene">
+            <de>Nur eigene Maschinen</de>
+            <en>Own machines only</en>
+            <fr>Machines possédées uniquement</fr>
+        </text>
+        <text name="ao_ui_vNurEigene_t">
+            <de>Auftrags- und Leihmaschinen behalten den Originalverbrauch, sonst bleibt nachgekauftes Material bei der Rückgabe in der Maschine.</de>
+            <en>Contract and leased machines keep the original usage, otherwise material you buy stays in the machine when it is returned.</en>
+            <fr>Les machines de mission et en leasing gardent la consommation d'origine, sinon le matériel acheté reste dans la machine au retour.</fr>
+        </text>
+        <text name="ao_sec_automatik">
+            <de>Agrar-Ökonomie: Automatik</de>
+            <en>Farm Economy: Automatic Balancing</en>
+            <fr>Économie Agricole : équilibrage automatique</fr>
+        </text>
+        <text name="ao_ui_autoAktiv">
+            <de>Automatik</de>
+            <en>Automatic balancing</en>
+            <fr>Équilibrage automatique</fr>
+        </text>
+        <text name="ao_ui_autoAktiv_t">
+            <de>Stellt die Verkaufspreis-Faktoren einmal pro Spieljahr selbst nach, bis der Erlös je Feldhektar im Zielbereich liegt. Handeinstellungen der Faktoren dienen als Startwert.</de>
+            <en>Adjusts the selling price factors once per in-game year until revenue per field hectare is within the target range. Manually set factors serve as the starting point.</en>
+            <fr>Ajuste les facteurs de prix de vente une fois par année de jeu jusqu'à ce que le revenu par hectare de champ soit dans la plage cible. Les facteurs réglés à la main servent de point de départ.</fr>
+        </text>
+        <text name="ao_ui_autoStufe">
+            <de>Schwierigkeit</de>
+            <en>Difficulty</en>
+            <fr>Difficulté</fr>
+        </text>
+        <text name="ao_ui_autoStufe_t">
+            <de>Leicht liegt nahe am Basisspiel, Realistisch nahe an echten Betriebszahlen. Eigene verwendet den Zielbereich darunter.</de>
+            <en>Easy stays close to the base game, Realistic close to real farm figures. Custom uses the target range below.</en>
+            <fr>Facile reste proche du jeu de base, Réaliste proche des chiffres réels. Personnalisé utilise la plage cible ci-dessous.</fr>
+        </text>
+        <text name="ao_opt_realistisch">
+            <de>Realistisch</de>
+            <en>Realistic</en>
+            <fr>Réaliste</fr>
+        </text>
+        <text name="ao_opt_eigene">
+            <de>Eigene</de>
+            <en>Custom</en>
+            <fr>Personnalisé</fr>
+        </text>
+        <text name="ao_ui_autoZielMin">
+            <de>Ziel-Erlös ab</de>
+            <en>Target revenue from</en>
+            <fr>Revenu cible à partir de</fr>
+        </text>
+        <text name="ao_ui_autoZielMin_t">
+            <de>Untere Grenze des Erlöses je Feldhektar pro Spieljahr. Wird nur bei Schwierigkeit Eigene verwendet.</de>
+            <en>Lower limit of revenue per field hectare per in-game year. Only used with difficulty Custom.</en>
+            <fr>Limite basse du revenu par hectare de champ par année de jeu. Utilisée uniquement avec la difficulté Personnalisé.</fr>
+        </text>
+        <text name="ao_ui_autoZielMax">
+            <de>Ziel-Erlös bis</de>
+            <en>Target revenue up to</en>
+            <fr>Revenu cible jusqu'à</fr>
+        </text>
+        <text name="ao_ui_autoZielMax_t">
+            <de>Obere Grenze des Erlöses je Feldhektar pro Spieljahr. Wird nur bei Schwierigkeit Eigene verwendet.</de>
+            <en>Upper limit of revenue per field hectare per in-game year. Only used with difficulty Custom.</en>
+            <fr>Limite haute du revenu par hectare de champ par année de jeu. Utilisée uniquement avec la difficulté Personnalisé.</fr>
+        </text>
+        <text name="ao_unit_proHa">
+            <de>/ha</de>
+            <en>/ha</en>
+            <fr>/ha</fr>
+        </text>
+        <text name="ao_auto_kopfBilanz">
+            <de>Automatik: letzte Bilanz %s je ha, Faktor x%s</de>
+            <en>Automatic: last result %s per ha, factor x%s</en>
+            <fr>Automatique : dernier bilan %s par ha, facteur x%s</fr>
+        </text>
+        <text name="ao_auto_kopfLaeuft">
+            <de>Automatik: Messung läuft, Monat %s von 12</de>
+            <en>Automatic: measuring, month %s of 12</en>
+            <fr>Automatique : mesure en cours, mois %s sur 12</fr>
+        </text>
+        <text name="ao_msg_autoAnpassung">
+            <de>Jahresbilanz: %s je Feldhektar, Ziel %s bis %s. Verkaufspreis-Faktor x%s wird x%s.</de>
+            <en>Yearly result: %s per field hectare, target %s to %s. Selling price factor x%s becomes x%s.</en>
+            <fr>Bilan annuel : %s par hectare de champ, cible %s à %s. Facteur de prix x%s devient x%s.</fr>
+        </text>
+        <text name="ao_msg_autoPasst">
+            <de>Jahresbilanz: %s je Feldhektar liegt im Ziel %s bis %s. Faktor bleibt x%s.</de>
+            <en>Yearly result: %s per field hectare is within the target %s to %s. Factor stays x%s.</en>
+            <fr>Bilan annuel : %s par hectare de champ est dans la cible %s à %s. Le facteur reste x%s.</fr>
+        </text>
+        <text name="ao_msg_autoGrenze">
+            <de>Jahresbilanz: %s je Feldhektar, Ziel %s bis %s. Der Faktor steht bereits an der Grenze x%s.</de>
+            <en>Yearly result: %s per field hectare, target %s to %s. The factor is already at its limit x%s.</en>
+            <fr>Bilan annuel : %s par hectare de champ, cible %s à %s. Le facteur est déjà à sa limite x%s.</fr>
+        </text>
+        <text name="ao_msg_autoZuWenig">
+            <de>Jahresbilanz: zu wenig Feldfläche oder Verkäufe, die Faktoren bleiben, wie sie sind.</de>
+            <en>Yearly result: not enough field area or sales, so the factors stay as they are.</en>
+            <fr>Bilan annuel : pas assez de surface ou de ventes, les facteurs restent inchangés.</fr>
+        </text>
+        <text name="ao_msg_grundsteuer">
+            <de>Grundsteuer: %s für %s ha</de>
+            <en>Property tax: %s for %s ha</en>
+            <fr>Impôt foncier : %s pour %s ha</fr>
+        </text>
+        <text name="ao_msg_bremseDeckel">
+            <de>Sicherheitsbremse: %s erlassen, das Tagesbudget war aufgebraucht</de>
+            <en>Safety brake: %s waived, today's budget was used up</en>
+            <fr>Frein de sécurité : %s non prélevés, le budget du jour était épuisé</fr>
+        </text>
+        <text name="ao_msg_bremseKonto">
+            <de>Sicherheitsbremse: %s erlassen, das Konto steht an der Untergrenze</de>
+            <en>Safety brake: %s waived, your balance is at the minimum</en>
+            <fr>Frein de sécurité : %s non prélevés, le solde est au minimum</fr>
+        </text>
+        <text name="ao_help_startTitle">
+            <de>Schnellstart</de>
+            <en>Quick start</en>
+            <fr>Démarrage rapide</fr>
+        </text>
+        <text name="ao_help_start">
+            <de>Ernte verkauft und das Konto quillt über? Genau da setzt Agrar-Ökonomie an. Feldfrüchte und Produktionen bringen weniger ein, dafür kosten Fahrzeuge, Reparaturen und Helfer mehr. Das Ganze sieht danach eher nach echtem Hof aus. Einstellen musst du nach der Installation nichts. Jeder Baustein startet mit ausgewogenen Werten, und einmal pro Spieljahr stellt die Automatik die Verkaufspreise selbst auf deinen Betrieb ein.</de>
+            <en>Farm Economy makes the money side of your farm feel more like the real thing. Crops and production output pay less, and you will spend more on vehicles, repairs and helpers. There is nothing to set up after installing it. Every part comes with balanced defaults, and once per in-game year the automatic balancing tunes the selling prices to your own farm.</en>
+            <fr>L'argent rentre trop facilement ? Économie Agricole rapproche les comptes de votre exploitation de la réalité. Véhicules, réparations et ouvriers coûtent plus cher, récoltes et produits de production rapportent moins. Après l'installation, rien à régler : chaque module part de valeurs équilibrées, et une fois par année de jeu l'équilibrage automatique adapte lui-même les prix de vente à votre exploitation.</fr>
+        </text>
+        <text name="ao_help_menuTitle">
+            <de>Wo finde ich die Einstellungen?</de>
+            <en>Where are the settings?</en>
+            <fr>Où sont les réglages ?</fr>
+        </text>
+        <text name="ao_help_menu">
+            <de>Du findest alles im ESC-Menü unter Einstellungen, dort oben in der Reiterleiste auf Agrar-Ökonomie wechseln. Unklar, was ein Regler macht? Jede Zeile hat ihren eigenen Hinweistext. Was du änderst, gilt sofort und wird gespeichert, im Multiplayer schickt der Server die Werte an alle Spieler. Ändern dürfen dort aber nur Admins. Alle anderen sehen gesperrte Regler und in der Kopfzeile steht nur für Admins änderbar. Dein Angebot an die Helfer und ihre Richtpreise haben noch ein eigenes Fenster, das geht mit Alt+H auf.</de>
+            <en>Hit ESC, go to Settings and pick the Farm Economy tab in the tab bar at the top. Not sure what a row does? Each one comes with a hint text. Changes take effect right away and are saved. In multiplayer the server sends them out to every player, but only admins can make them: for everyone else the controls are locked and the header reads admins only. Your helper offer and the reference prices live in a separate window, opened with Alt+H.</en>
+            <fr>Tout se règle dans le menu ESC : Paramètres, puis l'onglet Économie Agricole dans la barre du haut. Un texte d'aide accompagne chaque ligne. Une modification prend effet tout de suite et elle est enregistrée. En multijoueur, c'est le serveur qui la transmet à tous les joueurs, et seuls les administrateurs peuvent toucher aux réglages ; les autres voient des commandes verrouillées, avec réservé aux administrateurs dans l'en-tête. Pour votre offre aux ouvriers et leurs prix indicatifs, il existe une fenêtre à part, accessible avec Alt+H.</fr>
+        </text>
+        <text name="ao_help_kostenTitle">
+            <de>Was ändert sich im Spiel?</de>
+            <en>What changes in the game?</en>
+            <fr>Qu'est-ce qui change en jeu ?</fr>
+        </text>
+        <text name="ao_help_kosten">
+            <de>Jedes Fahrzeug und Anbaugerät kostet jetzt Fuhrpark-Steuer. Viel genutzte Maschinen werden in der Werkstatt teurer, Helfer bekommen Lohn nach Lohnstufe, und Pressen und Wickler brauchen mehr Bindegarn, Netz und Folie. Wer will, nimmt noch die Grundsteuer dazu. Alles steht in der Finanzübersicht, Fuhrpark-Steuer und Grundsteuer melden sich zusätzlich oben rechts. Damit dich das nach einem Kreditkauf oder einem mageren Monat nicht pleite macht, gibt es die Sicherheitsbremse.</de>
+            <en>Fleet tax is now charged for every vehicle and implement. Heavily used machines cost more to repair, helpers are paid by wage tier, and balers and wrappers go through more twine, net and wrap. Property tax is optional. It all shows up in the finances overview, and fleet tax and property tax also appear as a notification in the top right. Bought something on credit or had a weak month? The safety brake keeps these costs from bankrupting you.</en>
+            <fr>Plusieurs dépenses s'ajoutent. Chaque véhicule et outil paie une taxe de flotte, et une machine très utilisée coûte plus cher à réparer. Les ouvriers sont payés selon leur niveau, il faut plus de ficelle, de filet et de film, et un impôt foncier peut s'y ajouter en option. Tout figure dans le bilan financier ; la taxe de flotte et l'impôt foncier s'affichent aussi en notification en haut à droite. Après un achat à crédit ou un mois faible, le frein de sécurité vous évite la faillite.</fr>
+        </text>
+        <text name="ao_help_preisTitle">
+            <de>Verkaufspreise und Automatik</de>
+            <en>Selling Prices and Automatic Balancing</en>
+            <fr>Prix de vente et équilibrage automatique</fr>
+        </text>
+        <text name="ao_help_preis">
+            <de>Verkaufst du Ernte oder Erzeugnisse aus Produktionen, bekommst du nur den eingestellten Anteil ausgezahlt. Bei Faktor 0.75 sind das drei Viertel vom angezeigten Preis. Nicht wundern: Die Preistafeln an den Verkaufsstellen zeigen trotzdem den vollen Preis. Milch, Eier, Wolle, Tiere, Ballen, Holz, BGA-Strom und Aufträge rührt die Mod nicht an.</de>
+            <en>Sell crops or production output and you only get the set share of the price. A factor of 0.75 pays three quarters of what is displayed. The price boards at the selling points don't change, they keep showing the full price. Milk, eggs, wool, animals, bales, wood, biogas power and contracts are left alone.</en>
+            <fr>Les tableaux des points de vente affichent toujours le prix complet. Mais à la vente de récoltes ou de produits de production, le jeu ne verse que la part réglée : avec un facteur de 0.75, vous touchez les trois quarts du prix affiché. Lait, oeufs, laine, animaux, balles, bois, électricité du biogaz et missions ne sont pas concernés.</fr>
+        </text>
+        <text name="ao_help_autoTitle">
+            <de>So arbeitet die Automatik</de>
+            <en>How automatic balancing works</en>
+            <fr>Fonctionnement de l'équilibrage automatique</fr>
+        </text>
+        <text name="ao_help_auto">
+            <de>Ein Spieljahr lang, also 12 Monate, schreibt die Automatik mit, was dir Ernteverkauf und Produktionen einbringen. Am Ende teilt sie die Summe durch die Fläche deiner eigenen Felder. Verdienst du je Feldhektar mehr, als die gewählte Schwierigkeit vorsieht, geht der Faktor runter, verdienst du weniger, geht er hoch. Liegst du im Ziel, passiert nichts. Mehr als 0.05 pro Jahr bewegt er sich nie, und er bleibt immer zwischen 0.50 und 1.00. Feldfrüchte und Produktionserzeugnisse verschiebt sie dabei gemeinsam.</de>
+            <en>For one in-game year, so 12 months, the automatic balancing keeps a tally of what crop sales and production output bring in. That total is divided by the area of your own fields. Earn more per field hectare than the chosen difficulty aims for and the factor drops; earn less and it rises. Inside the target, nothing changes. The factor moves by 0.05 per year at most and never leaves the range 0.50 to 1.00. Crops and production output always move together.</en>
+            <fr>Pendant une année de jeu, soit 12 mois, l'équilibrage automatique additionne ce que rapportent les ventes de récoltes et de produits de production, puis divise le tout par la surface de vos propres champs. Ce revenu par hectare de champ est comparé à la cible de la difficulté choisie. Trop haut ? Le facteur baisse. Trop bas, il monte. Dans la cible, on n'y touche pas. D'une année à l'autre, il ne varie que de 0.05 au maximum et reste toujours entre 0.50 et 1.00. Cultures et produits de production sont ajustés ensemble.</fr>
+        </text>
+        <text name="ao_help_stufenTitle">
+            <de>Schwierigkeitsstufen</de>
+            <en>Difficulty levels</en>
+            <fr>Niveaux de difficulté</fr>
+        </text>
+        <text name="ao_help_stufen">
+            <de>Gezielt wird auf Erlös je Feldhektar und Spieljahr, nach dem Faktor. Leicht will 2.600 bis 3.600, das ist nah am Basisspiel. Normal ist Standard mit 2.000 bis 2.700. Schwer liegt bei 1.600 bis 2.100, Realistisch bei 1.300 bis 1.800 und damit nah an echten Betriebszahlen. Bei Eigene gelten die beiden Zielwerte, die du darunter einträgst.</de>
+            <en>Each level is a target revenue per field hectare per in-game year, after the factor. Easy wants 2,600 to 3,600, close to the base game. Normal is the default at 2,000 to 2,700, Hard asks for 1,600 to 2,100. Realistic, at 1,300 to 1,800, is close to real farm figures. Pick Custom and the two target values you set below apply.</en>
+            <fr>La difficulté fixe un revenu cible par hectare de champ et par année de jeu, après le facteur. Réaliste vise 1 300 à 1 800, proche des chiffres réels, Difficile 1 600 à 2 100. Normal, par défaut, vise 2 000 à 2 700. Facile reste proche du jeu de base avec 2 600 à 3 600. Avec Personnalisé, ce sont les deux valeurs cibles réglées en dessous qui comptent.</fr>
+        </text>
+        <text name="ao_help_anzeigeTitle">
+            <de>Woran erkenne ich, was passiert?</de>
+            <en>How do I see what is happening?</en>
+            <fr>Comment voir ce qui se passe ?</fr>
+        </text>
+        <text name="ao_help_anzeige">
+            <de>Schau in die Kopfzeile des Automatik-Abschnitts im Reiter. Solange gemessen wird, steht dort der laufende Monat, danach die letzte Bilanz mit dem aktuellen Faktor. Ist ein Spieljahr um, meldet sich die Mod oben rechts mit Ergebnis, Ziel und neuem Faktor. Los geht die Messung erst beim ersten Monatswechsel nach dem Laden. Die erste Bilanz kommt also gut ein Spieljahr später. Den Messstand legt die Mod im Spielstand ab.</de>
+            <en>Check the header of the automatic section in the tab. While measuring, it shows the month you are in; after that, the last result and the current factor. At the end of every in-game year you also get a notification in the top right with the result, the target and the new factor. Measuring only starts at the first month change after loading, so expect the first result a little over one in-game year later. Progress is stored in the savegame.</en>
+            <fr>Le premier bilan se fait un peu attendre : la mesure ne démarre qu'au premier changement de mois après le chargement, il arrive donc un peu plus d'une année de jeu plus tard. En attendant, l'en-tête de la section automatique de l'onglet indique le mois en cours ; ensuite, il affiche le dernier bilan et le facteur actuel. À la fin de chaque année de jeu, une notification en haut à droite donne le résultat, la cible et le nouveau facteur. L'avancement de la mesure est enregistré dans la sauvegarde.</fr>
+        </text>
+        <text name="ao_help_tippsTitle">
+            <de>Tipps</de>
+            <en>Tips</en>
+            <fr>Conseils</fr>
+        </text>
+        <text name="ao_help_tipps">
+            <de>Nach einem Wechsel der Schwierigkeit dauert es ein paar Spieljahre, bis das Ziel erreicht ist, weil die Automatik nur in kleinen Schritten nachstellt. Du willst die Faktoren lieber selbst bestimmen? Dann schalte die Automatik aus, und deine Handwerte gelten dauerhaft. Ist sie an, sind die Handwerte nur der Startwert. Bei weniger als 2 ha eigener Feldfläche oder ganz ohne Verkäufe lässt sie den Faktor, wie er ist. Milch und Tiere zählen nicht mit, ein Tierbetrieb mit wenig Acker wird also nicht heruntergeregelt. In der Konsole zeigt aoStatus den Messstand, und aoAutoBilanz zieht die Bilanz sofort und stellt die Faktoren nach.</de>
+            <en>The balancing only takes small steps, so after switching difficulty give it a few in-game years to reach the target. Would you rather set the factors yourself? Turn the automatic balancing off and your manual values stay in place for good. While it is on, they are only the starting point. With less than 2 ha of your own fields, or no sales at all, the factor is left as it is. Milk and animals are not counted, which means a livestock farm with little arable land won't get turned down. In the console, aoStatus shows the current measurement and aoAutoBilanz works out the result right now and adjusts the factors.</en>
+            <fr>Vous préférez fixer les facteurs vous-même ? Désactivez l'équilibrage automatique, vos valeurs manuelles s'appliquent alors en permanence. Tant qu'il est actif, elles ne servent que de point de départ. Comme il avance par petits pas, comptez quelques années de jeu après un changement de difficulté avant d'atteindre la cible. Avec moins de 2 ha de champs à vous, ou sans aucune vente, le facteur ne bouge pas. Le lait et les animaux n'entrent pas dans le calcul, un élevage avec peu de terres cultivées n'est donc pas pénalisé. Dans la console, aoStatus affiche la mesure en cours et aoAutoBilanz calcule le bilan sur-le-champ, puis ajuste les facteurs.</fr>
+        </text>
+        <text name="ao_help_bremseTitle">
+            <de>Sicherheitsbremse, Grundsteuer, Verbrauch</de>
+            <en>Safety Brake, Property Tax, Consumables</en>
+            <fr>Frein de sécurité, impôt foncier, consommables</fr>
+        </text>
+        <text name="ao_help_bremse">
+            <de>Fuhrpark-Steuer und Grundsteuer sind die laufenden Abbuchungen dieser Mod, und für beide zusammen gibt es einen Deckel. An einem Spieltag dürfen sie höchstens den eingestellten Anteil deiner mittleren Tageseinnahmen kosten, ab Werk 25 Prozent. Werden beide am selben Tag fällig und reicht das Tagesbudget nicht für beide, kürzt die Bremse jeden Posten um denselben Anteil, also passend zu seiner Höhe. Keiner geht mehr leer aus, nur weil er zufällig als zweiter dran war. Rutscht dein Kontostand unter die Notbremse (Standard 50.000), wird gar nichts mehr abgebucht. Neu gekaufte Fahrzeuge bleiben für die eingestellte Karenz steuerfrei, Standard sind 3 Spielmonate. Was die Bremse streicht, ist weg und wird nicht nachgeholt. Hat sie gekürzt, kommt oben rechts eine Meldung mit dem erlassenen Betrag, und der Konsolenbefehl aoStatus zeigt die letzte Kürzung je Hof. Kreditzinsen, Käufe und Reparaturen in der Werkstatt fasst die Bremse nicht an.</de>
+            <en>Fleet tax and property tax are the recurring charges this mod makes, and they share one cap. Per in-game day they can take no more than the set share of your average daily income, 25 percent by default. If both are due on the same day and the daily budget can't cover both, each one is cut by the same proportion, so the bigger charge gives up more. Neither gets dropped entirely just because it happened to come second. Below the emergency stop balance (default 50,000) nothing is charged at all. A newly bought vehicle stays tax free for the set grace period, which defaults to 3 in-game months. Whatever the brake cuts is gone for good and not charged later. Whenever it steps in, a notification in the top right shows the amount waived, and the console command aoStatus lists the last cut for each farm. Loan interest, purchases and workshop repairs are not affected.</en>
+            <fr>La taxe de flotte et l'impôt foncier sont les prélèvements récurrents de ce mod, et ils partagent un même plafond. Par jour de jeu, ensemble, ils ne peuvent pas dépasser la part réglée de votre revenu journalier moyen (25 pour cent par défaut). Si les deux tombent le même jour et que le budget du jour ne suffit pas, chacun est réduit dans la même proportion, au prorata de son montant ; aucun n'est sacrifié simplement parce qu'il passait en second. Quand le solde descend sous l'arrêt d'urgence, fixé à 50 000 par défaut, plus rien n'est prélevé. Un véhicule neuf reste exonéré pendant le délai de grâce réglé, 3 mois de jeu par défaut. Ce que le frein retient est abandonné, rien n'est rattrapé plus tard. À chaque réduction, une notification en haut à droite indique le montant remis, et la commande console aoStatus affiche la dernière réduction pour chaque exploitation. Le frein ne s'applique ni aux intérêts de prêt, ni aux achats, ni aux réparations à l'atelier.</fr>
+        </text>
+        <text name="ao_help_gsTitle">
+            <de>Grundsteuer</de>
+            <en>Property tax</en>
+            <fr>Impôt foncier</fr>
+        </text>
+        <text name="ao_help_gs">
+            <de>Ab Werk ist sie aus. Schaltest du sie ein, wird jeden Monat ein Zwölftel des Jahressatzes auf den Wert deines gekauften Landes fällig, standardmäßig 2 Prozent im Jahr. Sie ist der einzige Kostenblock, der mit der Größe des Betriebs mitwächst. Große Landkäufe spürst du damit deutlicher.</de>
+            <en>This one is off by default. Switch it on and every month you pay one twelfth of the yearly rate on the value of the land you own; the default rate is 2 percent per year. No other cost grows with the size of your farm, so big land purchases are felt a lot more.</en>
+            <fr>Il est désactivé par défaut. Une fois activé, vous payez chaque mois un douzième du taux annuel sur la valeur de vos terres, soit 2 pour cent par an par défaut. C'est le seul poste de dépenses qui suit la taille de l'exploitation, et les gros achats de terres se font donc davantage sentir.</fr>
+        </text>
+        <text name="ao_help_verbrauchTitle">
+            <de>Bindegarn, Netz und Folie</de>
+            <en>Twine, net and wrap</en>
+            <fr>Ficelle, filet et film</fr>
+        </text>
+        <text name="ao_help_verbrauch">
+            <de>Pressen und Wickler brauchen ein einstellbares Vielfaches dessen, was im Original drinsteht. Ab Werk sind es bei Bindegarn und Netz 5-fach, bei Folie 3-fach. Und bei Aufträgen oder Leihmaschinen? Ist Nur eigene Maschinen an, verbrauchen die weiter wie im Original. Sonst kaufst du teures Material nach, und das bleibt bei der Rückgabe einfach in der Maschine. Stellst du die Folie um, merkt der Wickler das erst, wenn er neu geladen wird.</de>
+            <en>Balers and wrappers use a multiple of their original amount, and you pick the multiple. Out of the box that's 5x for twine and net and 3x for wrap. With Own machines only, contract and leased machines keep their original usage. Otherwise you'd pay for extra material that just stays in the machine when the contract ends and it goes back. If you change the wrap setting, it kicks in the next time the wrapper is loaded.</en>
+            <fr>La consommation des presses et des enrubanneuses est multipliée par un facteur réglable : par défaut 5x pour la ficelle et le filet, 3x pour le film. Avec Machines possédées uniquement, les machines de mission et celles en leasing gardent leur consommation d'origine. Sans cela, une mission pourrait se terminer avec du matériel racheté cher qui reste dans la machine quand vous la rendez. Si vous modifiez le réglage du film, il ne prend effet qu'au prochain chargement de l'enrubanneuse.</fr>
+        </text>
+        <text name="ao_msg_autoStart">
+            <de>Agrar-Ökonomie: Die Automatik misst ab jetzt ein Spieljahr lang den Erlös je Feldhektar und passt danach die Verkaufspreise an. Anleitung im ESC-Menü unter Hilfe.</de>
+            <en>Farm Economy: automatic balancing now measures revenue per field hectare for one in-game year and then adjusts selling prices. Guide in the ESC menu under Help.</en>
+            <fr>Économie Agricole : l'équilibrage automatique mesure désormais pendant une année de jeu le revenu par hectare de champ, puis ajuste les prix de vente. Guide dans le menu ESC sous Aide.</fr>
+        </text>
+        <text name="ao_rep_tabTitle">
+            <de>Betriebsübersicht</de>
+            <en>Farm Report</en>
+            <fr>Bilan de l'exploitation</fr>
+        </text>
+        <text name="ao_rep_secStand">
+            <de>Stand des Betriebs</de>
+            <en>Farm position</en>
+            <fr>Situation de l'exploitation</fr>
+        </text>
+        <text name="ao_rep_secStandOhne">
+            <de>Stand des Betriebs (Vergleich ab dem nächsten Spieljahr)</de>
+            <en>Farm position (comparison from next in-game year)</en>
+            <fr>Situation de l'exploitation (comparaison dès l'année de jeu suivante)</fr>
+        </text>
+        <text name="ao_rep_secEinnahmen">
+            <de>Einnahmen %s bis %s</de>
+            <en>Income %s to %s</en>
+            <fr>Revenus %s à %s</fr>
+        </text>
+        <text name="ao_rep_secAusgaben">
+            <de>Ausgaben %s bis %s</de>
+            <en>Expenses %s to %s</en>
+            <fr>Dépenses %s à %s</fr>
+        </text>
+        <text name="ao_rep_secErgebnis">
+            <de>Ergebnis %s bis %s</de>
+            <en>Result %s to %s</en>
+            <fr>Résultat %s à %s</fr>
+        </text>
+        <text name="ao_rep_secLaden">
+            <de>Daten werden geladen ...</de>
+            <en>Loading data ...</en>
+            <fr>Chargement des données ...</fr>
+        </text>
+        <text name="ao_rep_colJetzt">
+            <de>Jetzt</de>
+            <en>Now</en>
+            <fr>Maintenant</fr>
+        </text>
+        <text name="ao_rep_colVorEinemJahr">
+            <de>Vor einem Jahr</de>
+            <en>A year ago</en>
+            <fr>Il y a un an</fr>
+        </text>
+        <text name="ao_rep_colJahr">
+            <de>Dieses Jahr</de>
+            <en>This year</en>
+            <fr>Cette année</fr>
+        </text>
+        <text name="ao_rep_colVorjahr">
+            <de>Vorjahr</de>
+            <en>Last year</en>
+            <fr>Année précédente</fr>
+        </text>
+        <text name="ao_rep_colAenderung">
+            <de>Veränderung</de>
+            <en>Change</en>
+            <fr>Évolution</fr>
+        </text>
+        <text name="ao_rep_vermoegen">
+            <de>Betriebsvermögen</de>
+            <en>Net worth</en>
+            <fr>Patrimoine net</fr>
+        </text>
+        <text name="ao_rep_geld">
+            <de>Kontostand</de>
+            <en>Balance</en>
+            <fr>Solde</fr>
+        </text>
+        <text name="ao_rep_kredit">
+            <de>Kredit</de>
+            <en>Loan</en>
+            <fr>Prêt</fr>
+        </text>
+        <text name="ao_rep_fahrzeuge">
+            <de>Fahrzeuge und Geräte</de>
+            <en>Vehicles and implements</en>
+            <fr>Véhicules et outils</fr>
+        </text>
+        <text name="ao_rep_gebaeude">
+            <de>Gebäude</de>
+            <en>Buildings</en>
+            <fr>Bâtiments</fr>
+        </text>
+        <text name="ao_rep_land">
+            <de>Land</de>
+            <en>Land</en>
+            <fr>Terres</fr>
+        </text>
+        <text name="ao_rep_landHa">
+            <de>Landfläche</de>
+            <en>Land area</en>
+            <fr>Surface des terres</fr>
+        </text>
+        <text name="ao_rep_feldHa">
+            <de>Feldfläche</de>
+            <en>Field area</en>
+            <fr>Surface des champs</fr>
+        </text>
+        <text name="ao_rep_ernte">
+            <de>Ernteverkauf</de>
+            <en>Crop sales</en>
+            <fr>Ventes de récoltes</fr>
+        </text>
+        <text name="ao_rep_produkte">
+            <de>Produktionen</de>
+            <en>Production output</en>
+            <fr>Produits de production</fr>
+        </text>
+        <text name="ao_rep_tiere">
+            <de>Tiere, Milch, Wolle, Eier</de>
+            <en>Animals, milk, wool, eggs</en>
+            <fr>Animaux, lait, laine, oeufs</fr>
+        </text>
+        <text name="ao_rep_ballenHolz">
+            <de>Ballen und Holz</de>
+            <en>Bales and wood</en>
+            <fr>Balles et bois</fr>
+        </text>
+        <text name="ao_rep_energie">
+            <de>Biogas und Energie</de>
+            <en>Biogas and energy</en>
+            <fr>Biogaz et énergie</fr>
+        </text>
+        <text name="ao_rep_auftraege">
+            <de>Aufträge</de>
+            <en>Contracts</en>
+            <fr>Missions</fr>
+        </text>
+        <text name="ao_rep_sonstEin">
+            <de>Sonstige Einnahmen</de>
+            <en>Other income</en>
+            <fr>Autres revenus</fr>
+        </text>
+        <text name="ao_rep_betriebsmittel">
+            <de>Saatgut, Dünger, Diesel</de>
+            <en>Seeds, fertilizer, fuel</en>
+            <fr>Semences, engrais, carburant</fr>
+        </text>
+        <text name="ao_rep_fahrzeugKosten">
+            <de>Fahrzeugkosten, Reparatur, Steuer</de>
+            <en>Vehicle costs, repairs, tax</en>
+            <fr>Véhicules, réparations, taxe</fr>
+        </text>
+        <text name="ao_rep_gebaeudeKosten">
+            <de>Gebäude und Produktion</de>
+            <en>Buildings and production</en>
+            <fr>Bâtiments et production</fr>
+        </text>
+        <text name="ao_rep_loehne">
+            <de>Helferlöhne</de>
+            <en>Helper wages</en>
+            <fr>Salaires des ouvriers</fr>
+        </text>
+        <text name="ao_rep_zinsen">
+            <de>Kreditzinsen</de>
+            <en>Loan interest</en>
+            <fr>Intérêts du prêt</fr>
+        </text>
+        <text name="ao_rep_sonstAus">
+            <de>Sonstige Ausgaben</de>
+            <en>Other expenses</en>
+            <fr>Autres dépenses</fr>
+        </text>
+        <text name="ao_rep_investFahrzeuge">
+            <de>Fahrzeuge gekauft/verkauft</de>
+            <en>Vehicles bought/sold</en>
+            <fr>Véhicules achetés/vendus</fr>
+        </text>
+        <text name="ao_rep_investBau">
+            <de>Gebäude gebaut/verkauft</de>
+            <en>Buildings built/sold</en>
+            <fr>Bâtiments construits/vendus</fr>
+        </text>
+        <text name="ao_rep_investLand">
+            <de>Land gekauft/verkauft</de>
+            <en>Land bought/sold</en>
+            <fr>Terres achetées/vendues</fr>
+        </text>
+        <text name="ao_rep_investTiere">
+            <de>Tiere gekauft</de>
+            <en>Animals bought</en>
+            <fr>Animaux achetés</fr>
+        </text>
+        <text name="ao_rep_summeEin">
+            <de>Einnahmen gesamt</de>
+            <en>Total income</en>
+            <fr>Total des revenus</fr>
+        </text>
+        <text name="ao_rep_summeAus">
+            <de>Ausgaben gesamt</de>
+            <en>Total expenses</en>
+            <fr>Total des dépenses</fr>
+        </text>
+        <text name="ao_rep_ergebnis">
+            <de>Betriebsergebnis</de>
+            <en>Operating result</en>
+            <fr>Résultat d'exploitation</fr>
+        </text>
+        <text name="ao_rep_investSumme">
+            <de>Investitionen gesamt</de>
+            <en>Total investments</en>
+            <fr>Total des investissements</fr>
+        </text>
+        <text name="ao_rep_proHa">
+            <de>Erlös je Feldhektar</de>
+            <en>Revenue per field hectare</en>
+            <fr>Revenu par hectare de champ</fr>
+        </text>
+        <text name="ao_rep_neu">
+            <de>neu</de>
+            <en>new</en>
+            <fr>inédit</fr>
+        </text>
+        <text name="ao_rep_monat">
+            <de>Monat %s</de>
+            <en>Month %s</en>
+            <fr>Mois %s</fr>
+        </text>
+        <text name="ao_help_berichtTitle">
+            <de>Jahresvergleich</de>
+            <en>Year comparison</en>
+            <fr>Comparaison annuelle</fr>
+        </text>
+        <text name="ao_help_bericht">
+            <de>Was hat der Hof dieses Jahr eigentlich verdient, und steht er besser da als letztes Jahr? Dafür schreibt Agrar-Ökonomie jeden Monat die Zahlen des Betriebs mit. Das Betriebsvermögen ist Kontostand minus Kredit plus der Wert von Fahrzeugen, Gebäuden und Land. Dazu kommen die einzelnen Posten, die Flächen, Einnahmen und Ausgaben nach Gruppen, das Betriebsergebnis, die Investitionen und der Erlös je Feldhektar. Anschauen kannst du das Ganze in der Mod Betriebsübersicht: ESC-Menü, Seite Betriebsübersicht, Bereich Finanzen. Der Bereich taucht von selbst auf, sobald beide Mods installiert sind. Grün ist besser als im Vorjahr, rot schlechter. Jede der beiden Mods läuft auch allein: Ohne Betriebsübersicht zeichnet Agrar-Ökonomie weiter auf, man sieht die Zahlen nur nicht, und ohne Agrar-Ökonomie fehlt in der Betriebsübersicht einfach der Bereich Finanzen.</de>
+            <en>Every month Farm Economy writes down where your farm stands. That covers net worth, meaning your balance minus the loan plus whatever your vehicles, buildings and land are worth, along with the individual items and your areas. It also keeps track of income and expenses by group, the operating result, investments and revenue per field hectare. You see it all in the Farm Overview mod: ESC menu, Farm Overview page, Finances area. That area shows up on its own once both mods are installed. Green beats last year, red falls short of it. Neither mod depends on the other: without Farm Overview the recording carries on and you just can't see the figures, and without Farm Economy the Overview simply has no Finances area.</en>
+            <fr>Chaque mois, Économie Agricole relève les chiffres de votre exploitation. D'abord le patrimoine net, c'est-à-dire le solde moins le prêt plus la valeur des véhicules, des bâtiments et des terres, puis les différents postes et les surfaces. S'y ajoutent les revenus et dépenses par groupe, le résultat d'exploitation, les investissements et la recette par hectare de champ. Pour les consulter, il faut le mod Aperçu de l'exploitation : menu ÉCHAP, page Aperçu de l'exploitation, rubrique Finances. Cette rubrique apparaît d'elle-même dès que les deux mods sont installés. En vert ce qui va mieux que l'an dernier, en rouge ce qui va moins bien. Chaque mod tourne très bien seul. Sans l'Aperçu, Économie Agricole continue d'enregistrer, on ne voit simplement pas les chiffres. Sans Économie Agricole, l'Aperçu fonctionne aussi, il lui manque juste la rubrique Finances.</fr>
+        </text>
+        <text name="ao_help_berichtVglTitle">
+            <de>Womit wird verglichen?</de>
+            <en>What is compared?</en>
+            <fr>Que compare-t-on ?</fr>
+        </text>
+        <text name="ao_help_berichtVgl">
+            <de>Im Juli ein halbes Jahr gegen ein ganzes Vorjahr zu stellen, wäre Unsinn. Deshalb stehen immer dieselben Monate beider Jahre nebeneinander, also etwa März bis Juli gegen März bis Juli. Den Stand des Betriebs vergleicht die Mod mit dem Beginn desselben Monats im Vorjahr. Aufgezeichnet wird erst ab der Installation, den ersten Vergleich gibt es also im folgenden Spieljahr. Ausgaben stehen als negative Beträge da. Einen Kredit aufnehmen oder tilgen zählt weder als Einnahme noch als Ausgabe.</de>
+            <en>Putting half a year up against a whole one would tell you nothing, so both years are always cut to the same months, say March to July against March to July. Your farm's position is held up against the start of the same month last year. Recording only begins once the mod is installed, which means the first comparison shows up in the following in-game year. Expenses appear as negative amounts. Taking out a loan or paying it back counts as neither income nor expense.</en>
+            <fr>La rubrique compare toujours les mêmes mois des deux années, par exemple de mars à juillet cette année face à mars à juillet l'an dernier. En plein été, vous ne mettez donc pas une demi-année en face d'une année entière. Pour la situation de l'exploitation, la référence est le début du même mois de l'année précédente. Le mod n'enregistre qu'à partir de son installation ; il faut donc attendre l'année de jeu suivante pour la première comparaison. Les dépenses apparaissent en montants négatifs. Emprunter ou rembourser le prêt ne compte ni comme revenu ni comme dépense.</fr>
+        </text>
+    </l10n>
+</modDesc>

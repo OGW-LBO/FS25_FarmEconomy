@@ -1,0 +1,44 @@
+# Agrar-Ökonomie
+
+Wirtschaftssimulation: Steuern, Reparaturen, Löhne, Spritverbrauch, Preise.
+
+Im Grundspiel spielt Geld nach ein paar Ernten keine Rolle mehr. Die Erlöse sind hoch, und ein bezahlter Traktor kostet danach nur noch Diesel. Farm Economy dreht an beiden Enden.
+
+Feldfrüchte und Erzeugnisse aus Produktionen bringen weniger ein. Milch, Tiere, Holz, Ballen und Aufträge bleiben, wie sie sind. Wie stark gekürzt wird, kann eine Automatik übernehmen: Einmal im Spieljahr schaut sie, was dein Hof pro Hektar verdient hat, und stellt nach, bis es zur gewählten Schwierigkeit passt.
+
+Bei den Kosten zahlst du laufend für jedes eigene Fahrzeug und Gerät. Was im Abrechnungszeitraum nur herumstand oder in der Halle parkt, kommt günstiger weg. Reparaturen werden mit den Betriebsstunden teurer. Helfer gibt es in Lohnstufen, bei zu knappem Angebot sagen sie auch mal ab, und beim Festpreis zahlst du nur für fertige Arbeit. Pressen und Wickler brauchen mehr Garn, Netz und Folie. Wer mag, schaltet noch eine Grundsteuer auf gekauftes Land dazu.
+
+Ab Werk aus, aber dabei: Spritverbrauch stufenlos statt Wenig/Normal/Hoch, getrennt für Feld und Straße, auf Wunsch aus der Motorleistung gerechnet und im Tacho angezeigt. Guthabenzinsen auf Kontostand minus Kredit, gestaffelt, damit ein volles Konto nicht von allein wächst. Und eine Produktionsgeschwindigkeit für alle Produktionen oder einzelne Gebäude.
+
+Damit kein Spielstand kaputtgeht, gibt es eine Bremse. Die Mod darf pro Tag nur einen Teil der üblichen Einnahmen abbuchen, und unter einem Mindestkontostand zieht sie gar nichts mehr ab.
+
+Wohin das Geld fließt, zeigt das Kassenbuch: Strg+K öffnet es im Spiel, mit einer Rangliste der größten Posten und den letzten Buchungen, Monat für Monat und Jahr für Jahr. Die Buchungen dieses und des vorigen Spieljahres landen mit Spielmonat, Gruppe und Betrag in einer Datei im Ordner des Spielstands: als Tabelle für die Tabellenkalkulation und als fertige Seite mit Diagrammen, die sich im Browser öffnen lässt. Posten, die im Sekundentakt anfallen, etwa Sprit und laufende Kosten, stehen als Tagessumme darin, sonst wäre die Datei nach einer Stunde nicht mehr lesbar.
+
+Eingestellt wird im ESC-Menü unter Einstellungen, Reiter Agrar-Ökonomie, im Multiplayer nur von Admins. Die Hilfe im Spiel erklärt jeden Teil. Läuft auf jeder Karte, auch mit Früchten, die das Grundspiel nicht kennt. Zusammen mit der Mod Betriebsübersicht (Farm Overview) bekommst du außerdem einen Jahresvergleich deiner Finanzen.
+
+Nur PC/Mac.
+
+Changelog 1.1.0.0:
+- Kassenbuch: Strg+K zeigt im Spiel, wofür das Geld weggeht, als Rangliste mit Balken und mit den letzten Buchungen. Monate und Jahre lassen sich bis zum Anfang des vorigen Spieljahres zurückblättern, unten steht der Vergleich mit dem Monat davor oder dem Vorjahr. Grundsteuer und Fuhrpark-Steuer stehen als eigene Buchung drin. Im Spielstand-Ordner liegen dazu eine CSV-Tabelle und eine HTML-Seite mit Diagrammen. Der Konsolenbefehl aoKassenbuch schreibt sie sofort.
+- Sicherheitsbremse: Wenn Grundsteuer und Fuhrpark-Steuer am selben Tag fällig sind und das Budget nicht für beide reicht, werden beide um denselben Anteil gekürzt. Bisher bekam der Posten, der als zweiter abgerechnet wurde, oft gar nichts mehr ab. Eine Kürzung meldet die Mod jetzt oben rechts, aoStatus zeigt die letzte je Hof.
+- Produktionsgeschwindigkeit: Die laufenden Kosten haben drei Stufen statt an/aus: voll mit, Wurzel des Faktors oder gleich bleibend. Wer vorher an hatte, landet bei voll mit, aus wird zu gleich bleibend.
+- Hilfeseiten und Beschreibung sind überarbeitet.
+
+## Installation
+
+Die ZIP aus den [Releases](../../releases) herunterladen und in den
+Mods-Ordner legen:
+
+    Dokumente\My Games\FarmingSimulator2025\mods
+
+Auf einem Dedicated Server gehoert sie in dessen Mods-Ordner.
+
+## Stand
+
+Version 1.1.0.0, gebaut gegen descVersion 116.
+
+## Lizenz
+
+Alle Rechte vorbehalten, Einzelheiten in LICENSE.txt. Der Quelltext liegt
+offen, damit man sieht, was die Mod tut - eine Freigabe zur
+Weiterverwendung ist das nicht.

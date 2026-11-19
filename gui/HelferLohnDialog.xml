@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="HelferLohnDialogUI" onOpen="onOpen" onClose="onClose">
+    <GuiElement profile="newLayer" />
+    <Bitmap profile="dialogFullscreenBg" id="dialogBg" />
+
+    <GuiElement profile="fs25_dialogBg" id="dialogElement" size="1240px 780px">
+        <ThreePartBitmap profile="fs25_dialogBgMiddle" />
+        <ThreePartBitmap profile="fs25_dialogBgTop" />
+        <ThreePartBitmap profile="fs25_dialogBgBottom" />
+
+        <GuiElement profile="fs25_dialogContentContainer">
+            <Text profile="dialogTitle" id="dialogTitleElement" position="0px -25px" text="$l10n_hl_menuTitle" />
+
+            <ScrollingLayout profile="fs25_settingsLayout" id="hlLayout" position="0px -90px" size="1150px 625px">
+
+                <Bitmap profile="hl_rowBox">
+                    <BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="chkAktiv" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mAktiv" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="optModus" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mModus" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="optSchwierigkeit" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mSchwierigkeit" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="optStufe" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mStufe" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="optFestLohn" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mFestLohn" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="chkZufall" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mZufall" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="chkGratis" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mGratis" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <BinaryOption profile="fs25_settingsBinaryOption" onClick="onClickCheckbox" id="chkNurErfolg" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mNurErfolg" />
+                </Bitmap>
+
+                <Text profile="fs25_settingsSectionHeader" name="sectionHeader" text="$l10n_hl_secPreise" />
+
+                <Bitmap profile="hl_rowBox">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="optPreisLeicht" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mPreisLeicht" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="optPreisMittel" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mPreisMittel" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="optPreisBoden" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mPreisBoden" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="optPreisPressen" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mPreisPressen" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="optPreisDreschen" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mPreisDreschen" />
+                </Bitmap>
+
+                <Bitmap profile="hl_rowBox">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickMultiOption" id="optPreisHaeckseln" />
+                    <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_hl_mPreisHaeckseln" />
+                </Bitmap>
+
+            </ScrollingLayout>
+        </GuiElement>
+
+        <BoxLayout profile="fs25_dialogButtonBox" size="1150px 60px">
+            <Button profile="buttonBack" onClick="onClickBack" id="closeButton" />
+        </BoxLayout>
+    </GuiElement>
+
+    <GUIProfiles>
+        <!-- flacher als der Standard, damit alles ohne Scrollen passt -->
+        <Profile name="hl_rowBox" extends="fs25_multiTextOptionContainer">
+            <size value="1150px 34px" />
+        </Profile>
+    </GUIProfiles>
+</GUI>

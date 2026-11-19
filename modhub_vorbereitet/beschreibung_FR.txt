@@ -1,0 +1,23 @@
+TITRE: Économie Agricole
+
+Dans le jeu de base, l'argent ne compte plus après quelques récoltes. Économie Agricole rééquilibre les recettes et les dépenses.
+
+Les cultures et les produits de vos productions rapportent moins ; le lait, les animaux, le bois, les balles et les missions ne changent pas. Si vous le souhaitez, un mode automatique fait le point une fois par an sur ce que votre ferme gagne à l'hectare et ajuste le facteur de prix selon la difficulté choisie.
+
+Côté dépenses, chaque véhicule et outil que vous possédez coûte un peu chaque mois, moins s'il est resté à l'arrêt ou s'il est rangé sous un abri. Les réparations deviennent plus chères avec les heures de travail. Les ouvriers ont plusieurs niveaux de salaire, refusent parfois une offre trop basse et, au prix fixe, ne sont payés que pour un travail terminé. Presses et enrubanneuses consomment davantage de ficelle, de filet et de film. Un impôt foncier sur les terres achetées peut s'y ajouter.
+
+Désactivés par défaut : une consommation de carburant réglable librement, séparée entre travail et route, calculée si besoin à partir de la puissance du moteur et affichée au compteur ; des intérêts sur l'épargne, par paliers, sur le solde moins le prêt ; une vitesse de production pour toutes les productions ou par bâtiment.
+
+Un frein de sécurité évite de ruiner une partie : ce que le mod prélève par jour reste limité à une part des revenus habituels, et sous un solde minimum il ne prélève plus rien.
+
+Le livre de caisse montre où va l'argent : Ctrl+K l'ouvre dans le jeu, avec un classement des plus gros postes et les dernières opérations, mois par mois ou année par année. Les opérations de l'année de jeu en cours et de la précédente sont écrites dans un fichier du dossier de sauvegarde avec le mois de jeu, le groupe et le montant : sous forme de tableau pour le tableur et sous forme de page avec graphiques qui s'ouvre dans le navigateur. Les postes comptabilisés à chaque seconde, comme le carburant et les frais courants, y figurent comme somme journalière, sinon le fichier deviendrait illisible au bout d'une heure.
+
+Les réglages se trouvent dans le menu ESC, Paramètres, onglet Économie Agricole ; en multijoueur, seuls les administrateurs peuvent les modifier. L'aide du jeu décrit chaque module. Compatible avec toutes les cartes. Avec le mod Aperçu de l'exploitation (Farm Overview), vous obtenez aussi une comparaison annuelle de vos finances.
+
+PC/Mac uniquement.
+
+Changelog 1.1.0.0 :
+- Livre de caisse : Ctrl+K montre dans le jeu où part l'argent, avec un classement en barres et les dernières opérations. On remonte mois par mois ou année par année jusqu'au début de l'année de jeu précédente, et la ligne du bas compare avec le mois d'avant ou avec l'année précédente. L'impôt foncier et la taxe de flotte apparaissent comme des opérations à part. Le dossier de sauvegarde reçoit aussi un tableau CSV et une page HTML avec graphiques ; la commande aoKassenbuch les écrit tout de suite.
+- Frein de sécurité : quand l'impôt foncier et la taxe de flotte tombent le même jour et que le budget ne suffit pas, les deux sont réduits dans la même proportion. Avant, celui qui passait en second n'obtenait souvent plus rien. Une réduction s'affiche désormais en haut à droite, et aoStatus indique la dernière par exploitation.
+- Vitesse de production : les frais de fonctionnement proposent trois choix au lieu de oui/non : plein, racine du facteur ou inchangés. Activé devient plein, désactivé devient inchangés.
+- Pages d'aide et description retravaillées.

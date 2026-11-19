@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!-- Mod-Tab unter ESC > Allgemeine Einstellungen.
+     Die Prefabs sind nur Klonvorlagen und werden nach dem Laden entfernt. -->
+<GUI>
+    <GuiElement profile="fs25_menuContainer">
+        <BoxLayout profile="fs25_subCategorySelectorTabbedBox">
+            <!-- kein $l10n_ hier, die Mod-Texte gibt es beim Laden noch nicht.
+                 Titel setzt AOMenuPage.setzeTabText. -->
+            <Button profile="fs25_subCategorySelectorTabbedTab" id="aoTab"
+                    onClick="onClickAoTab">
+                <ThreePartBitmap profile="fs25_subCategorySelectorTabbedTabBg" name="background"/>
+            </Button>
+        </BoxLayout>
+        <GuiElement profile="fs25_subCategorySelectorTabbedContainer" id="aoPage">
+            <ScrollingLayout profile="fs25_settingsLayout" id="aoLayout">
+                <Text profile="fs25_settingsSectionHeader" id="aoSectionPrefab"/>
+                <!-- Werteliste kommt aus Lua -->
+                <Bitmap profile="fs25_multiTextOptionContainer" id="aoRowPrefab">
+                    <MultiTextOption profile="fs25_settingsMultiTextOption" id="aoRowOptPrefab">
+                        <Text profile="fs25_multiTextOptionTooltip" name="ignore"/>
+                    </MultiTextOption>
+                    <Text profile="fs25_settingsMultiTextOptionTitle"/>
+                </Bitmap>
+            </ScrollingLayout>
+            <Bitmap profile="fs25_settingsTooltipSeparator"/>
+        </GuiElement>
+    </GuiElement>
+</GUI>

@@ -1,0 +1,11 @@
+Update 1.0.0.0 -> 1.1.0.0, changelog in all three descriptions.
+
+Changes after your report of 12.11.:
+- descVersion is now 116 (TestRunner 0.9.24: PASS).
+- Uploaded as FS25_FarmEconomy.zip, so the file name is FS25_FarmEconomy_update.
+- Screenshot 02 no longer shows the tabs of other mods.
+
+- Cash book: new in-game window (Ctrl+K, action AO_BUCH), MP via AOKassenbuchEvent. Months and years can be browsed; monthly totals are kept for the current and the previous game year, older data is dropped at year change. Writes FS25_FarmEconomy_Kassenbuch.xml/.csv/.html into the savegame folder (io.open with mode "w" only).
+- Safety brake: tax charges of one billing date are collected and split proportionally instead of first come, first served. Cuts are logged, shown as a notification and listed in aoStatus.
+- Production speed: running costs option with three values (full / square root / unchanged) instead of a bool; old settings are migrated.
+- Help texts and description reworded, no change in scope.

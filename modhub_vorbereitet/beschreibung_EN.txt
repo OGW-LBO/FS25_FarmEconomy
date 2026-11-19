@@ -1,0 +1,23 @@
+TITLE: Farm Economy
+
+In the base game, money stops mattering after a few harvests. Crops sell high, and a tractor you have paid off never costs you anything but diesel again. Farm Economy pushes back on both sides.
+
+You get less for your crops and for goods from your productions. Milk, animals, wood, bales and contracts are left alone. An optional automatic mode looks at what your farm earned per hectare once a year and nudges the price factor until it matches the difficulty you picked.
+
+On the cost side there is a fleet tax on every vehicle and implement you own, with a discount for machines that sat idle or are parked under a roof. Repairs get pricier as the hours pile up. Helpers come in wage tiers, may turn down an offer that is too low, and on a fixed price they only get paid for work they actually finished. Balers and wrappers go through more twine, net and film. If you want, add a property tax on the land you bought.
+
+Off by default but ready when you are: fuel use set freely instead of low/normal/high, separate for field work and road, optionally based on engine power and shown in the speedometer. Interest on savings, paid on your balance minus any loan and tiered so a big account does not grow on its own. And a production speed setting for all productions or single buildings.
+
+A safety brake makes sure none of this wrecks a save. What the mod charges per day is capped at a share of your usual income, and below a minimum balance it stops charging at all.
+
+Where the money goes is what the cash book shows: Ctrl+K opens it in the game, with a ranking of the largest items and the latest bookings, month by month or year by year. This year's and last year's bookings are written to a file in the savegame folder with game month, group and amount: as a table for your spreadsheet and as a finished page with charts that opens in the browser. Items that are booked every few seconds, such as fuel and running costs, appear as a daily sum, otherwise the file would be unreadable after an hour.
+
+You will find the settings in the ESC menu under Settings, tab Farm Economy. In multiplayer only admins can change them. The in-game help covers every part. Works on any map, including crops the base game does not know. Pair it with Farm Overview to get a year-on-year look at your finances.
+
+PC/Mac only.
+
+Changelog 1.1.0.0:
+- Cash book: press Ctrl+K to see where your money goes, as a ranking with bars plus the latest bookings. You can page back through months and years as far as the start of last game year, and the bottom line compares with the month before or with last year. Property tax and fleet tax appear as bookings of their own. The savegame folder also gets a CSV table and an HTML page with charts; the console command aoKassenbuch writes them right away.
+- Safety brake: when property tax and fleet tax fall on the same day and the daily budget cannot cover both, they are now cut by the same share. Before, whichever was billed second often got nothing at all. A cut now shows up as a notification in the top right, and aoStatus lists the last one per farm.
+- Production speed: running costs have three options instead of on/off: full, square root or unchanged. If you had it on, you get full; off becomes unchanged.
+- Help pages and store text reworked.
