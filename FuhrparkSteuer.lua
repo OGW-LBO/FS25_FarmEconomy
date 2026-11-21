@@ -296,9 +296,10 @@ function FuhrparkSteuer.berechne(monate, merken)
             local monat = FuhrparkSteuer.getMonatskosten(vehicle)
 
             if proFarm[farmId] == nil then
-                proFarm[farmId] = { summe = 0, anzahl = 0, ruhend = 0, unterDach = 0 }
+                proFarm[farmId] = { summe = 0, anzahl = 0, ruhend = 0, unterDach = 0, posten = {} }
             end
             proFarm[farmId].summe = proFarm[farmId].summe + monat * monate
+            table.insert(proFarm[farmId].posten, { vehicle = vehicle, betrag = monat * monate })
             proFarm[farmId].anzahl = proFarm[farmId].anzahl + 1
             if not FuhrparkSteuer.hatGearbeitet(vehicle) then
                 proFarm[farmId].ruhend = proFarm[farmId].ruhend + 1
@@ -356,6 +357,10 @@ function FuhrparkSteuer.abgerechnet(farmId, daten, betrag, jaehrlich)
         farmId, daten.anzahl, daten.ruhend, daten.unterDach,
         math.floor(betrag + 0.5),
         jaehrlich and "(yearly)" or "(monthly)")
+
+    if AOMaschinenMain ~= nil and AOMaschinenMain.verteileFuhrpark ~= nil then
+        AOMaschinenMain.verteileFuhrpark(daten.posten, daten.summe, betrag)
+    end
 
     FuhrparkSteuer.zeigeMeldung(farmId, daten.anzahl, betrag, jaehrlich)
     if g_server ~= nil and g_server.broadcastEvent ~= nil

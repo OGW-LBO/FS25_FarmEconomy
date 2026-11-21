@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<GUI name="AOHofPCUI" onOpen="onOpen" onClose="onClose">
+    <GuiElement profile="newLayer" />
+    <Bitmap profile="dialogFullscreenBg" id="dialogBg" />
+
+    <GuiElement profile="fs25_dialogBg" id="dialogElement" size="1600px 900px">
+            <Bitmap profile="aoPcBild" id="pcBild" position="0px 0px" size="1600px 900px" />
+            <Text profile="aoPcText" id="pcTitel" position="74px -28px" size="140px 36px" textSize="19px" textBold="true" text="$l10n_ao_pc_titel" />
+            <Text profile="aoPcText" id="pcHof" position="214px -28px" size="700px 36px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="pcUhr" position="960px -28px" size="600px 36px" textSize="15px" textAlignment="right" textColor="0.88 0.92 0.96 1" />
+            <Bitmap profile="aoPcFlaeche" id="tabBg1" position="40px -72px" size="236px 38px" imageColor="1 1 1 0.05" />
+            <Bitmap profile="aoPcFlaeche" id="tabStrich1" position="40px -107px" size="236px 3px" imageColor="0.376 0.659 0.290 1" />
+            <Button profile="aoPcTab" id="tab1" position="40px -72px" size="236px 38px" onClick="onClickTab" text="$l10n_ao_pc_tab1" />
+            <Bitmap profile="aoPcFlaeche" id="tabBg2" position="286px -72px" size="236px 38px" imageColor="1 1 1 0.05" />
+            <Bitmap profile="aoPcFlaeche" id="tabStrich2" position="286px -107px" size="236px 3px" imageColor="0.376 0.659 0.290 1" />
+            <Button profile="aoPcTab" id="tab2" position="286px -72px" size="236px 38px" onClick="onClickTab" text="$l10n_ao_pc_tab2" />
+            <Bitmap profile="aoPcFlaeche" id="tabBg3" position="532px -72px" size="236px 38px" imageColor="1 1 1 0.05" />
+            <Bitmap profile="aoPcFlaeche" id="tabStrich3" position="532px -107px" size="236px 3px" imageColor="0.376 0.659 0.290 1" />
+            <Button profile="aoPcTab" id="tab3" position="532px -72px" size="236px 38px" onClick="onClickTab" text="$l10n_ao_pc_tab3" />
+            <Bitmap profile="aoPcFlaeche" id="tabBg4" position="778px -72px" size="236px 38px" imageColor="1 1 1 0.05" />
+            <Bitmap profile="aoPcFlaeche" id="tabStrich4" position="778px -107px" size="236px 3px" imageColor="0.376 0.659 0.290 1" />
+            <Button profile="aoPcTab" id="tab4" position="778px -72px" size="236px 38px" onClick="onClickTab" text="$l10n_ao_pc_tab4" />
+            <Bitmap profile="aoPcFlaeche" id="tabBg5" position="1024px -72px" size="236px 38px" imageColor="1 1 1 0.05" />
+            <Bitmap profile="aoPcFlaeche" id="tabStrich5" position="1024px -107px" size="236px 3px" imageColor="0.376 0.659 0.290 1" />
+            <Button profile="aoPcTab" id="tab5" position="1024px -72px" size="236px 38px" onClick="onClickTab" text="$l10n_ao_pc_tab5" />
+            <GuiElement profile="aoPcSeite" id="seite1" position="0px 0px" size="1600px 900px">
+            <Bitmap profile="aoPcFlaeche" id="fl1" position="44px -132px" size="364px 86px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="stLab1" position="60px -140px" size="332px 20px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stWert1" position="60px -162px" size="332px 32px" textSize="26px" textBold="true" />
+            <Text profile="aoPcText" id="stSub1" position="60px -196px" size="332px 18px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fl2" position="424px -132px" size="364px 86px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="stLab2" position="440px -140px" size="332px 20px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stWert2" position="440px -162px" size="332px 32px" textSize="26px" textBold="true" />
+            <Text profile="aoPcText" id="stSub2" position="440px -196px" size="332px 18px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fl3" position="804px -132px" size="364px 86px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="stLab3" position="820px -140px" size="332px 20px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stWert3" position="820px -162px" size="332px 32px" textSize="26px" textBold="true" />
+            <Text profile="aoPcText" id="stSub3" position="820px -196px" size="332px 18px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fl4" position="1184px -132px" size="364px 86px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="stLab4" position="1200px -140px" size="332px 20px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stWert4" position="1200px -162px" size="332px 32px" textSize="26px" textBold="true" />
+            <Text profile="aoPcText" id="stSub4" position="1200px -196px" size="332px 18px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fl5" position="44px -234px" size="746px 286px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" position="60px -242px" size="714px 24px" textSize="17px" textBold="true" text="$l10n_ao_pc_stVermoegen" />
+            <Text profile="aoPcText" id="stVLab1" position="60px -282px" size="200px 30px" textSize="15px" />
+            <Bitmap profile="aoPcFlaeche" id="fl6" position="270px -289px" size="330px 16px" imageColor="1 1 1 0.06" />
+            <Bitmap profile="aoPcFlaeche" id="stVBalken1" position="270px -289px" size="330px 16px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="stVWert1" position="610px -282px" size="165px 30px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="stVLab2" position="60px -326px" size="200px 30px" textSize="15px" />
+            <Bitmap profile="aoPcFlaeche" id="fl7" position="270px -333px" size="330px 16px" imageColor="1 1 1 0.06" />
+            <Bitmap profile="aoPcFlaeche" id="stVBalken2" position="270px -333px" size="330px 16px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="stVWert2" position="610px -326px" size="165px 30px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="stVLab3" position="60px -370px" size="200px 30px" textSize="15px" />
+            <Bitmap profile="aoPcFlaeche" id="fl8" position="270px -377px" size="330px 16px" imageColor="1 1 1 0.06" />
+            <Bitmap profile="aoPcFlaeche" id="stVBalken3" position="270px -377px" size="330px 16px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="stVWert3" position="610px -370px" size="165px 30px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="stVLab4" position="60px -414px" size="200px 30px" textSize="15px" />
+            <Bitmap profile="aoPcFlaeche" id="fl9" position="270px -421px" size="330px 16px" imageColor="1 1 1 0.06" />
+            <Bitmap profile="aoPcFlaeche" id="stVBalken4" position="270px -421px" size="330px 16px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="stVWert4" position="610px -414px" size="165px 30px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="stVLab5" position="60px -458px" size="200px 30px" textSize="15px" />
+            <Bitmap profile="aoPcFlaeche" id="fl10" position="270px -465px" size="330px 16px" imageColor="1 1 1 0.06" />
+            <Bitmap profile="aoPcFlaeche" id="stVBalken5" position="270px -465px" size="330px 16px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="stVWert5" position="610px -458px" size="165px 30px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl11" position="806px -234px" size="750px 286px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" position="822px -242px" size="718px 24px" textSize="17px" textBold="true" text="$l10n_ao_pc_stBlick" />
+            <Text profile="aoPcText" id="stBLab1" position="822px -278px" size="380px 26px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stBWert1" position="1206px -278px" size="335px 26px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="stBLab2" position="822px -308px" size="380px 26px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stBWert2" position="1206px -308px" size="335px 26px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="stBLab3" position="822px -338px" size="380px 26px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stBWert3" position="1206px -338px" size="335px 26px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="stBLab4" position="822px -368px" size="380px 26px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stBWert4" position="1206px -368px" size="335px 26px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="stBLab5" position="822px -398px" size="380px 26px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stBWert5" position="1206px -398px" size="335px 26px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="stBLab6" position="822px -428px" size="380px 26px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stBWert6" position="1206px -428px" size="335px 26px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="stBLab7" position="822px -458px" size="380px 26px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stBWert7" position="1206px -458px" size="335px 26px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="stBLab8" position="822px -488px" size="380px 26px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="stBWert8" position="1206px -488px" size="335px 26px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl12" position="44px -536px" size="1512px 208px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" position="60px -544px" size="1480px 24px" textSize="17px" textBold="true" text="$l10n_ao_pc_stVerlauf" />
+            <Bitmap profile="aoPcFlaeche" id="fl13" position="1180px -550px" size="14px 14px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" position="1200px -545px" size="150px 24px" textSize="13px" textColor="0.62 0.62 0.62 1" text="$l10n_ao_buch_ein" />
+            <Bitmap profile="aoPcFlaeche" id="fl14" position="1360px -550px" size="14px 14px" imageColor="0.922 0.408 0.204 1" />
+            <Text profile="aoPcText" position="1380px -545px" size="160px 24px" textSize="13px" textColor="0.62 0.62 0.62 1" text="$l10n_ao_buch_aus" />
+            <Bitmap profile="aoPcFlaeche" id="fl15" position="60px -712px" size="1480px 1px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="stEin1" position="134px -582px" size="50px 130px" imageColor="0.165 0.471 0.839 1" />
+            <Bitmap profile="aoPcFlaeche" id="stAus1" position="190px -582px" size="50px 130px" imageColor="0.922 0.408 0.204 1" />
+            <Text profile="aoPcText" id="stMon1" position="70px -716px" size="234px 24px" textSize="14px" textAlignment="center" />
+            <Bitmap profile="aoPcFlaeche" id="stEin2" position="382px -582px" size="50px 130px" imageColor="0.165 0.471 0.839 1" />
+            <Bitmap profile="aoPcFlaeche" id="stAus2" position="438px -582px" size="50px 130px" imageColor="0.922 0.408 0.204 1" />
+            <Text profile="aoPcText" id="stMon2" position="318px -716px" size="234px 24px" textSize="14px" textAlignment="center" />
+            <Bitmap profile="aoPcFlaeche" id="stEin3" position="630px -582px" size="50px 130px" imageColor="0.165 0.471 0.839 1" />
+            <Bitmap profile="aoPcFlaeche" id="stAus3" position="686px -582px" size="50px 130px" imageColor="0.922 0.408 0.204 1" />
+            <Text profile="aoPcText" id="stMon3" position="566px -716px" size="234px 24px" textSize="14px" textAlignment="center" />
+            <Bitmap profile="aoPcFlaeche" id="stEin4" position="878px -582px" size="50px 130px" imageColor="0.165 0.471 0.839 1" />
+            <Bitmap profile="aoPcFlaeche" id="stAus4" position="934px -582px" size="50px 130px" imageColor="0.922 0.408 0.204 1" />
+            <Text profile="aoPcText" id="stMon4" position="814px -716px" size="234px 24px" textSize="14px" textAlignment="center" />
+            <Bitmap profile="aoPcFlaeche" id="stEin5" position="1126px -582px" size="50px 130px" imageColor="0.165 0.471 0.839 1" />
+            <Bitmap profile="aoPcFlaeche" id="stAus5" position="1182px -582px" size="50px 130px" imageColor="0.922 0.408 0.204 1" />
+            <Text profile="aoPcText" id="stMon5" position="1062px -716px" size="234px 24px" textSize="14px" textAlignment="center" />
+            <Bitmap profile="aoPcFlaeche" id="stEin6" position="1374px -582px" size="50px 130px" imageColor="0.165 0.471 0.839 1" />
+            <Bitmap profile="aoPcFlaeche" id="stAus6" position="1430px -582px" size="50px 130px" imageColor="0.922 0.408 0.204 1" />
+            <Text profile="aoPcText" id="stMon6" position="1310px -716px" size="234px 24px" textSize="14px" textAlignment="center" />
+            </GuiElement>
+            <GuiElement profile="aoPcSeite" id="seite2" position="0px 0px" size="1600px 900px">
+            <GuiElement profile="aoPcOptZeile" position="44px -126px">
+                <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickKbAnsicht" id="kbOptAnsicht" />
+                <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ao_buch_ansicht" />
+            </GuiElement>
+            <GuiElement profile="aoPcOptZeile" position="700px -126px">
+                <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickKbZeitraum" id="kbOptZeitraum" />
+                <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ao_buch_zeitraum" />
+            </GuiElement>
+            <Bitmap profile="aoPcFlaeche" id="fl16" position="44px -172px" size="364px 76px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="kbLab1" position="60px -180px" size="332px 20px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbWert1" position="60px -204px" size="332px 32px" textSize="26px" textBold="true" />
+            <Bitmap profile="aoPcFlaeche" id="fl17" position="424px -172px" size="364px 76px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="kbLab2" position="440px -180px" size="332px 20px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbWert2" position="440px -204px" size="332px 32px" textSize="26px" textBold="true" />
+            <Bitmap profile="aoPcFlaeche" id="fl18" position="804px -172px" size="364px 76px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="kbLab3" position="820px -180px" size="332px 20px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbWert3" position="820px -204px" size="332px 32px" textSize="26px" textBold="true" />
+            <Bitmap profile="aoPcFlaeche" id="fl19" position="1184px -172px" size="364px 76px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="kbLab4" position="1200px -180px" size="332px 20px" textSize="15px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbWert4" position="1200px -204px" size="332px 32px" textSize="26px" textBold="true" />
+            <Bitmap profile="aoPcFlaeche" id="fl20" position="44px -262px" size="746px 428px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" position="60px -270px" size="714px 24px" textSize="17px" textBold="true" text="$l10n_ao_buch_weg" />
+            <Text profile="aoPcText" id="kbRangLab1" position="60px -306px" size="240px 30px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="kbRangBalken1" position="312px -312px" size="300px 18px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="kbRangWert1" position="620px -306px" size="155px 30px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbRangLab2" position="60px -352px" size="240px 30px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="kbRangBalken2" position="312px -358px" size="300px 18px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="kbRangWert2" position="620px -352px" size="155px 30px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbRangLab3" position="60px -398px" size="240px 30px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="kbRangBalken3" position="312px -404px" size="300px 18px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="kbRangWert3" position="620px -398px" size="155px 30px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbRangLab4" position="60px -444px" size="240px 30px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="kbRangBalken4" position="312px -450px" size="300px 18px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="kbRangWert4" position="620px -444px" size="155px 30px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbRangLab5" position="60px -490px" size="240px 30px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="kbRangBalken5" position="312px -496px" size="300px 18px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="kbRangWert5" position="620px -490px" size="155px 30px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbRangLab6" position="60px -536px" size="240px 30px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="kbRangBalken6" position="312px -542px" size="300px 18px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="kbRangWert6" position="620px -536px" size="155px 30px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbRangLab7" position="60px -582px" size="240px 30px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="kbRangBalken7" position="312px -588px" size="300px 18px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="kbRangWert7" position="620px -582px" size="155px 30px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbRangLab8" position="60px -628px" size="240px 30px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="kbRangBalken8" position="312px -634px" size="300px 18px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="kbRangWert8" position="620px -628px" size="155px 30px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl21" position="806px -262px" size="750px 428px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" position="822px -270px" size="718px 24px" textSize="17px" textBold="true" text="$l10n_ao_buch_letzte" />
+            <Text profile="aoPcText" id="kbZeit1" position="822px -302px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText1" position="1016px -302px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag1" position="1340px -302px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl22" position="814px -334px" size="734px 26px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="kbZeit2" position="822px -334px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText2" position="1016px -334px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag2" position="1340px -334px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbZeit3" position="822px -366px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText3" position="1016px -366px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag3" position="1340px -366px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl23" position="814px -398px" size="734px 26px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="kbZeit4" position="822px -398px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText4" position="1016px -398px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag4" position="1340px -398px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbZeit5" position="822px -430px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText5" position="1016px -430px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag5" position="1340px -430px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl24" position="814px -462px" size="734px 26px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="kbZeit6" position="822px -462px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText6" position="1016px -462px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag6" position="1340px -462px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbZeit7" position="822px -494px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText7" position="1016px -494px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag7" position="1340px -494px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl25" position="814px -526px" size="734px 26px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="kbZeit8" position="822px -526px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText8" position="1016px -526px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag8" position="1340px -526px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbZeit9" position="822px -558px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText9" position="1016px -558px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag9" position="1340px -558px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl26" position="814px -590px" size="734px 26px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="kbZeit10" position="822px -590px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText10" position="1016px -590px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag10" position="1340px -590px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="kbZeit11" position="822px -622px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText11" position="1016px -622px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag11" position="1340px -622px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl27" position="814px -654px" size="734px 26px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="kbZeit12" position="822px -654px" size="190px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="kbText12" position="1016px -654px" size="330px 26px" textSize="14px" />
+            <Text profile="aoPcText" id="kbBetrag12" position="1340px -654px" size="190px 26px" textSize="14px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="kbRollBahn" position="1543px -318px" size="6px 346px" imageColor="1 1 1 0.06" />
+            <Bitmap profile="aoPcFlaeche" id="kbRollGriff" position="1543px -318px" size="6px 346px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcPfeilHoch" id="kbRollHoch" position="1540px -302px" size="12px 12px" imageColor="0.75 0.8 0.85 1" />
+            <Bitmap profile="aoPcPfeilRunter" id="kbRollRunter" position="1540px -668px" size="12px 12px" imageColor="0.75 0.8 0.85 1" />
+            <Button profile="aoPcZeile" id="kbRollKnopfHoch" position="1536px -298px" size="20px 20px" onClick="onClickRollHoch" />
+            <Button profile="aoPcZeile" id="kbRollKnopfRunter" position="1536px -664px" size="20px 20px" onClick="onClickRollRunter" />
+            <Text profile="aoPcText" id="kbFuss" position="44px -702px" size="1512px 30px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            </GuiElement>
+            <GuiElement profile="aoPcSeite" id="seite3" position="0px 0px" size="1600px 900px">
+            <GuiElement profile="aoPcOptZeile" position="44px -122px">
+                <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickFpZeitraum" id="fpOptZeitraum" />
+                <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ao_mk_zeitraum" />
+            </GuiElement>
+            <GuiElement profile="aoPcOptZeile" position="700px -122px">
+                <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickFpSort" id="fpOptSort" />
+                <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ao_mk_sortieren" />
+            </GuiElement>
+            <GuiElement profile="aoPcOptZeile" position="44px -158px">
+                <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickFpZeigen" id="fpOptZeigen" />
+                <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ao_mk_zeigen" />
+            </GuiElement>
+            <GuiElement profile="aoPcOptZeile" position="700px -158px">
+                <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickFpSeite" id="fpOptSeite" />
+                <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ao_mk_seite" />
+            </GuiElement>
+            <Bitmap profile="aoPcFlaeche" id="fl28" position="44px -200px" size="290px 70px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="fpKLab1" position="58px -206px" size="262px 18px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpKWert1" position="58px -224px" size="262px 28px" textSize="22px" textBold="true" />
+            <Text profile="aoPcText" id="fpKSub1" position="58px -252px" size="262px 16px" textSize="12px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fl29" position="347px -200px" size="290px 70px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="fpKLab2" position="361px -206px" size="262px 18px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpKWert2" position="361px -224px" size="262px 28px" textSize="22px" textBold="true" />
+            <Text profile="aoPcText" id="fpKSub2" position="361px -252px" size="262px 16px" textSize="12px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fl30" position="650px -200px" size="290px 70px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="fpKLab3" position="664px -206px" size="262px 18px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpKWert3" position="664px -224px" size="262px 28px" textSize="22px" textBold="true" />
+            <Text profile="aoPcText" id="fpKSub3" position="664px -252px" size="262px 16px" textSize="12px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fl31" position="953px -200px" size="290px 70px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="fpKLab4" position="967px -206px" size="262px 18px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpKWert4" position="967px -224px" size="262px 28px" textSize="22px" textBold="true" />
+            <Text profile="aoPcText" id="fpKSub4" position="967px -252px" size="262px 16px" textSize="12px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fl32" position="1256px -200px" size="290px 70px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="fpKLab5" position="1270px -206px" size="262px 18px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpKWert5" position="1270px -224px" size="262px 28px" textSize="22px" textBold="true" />
+            <Text profile="aoPcText" id="fpKSub5" position="1270px -252px" size="262px 16px" textSize="12px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fl33" position="44px -282px" size="1038px 462px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" position="100px -288px" size="240px 22px" textSize="13px" textColor="0.62 0.62 0.62 1" text="$l10n_ao_mk_hName" />
+            <Text profile="aoPcText" position="350px -288px" size="70px 22px" textSize="13px" textAlignment="right" textColor="0.62 0.62 0.62 1" text="$l10n_ao_mk_hStd" />
+            <Text profile="aoPcText" position="432px -288px" size="300px 22px" textSize="13px" textColor="0.62 0.62 0.62 1" text="$l10n_ao_mk_hKosten" />
+            <Text profile="aoPcText" position="740px -288px" size="110px 22px" textSize="13px" textAlignment="right" textColor="0.62 0.62 0.62 1" text="$l10n_ao_mk_hSumme" />
+            <Text profile="aoPcText" position="855px -288px" size="90px 22px" textSize="13px" textAlignment="right" textColor="0.62 0.62 0.62 1" text="$l10n_ao_mk_hEh" />
+            <Text profile="aoPcText" position="965px -288px" size="105px 22px" textSize="13px" textColor="0.62 0.62 0.62 1" text="$l10n_ao_mk_hZustand" />
+            <Bitmap profile="aoPcFlaeche" id="fpMarke1" position="48px -314px" size="5px 34px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcBild" id="fpBild1" position="58px -314px" size="34px 34px" />
+            <Text profile="aoPcText" id="fpName1" position="100px -314px" size="245px 34px" textSize="15px" />
+            <Text profile="aoPcText" id="fpStd1" position="350px -314px" size="70px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg1_1" position="432px -324px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg1_2" position="432px -324px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg1_3" position="432px -324px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg1_4" position="432px -324px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg1_5" position="432px -324px" size="300px 14px" imageColor="1 1 1 1" />
+            <Text profile="aoPcText" id="fpSumme1" position="740px -314px" size="110px 34px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpEh1" position="855px -314px" size="90px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpZustGrund1" position="965px -326px" size="100px 10px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="fpZust1" position="965px -326px" size="100px 10px" imageColor="0.4 0.8 0.3 1" />
+            <Button profile="aoPcZeile" id="fpZeile1" position="44px -314px" size="1020px 34px" onClick="onClickFpZeile" />
+            <Bitmap profile="aoPcFlaeche" id="fl34" position="48px -350px" size="1030px 34px" imageColor="1 1 1 0.03" />
+            <Bitmap profile="aoPcFlaeche" id="fpMarke2" position="48px -350px" size="5px 34px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcBild" id="fpBild2" position="58px -350px" size="34px 34px" />
+            <Text profile="aoPcText" id="fpName2" position="100px -350px" size="245px 34px" textSize="15px" />
+            <Text profile="aoPcText" id="fpStd2" position="350px -350px" size="70px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg2_1" position="432px -360px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg2_2" position="432px -360px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg2_3" position="432px -360px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg2_4" position="432px -360px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg2_5" position="432px -360px" size="300px 14px" imageColor="1 1 1 1" />
+            <Text profile="aoPcText" id="fpSumme2" position="740px -350px" size="110px 34px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpEh2" position="855px -350px" size="90px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpZustGrund2" position="965px -362px" size="100px 10px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="fpZust2" position="965px -362px" size="100px 10px" imageColor="0.4 0.8 0.3 1" />
+            <Button profile="aoPcZeile" id="fpZeile2" position="44px -350px" size="1020px 34px" onClick="onClickFpZeile" />
+            <Bitmap profile="aoPcFlaeche" id="fpMarke3" position="48px -386px" size="5px 34px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcBild" id="fpBild3" position="58px -386px" size="34px 34px" />
+            <Text profile="aoPcText" id="fpName3" position="100px -386px" size="245px 34px" textSize="15px" />
+            <Text profile="aoPcText" id="fpStd3" position="350px -386px" size="70px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg3_1" position="432px -396px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg3_2" position="432px -396px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg3_3" position="432px -396px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg3_4" position="432px -396px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg3_5" position="432px -396px" size="300px 14px" imageColor="1 1 1 1" />
+            <Text profile="aoPcText" id="fpSumme3" position="740px -386px" size="110px 34px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpEh3" position="855px -386px" size="90px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpZustGrund3" position="965px -398px" size="100px 10px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="fpZust3" position="965px -398px" size="100px 10px" imageColor="0.4 0.8 0.3 1" />
+            <Button profile="aoPcZeile" id="fpZeile3" position="44px -386px" size="1020px 34px" onClick="onClickFpZeile" />
+            <Bitmap profile="aoPcFlaeche" id="fl35" position="48px -422px" size="1030px 34px" imageColor="1 1 1 0.03" />
+            <Bitmap profile="aoPcFlaeche" id="fpMarke4" position="48px -422px" size="5px 34px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcBild" id="fpBild4" position="58px -422px" size="34px 34px" />
+            <Text profile="aoPcText" id="fpName4" position="100px -422px" size="245px 34px" textSize="15px" />
+            <Text profile="aoPcText" id="fpStd4" position="350px -422px" size="70px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg4_1" position="432px -432px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg4_2" position="432px -432px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg4_3" position="432px -432px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg4_4" position="432px -432px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg4_5" position="432px -432px" size="300px 14px" imageColor="1 1 1 1" />
+            <Text profile="aoPcText" id="fpSumme4" position="740px -422px" size="110px 34px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpEh4" position="855px -422px" size="90px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpZustGrund4" position="965px -434px" size="100px 10px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="fpZust4" position="965px -434px" size="100px 10px" imageColor="0.4 0.8 0.3 1" />
+            <Button profile="aoPcZeile" id="fpZeile4" position="44px -422px" size="1020px 34px" onClick="onClickFpZeile" />
+            <Bitmap profile="aoPcFlaeche" id="fpMarke5" position="48px -458px" size="5px 34px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcBild" id="fpBild5" position="58px -458px" size="34px 34px" />
+            <Text profile="aoPcText" id="fpName5" position="100px -458px" size="245px 34px" textSize="15px" />
+            <Text profile="aoPcText" id="fpStd5" position="350px -458px" size="70px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg5_1" position="432px -468px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg5_2" position="432px -468px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg5_3" position="432px -468px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg5_4" position="432px -468px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg5_5" position="432px -468px" size="300px 14px" imageColor="1 1 1 1" />
+            <Text profile="aoPcText" id="fpSumme5" position="740px -458px" size="110px 34px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpEh5" position="855px -458px" size="90px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpZustGrund5" position="965px -470px" size="100px 10px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="fpZust5" position="965px -470px" size="100px 10px" imageColor="0.4 0.8 0.3 1" />
+            <Button profile="aoPcZeile" id="fpZeile5" position="44px -458px" size="1020px 34px" onClick="onClickFpZeile" />
+            <Bitmap profile="aoPcFlaeche" id="fl36" position="48px -494px" size="1030px 34px" imageColor="1 1 1 0.03" />
+            <Bitmap profile="aoPcFlaeche" id="fpMarke6" position="48px -494px" size="5px 34px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcBild" id="fpBild6" position="58px -494px" size="34px 34px" />
+            <Text profile="aoPcText" id="fpName6" position="100px -494px" size="245px 34px" textSize="15px" />
+            <Text profile="aoPcText" id="fpStd6" position="350px -494px" size="70px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg6_1" position="432px -504px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg6_2" position="432px -504px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg6_3" position="432px -504px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg6_4" position="432px -504px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg6_5" position="432px -504px" size="300px 14px" imageColor="1 1 1 1" />
+            <Text profile="aoPcText" id="fpSumme6" position="740px -494px" size="110px 34px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpEh6" position="855px -494px" size="90px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpZustGrund6" position="965px -506px" size="100px 10px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="fpZust6" position="965px -506px" size="100px 10px" imageColor="0.4 0.8 0.3 1" />
+            <Button profile="aoPcZeile" id="fpZeile6" position="44px -494px" size="1020px 34px" onClick="onClickFpZeile" />
+            <Bitmap profile="aoPcFlaeche" id="fpMarke7" position="48px -530px" size="5px 34px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcBild" id="fpBild7" position="58px -530px" size="34px 34px" />
+            <Text profile="aoPcText" id="fpName7" position="100px -530px" size="245px 34px" textSize="15px" />
+            <Text profile="aoPcText" id="fpStd7" position="350px -530px" size="70px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg7_1" position="432px -540px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg7_2" position="432px -540px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg7_3" position="432px -540px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg7_4" position="432px -540px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg7_5" position="432px -540px" size="300px 14px" imageColor="1 1 1 1" />
+            <Text profile="aoPcText" id="fpSumme7" position="740px -530px" size="110px 34px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpEh7" position="855px -530px" size="90px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpZustGrund7" position="965px -542px" size="100px 10px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="fpZust7" position="965px -542px" size="100px 10px" imageColor="0.4 0.8 0.3 1" />
+            <Button profile="aoPcZeile" id="fpZeile7" position="44px -530px" size="1020px 34px" onClick="onClickFpZeile" />
+            <Bitmap profile="aoPcFlaeche" id="fl37" position="48px -566px" size="1030px 34px" imageColor="1 1 1 0.03" />
+            <Bitmap profile="aoPcFlaeche" id="fpMarke8" position="48px -566px" size="5px 34px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcBild" id="fpBild8" position="58px -566px" size="34px 34px" />
+            <Text profile="aoPcText" id="fpName8" position="100px -566px" size="245px 34px" textSize="15px" />
+            <Text profile="aoPcText" id="fpStd8" position="350px -566px" size="70px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg8_1" position="432px -576px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg8_2" position="432px -576px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg8_3" position="432px -576px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg8_4" position="432px -576px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg8_5" position="432px -576px" size="300px 14px" imageColor="1 1 1 1" />
+            <Text profile="aoPcText" id="fpSumme8" position="740px -566px" size="110px 34px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpEh8" position="855px -566px" size="90px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpZustGrund8" position="965px -578px" size="100px 10px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="fpZust8" position="965px -578px" size="100px 10px" imageColor="0.4 0.8 0.3 1" />
+            <Button profile="aoPcZeile" id="fpZeile8" position="44px -566px" size="1020px 34px" onClick="onClickFpZeile" />
+            <Bitmap profile="aoPcFlaeche" id="fpMarke9" position="48px -602px" size="5px 34px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcBild" id="fpBild9" position="58px -602px" size="34px 34px" />
+            <Text profile="aoPcText" id="fpName9" position="100px -602px" size="245px 34px" textSize="15px" />
+            <Text profile="aoPcText" id="fpStd9" position="350px -602px" size="70px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg9_1" position="432px -612px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg9_2" position="432px -612px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg9_3" position="432px -612px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg9_4" position="432px -612px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg9_5" position="432px -612px" size="300px 14px" imageColor="1 1 1 1" />
+            <Text profile="aoPcText" id="fpSumme9" position="740px -602px" size="110px 34px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpEh9" position="855px -602px" size="90px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpZustGrund9" position="965px -614px" size="100px 10px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="fpZust9" position="965px -614px" size="100px 10px" imageColor="0.4 0.8 0.3 1" />
+            <Button profile="aoPcZeile" id="fpZeile9" position="44px -602px" size="1020px 34px" onClick="onClickFpZeile" />
+            <Bitmap profile="aoPcFlaeche" id="fl38" position="48px -638px" size="1030px 34px" imageColor="1 1 1 0.03" />
+            <Bitmap profile="aoPcFlaeche" id="fpMarke10" position="48px -638px" size="5px 34px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcBild" id="fpBild10" position="58px -638px" size="34px 34px" />
+            <Text profile="aoPcText" id="fpName10" position="100px -638px" size="245px 34px" textSize="15px" />
+            <Text profile="aoPcText" id="fpStd10" position="350px -638px" size="70px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg10_1" position="432px -648px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg10_2" position="432px -648px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg10_3" position="432px -648px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg10_4" position="432px -648px" size="300px 14px" imageColor="1 1 1 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpSeg10_5" position="432px -648px" size="300px 14px" imageColor="1 1 1 1" />
+            <Text profile="aoPcText" id="fpSumme10" position="740px -638px" size="110px 34px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpEh10" position="855px -638px" size="90px 34px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fpZustGrund10" position="965px -650px" size="100px 10px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="fpZust10" position="965px -650px" size="100px 10px" imageColor="0.4 0.8 0.3 1" />
+            <Button profile="aoPcZeile" id="fpZeile10" position="44px -638px" size="1020px 34px" onClick="onClickFpZeile" />
+            <Bitmap profile="aoPcFlaeche" id="fpRollBahn" position="1069px -330px" size="6px 326px" imageColor="1 1 1 0.06" />
+            <Bitmap profile="aoPcFlaeche" id="fpRollGriff" position="1069px -330px" size="6px 326px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcPfeilHoch" id="fpRollHoch" position="1066px -314px" size="12px 12px" imageColor="0.75 0.8 0.85 1" />
+            <Bitmap profile="aoPcPfeilRunter" id="fpRollRunter" position="1066px -660px" size="12px 12px" imageColor="0.75 0.8 0.85 1" />
+            <Button profile="aoPcZeile" id="fpRollKnopfHoch" position="1062px -310px" size="20px 20px" onClick="onClickRollHoch" />
+            <Button profile="aoPcZeile" id="fpRollKnopfRunter" position="1062px -656px" size="20px 20px" onClick="onClickRollRunter" />
+            <Bitmap profile="aoPcFlaeche" id="fpLegF1" position="60px -696px" size="14px 14px" imageColor="0.545 0.361 0.839 1" />
+            <Text profile="aoPcText" id="fpLegT1" position="80px -692px" size="170px 22px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpLegF2" position="260px -696px" size="14px 14px" imageColor="0.922 0.533 0.204 1" />
+            <Text profile="aoPcText" id="fpLegT2" position="280px -692px" size="170px 22px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpLegF3" position="460px -696px" size="14px 14px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="fpLegT3" position="480px -692px" size="170px 22px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpLegF4" position="660px -696px" size="14px 14px" imageColor="0.141 0.651 0.620 1" />
+            <Text profile="aoPcText" id="fpLegT4" position="680px -692px" size="170px 22px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fpLegF5" position="860px -696px" size="14px 14px" imageColor="0.851 0.678 0.161 1" />
+            <Text profile="aoPcText" id="fpLegT5" position="880px -692px" size="170px 22px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpFuss" position="60px -716px" size="1010px 24px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fl39" position="1098px -282px" size="458px 462px" imageColor="1 1 1 0.045" />
+            <Bitmap profile="aoPcBild" id="fpDBild" position="1112px -294px" size="110px 110px" />
+            <Text profile="aoPcText" id="fpDName" position="1234px -296px" size="310px 26px" textSize="18px" textBold="true" />
+            <Text profile="aoPcText" id="fpDStatus" position="1234px -326px" size="310px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDSub" position="1234px -350px" size="310px 44px" textSize="13px" textColor="0.62 0.62 0.62 1" textMaxNumLines="2" />
+            <Text profile="aoPcText" id="fpDLab1" position="1112px -416px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert1" position="1330px -416px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab2" position="1112px -440px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert2" position="1330px -440px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab3" position="1112px -464px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert3" position="1330px -464px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab4" position="1112px -488px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert4" position="1330px -488px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab5" position="1112px -512px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert5" position="1330px -512px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab6" position="1112px -536px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert6" position="1330px -536px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab7" position="1112px -560px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert7" position="1330px -560px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab8" position="1112px -584px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert8" position="1330px -584px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab9" position="1112px -608px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert9" position="1330px -608px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab10" position="1112px -632px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert10" position="1330px -632px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab11" position="1112px -656px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert11" position="1330px -656px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab12" position="1112px -680px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert12" position="1330px -680px" size="214px 22px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="fpDLab13" position="1112px -704px" size="220px 22px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="fpDWert13" position="1330px -704px" size="214px 22px" textSize="14px" textAlignment="right" />
+            </GuiElement>
+            <GuiElement profile="aoPcSeite" id="seite4" position="0px 0px" size="1600px 900px">
+            <Bitmap profile="aoPcFlaeche" id="fl40" position="44px -126px" size="856px 618px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" position="60px -134px" size="824px 24px" textSize="17px" textBold="true" text="$l10n_ao_pc_abTitel" />
+            <Text profile="aoPcText" position="60px -170px" size="300px 22px" textSize="13px" textColor="0.62 0.62 0.62 1" text="$l10n_ao_pc_abPosten" />
+            <Text profile="aoPcText" position="370px -170px" size="170px 22px" textSize="13px" textAlignment="right" textColor="0.62 0.62 0.62 1" text="$l10n_ao_pc_abNaechste" />
+            <Text profile="aoPcText" position="550px -170px" size="160px 22px" textSize="13px" textAlignment="right" textColor="0.62 0.62 0.62 1" text="$l10n_ao_pc_abJahr" />
+            <Text profile="aoPcText" position="720px -170px" size="160px 22px" textSize="13px" textAlignment="right" textColor="0.62 0.62 0.62 1" text="$l10n_ao_pc_abVorjahr" />
+            <Text profile="aoPcText" id="abP1" position="60px -198px" size="300px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="abN1" position="370px -198px" size="170px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abJ1" position="550px -198px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abV1" position="720px -198px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl41" position="52px -230px" size="840px 28px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="abP2" position="60px -230px" size="300px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="abN2" position="370px -230px" size="170px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abJ2" position="550px -230px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abV2" position="720px -230px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abP3" position="60px -262px" size="300px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="abN3" position="370px -262px" size="170px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abJ3" position="550px -262px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abV3" position="720px -262px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl42" position="52px -294px" size="840px 28px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="abP4" position="60px -294px" size="300px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="abN4" position="370px -294px" size="170px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abJ4" position="550px -294px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abV4" position="720px -294px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abP5" position="60px -326px" size="300px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="abN5" position="370px -326px" size="170px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abJ5" position="550px -326px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abV5" position="720px -326px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="fl43" position="52px -358px" size="840px 28px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="abP6" position="60px -358px" size="300px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="abN6" position="370px -358px" size="170px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abJ6" position="550px -358px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abV6" position="720px -358px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abP7" position="60px -390px" size="300px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="abN7" position="370px -390px" size="170px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abJ7" position="550px -390px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="abV7" position="720px -390px" size="160px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" position="60px -436px" size="820px 24px" textSize="15px" textBold="true" text="$l10n_ao_pc_abGrundlagen" />
+            <Text profile="aoPcText" id="abIL1" position="60px -464px" size="330px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abIW1" position="400px -464px" size="480px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abIL2" position="60px -494px" size="330px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abIW2" position="400px -494px" size="480px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abIL3" position="60px -524px" size="330px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abIW3" position="400px -524px" size="480px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abIL4" position="60px -554px" size="330px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abIW4" position="400px -554px" size="480px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abIL5" position="60px -584px" size="330px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abIW5" position="400px -584px" size="480px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abIL6" position="60px -614px" size="330px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abIW6" position="400px -614px" size="480px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abIL7" position="60px -644px" size="330px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abIW7" position="400px -644px" size="480px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abIL8" position="60px -674px" size="330px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abIW8" position="400px -674px" size="480px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abFuss" position="60px -712px" size="830px 26px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Bitmap profile="aoPcFlaeche" id="fl44" position="916px -126px" size="640px 618px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" position="932px -134px" size="608px 24px" textSize="17px" textBold="true" text="$l10n_ao_pc_abHelfer" />
+            <Text profile="aoPcText" id="abHL1" position="932px -168px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW1" position="1236px -168px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL2" position="932px -198px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW2" position="1236px -198px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL3" position="932px -228px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW3" position="1236px -228px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL4" position="932px -258px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW4" position="1236px -258px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL5" position="932px -288px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW5" position="1236px -288px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL6" position="932px -318px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW6" position="1236px -318px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL7" position="932px -348px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW7" position="1236px -348px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" position="932px -392px" size="610px 24px" textSize="17px" textBold="true" text="$l10n_ao_pc_abBremse" />
+            <Text profile="aoPcText" id="abHL8" position="932px -426px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW8" position="1236px -426px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL9" position="932px -456px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW9" position="1236px -456px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL10" position="932px -486px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW10" position="1236px -486px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL11" position="932px -516px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW11" position="1236px -516px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL12" position="932px -546px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW12" position="1236px -546px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL13" position="932px -576px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW13" position="1236px -576px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL14" position="932px -606px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW14" position="1236px -606px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Text profile="aoPcText" id="abHL15" position="932px -636px" size="300px 26px" textSize="14px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="abHW15" position="1236px -636px" size="305px 26px" textSize="14px" textAlignment="right" />
+            <Bitmap profile="aoPcFlaeche" id="abBremseGrund" position="932px -680px" size="610px 14px" imageColor="1 1 1 0.12" />
+            <Bitmap profile="aoPcFlaeche" id="abBremse" position="932px -680px" size="610px 14px" imageColor="0.165 0.471 0.839 1" />
+            <Text profile="aoPcText" id="abBremseText" position="932px -700px" size="610px 30px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            </GuiElement>
+            <GuiElement profile="aoPcSeite" id="seite5" position="0px 0px" size="1600px 900px">
+            <GuiElement profile="aoPcOptZeile" position="44px -124px">
+                <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickFoBereich" id="foOptBereich" />
+                <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ao_pc_foBereich" />
+            </GuiElement>
+            <GuiElement profile="aoPcOptZeile" position="700px -124px">
+                <MultiTextOption profile="fs25_settingsMultiTextOption" onClick="onClickFoSeite" id="foOptSeite" />
+                <Text profile="fs25_settingsMultiTextOptionTitle" text="$l10n_ao_mk_seite" />
+            </GuiElement>
+            <Bitmap profile="aoPcFlaeche" id="fl45" position="44px -168px" size="1512px 576px" imageColor="1 1 1 0.045" />
+            <Text profile="aoPcText" id="foH1" position="60px -174px" size="450px 24px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="foH2" position="515px -174px" size="150px 24px" textSize="13px" textAlignment="right" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="foH3" position="680px -174px" size="150px 24px" textSize="13px" textAlignment="right" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="foH4" position="850px -174px" size="280px 24px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="foH5" position="1140px -174px" size="250px 24px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="foH6" position="1400px -174px" size="140px 24px" textSize="13px" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="foA1" position="60px -202px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB1" position="515px -202px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC1" position="680px -202px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD1" position="850px -202px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE1" position="1140px -202px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF1" position="1400px -202px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS1" position="60px -202px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile1" position="52px -202px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen1" position="1400px -202px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Bitmap profile="aoPcFlaeche" id="fl46" position="52px -232px" size="1496px 28px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="foA2" position="60px -232px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB2" position="515px -232px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC2" position="680px -232px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD2" position="850px -232px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE2" position="1140px -232px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF2" position="1400px -232px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS2" position="60px -232px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile2" position="52px -232px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen2" position="1400px -232px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Text profile="aoPcText" id="foA3" position="60px -262px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB3" position="515px -262px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC3" position="680px -262px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD3" position="850px -262px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE3" position="1140px -262px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF3" position="1400px -262px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS3" position="60px -262px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile3" position="52px -262px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen3" position="1400px -262px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Bitmap profile="aoPcFlaeche" id="fl47" position="52px -292px" size="1496px 28px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="foA4" position="60px -292px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB4" position="515px -292px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC4" position="680px -292px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD4" position="850px -292px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE4" position="1140px -292px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF4" position="1400px -292px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS4" position="60px -292px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile4" position="52px -292px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen4" position="1400px -292px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Text profile="aoPcText" id="foA5" position="60px -322px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB5" position="515px -322px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC5" position="680px -322px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD5" position="850px -322px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE5" position="1140px -322px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF5" position="1400px -322px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS5" position="60px -322px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile5" position="52px -322px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen5" position="1400px -322px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Bitmap profile="aoPcFlaeche" id="fl48" position="52px -352px" size="1496px 28px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="foA6" position="60px -352px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB6" position="515px -352px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC6" position="680px -352px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD6" position="850px -352px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE6" position="1140px -352px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF6" position="1400px -352px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS6" position="60px -352px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile6" position="52px -352px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen6" position="1400px -352px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Text profile="aoPcText" id="foA7" position="60px -382px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB7" position="515px -382px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC7" position="680px -382px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD7" position="850px -382px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE7" position="1140px -382px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF7" position="1400px -382px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS7" position="60px -382px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile7" position="52px -382px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen7" position="1400px -382px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Bitmap profile="aoPcFlaeche" id="fl49" position="52px -412px" size="1496px 28px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="foA8" position="60px -412px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB8" position="515px -412px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC8" position="680px -412px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD8" position="850px -412px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE8" position="1140px -412px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF8" position="1400px -412px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS8" position="60px -412px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile8" position="52px -412px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen8" position="1400px -412px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Text profile="aoPcText" id="foA9" position="60px -442px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB9" position="515px -442px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC9" position="680px -442px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD9" position="850px -442px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE9" position="1140px -442px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF9" position="1400px -442px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS9" position="60px -442px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile9" position="52px -442px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen9" position="1400px -442px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Bitmap profile="aoPcFlaeche" id="fl50" position="52px -472px" size="1496px 28px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="foA10" position="60px -472px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB10" position="515px -472px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC10" position="680px -472px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD10" position="850px -472px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE10" position="1140px -472px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF10" position="1400px -472px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS10" position="60px -472px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile10" position="52px -472px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen10" position="1400px -472px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Text profile="aoPcText" id="foA11" position="60px -502px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB11" position="515px -502px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC11" position="680px -502px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD11" position="850px -502px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE11" position="1140px -502px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF11" position="1400px -502px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS11" position="60px -502px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile11" position="52px -502px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen11" position="1400px -502px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Bitmap profile="aoPcFlaeche" id="fl51" position="52px -532px" size="1496px 28px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="foA12" position="60px -532px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB12" position="515px -532px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC12" position="680px -532px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD12" position="850px -532px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE12" position="1140px -532px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF12" position="1400px -532px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS12" position="60px -532px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile12" position="52px -532px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen12" position="1400px -532px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Text profile="aoPcText" id="foA13" position="60px -562px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB13" position="515px -562px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC13" position="680px -562px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD13" position="850px -562px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE13" position="1140px -562px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF13" position="1400px -562px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS13" position="60px -562px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile13" position="52px -562px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen13" position="1400px -562px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Bitmap profile="aoPcFlaeche" id="fl52" position="52px -592px" size="1496px 28px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="foA14" position="60px -592px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB14" position="515px -592px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC14" position="680px -592px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD14" position="850px -592px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE14" position="1140px -592px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF14" position="1400px -592px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS14" position="60px -592px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile14" position="52px -592px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen14" position="1400px -592px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Text profile="aoPcText" id="foA15" position="60px -622px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB15" position="515px -622px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC15" position="680px -622px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD15" position="850px -622px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE15" position="1140px -622px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF15" position="1400px -622px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS15" position="60px -622px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile15" position="52px -622px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen15" position="1400px -622px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Bitmap profile="aoPcFlaeche" id="fl53" position="52px -652px" size="1496px 28px" imageColor="1 1 1 0.03" />
+            <Text profile="aoPcText" id="foA16" position="60px -652px" size="450px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foB16" position="515px -652px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foC16" position="680px -652px" size="150px 28px" textSize="15px" textAlignment="right" />
+            <Text profile="aoPcText" id="foD16" position="850px -652px" size="280px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foE16" position="1140px -652px" size="250px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foF16" position="1400px -652px" size="140px 28px" textSize="15px" />
+            <Text profile="aoPcText" id="foS16" position="60px -652px" size="1480px 28px" textSize="15px" textBold="true" />
+            <Button profile="aoPcZeile" id="foZeile16" position="52px -652px" size="1480px 28px" onClick="onClickFoZeile" />
+            <Button profile="aoPcZeile" id="foOeffnen16" position="1400px -652px" size="132px 28px" onClick="onClickFoOeffnen" />
+            <Bitmap profile="aoPcFlaeche" id="foRollBahn" position="1543px -218px" size="6px 446px" imageColor="1 1 1 0.06" />
+            <Bitmap profile="aoPcFlaeche" id="foRollGriff" position="1543px -218px" size="6px 446px" imageColor="0.376 0.659 0.290 1" />
+            <Bitmap profile="aoPcPfeilHoch" id="foRollHoch" position="1540px -202px" size="12px 12px" imageColor="0.75 0.8 0.85 1" />
+            <Bitmap profile="aoPcPfeilRunter" id="foRollRunter" position="1540px -668px" size="12px 12px" imageColor="0.75 0.8 0.85 1" />
+            <Button profile="aoPcZeile" id="foRollKnopfHoch" position="1536px -198px" size="20px 20px" onClick="onClickRollHoch" />
+            <Button profile="aoPcZeile" id="foRollKnopfRunter" position="1536px -664px" size="20px 20px" onClick="onClickRollRunter" />
+            <Text profile="aoPcText" id="foLeer" position="60px -400px" size="1480px 30px" textSize="16px" textAlignment="center" textColor="0.62 0.62 0.62 1" />
+            <Text profile="aoPcText" id="foFuss" position="60px -690px" size="1480px 44px" textSize="13px" textColor="0.62 0.62 0.62 1" textMaxNumLines="2" />
+            </GuiElement>
+
+        <BoxLayout profile="aoPcKnoepfe" position="1130px -838px" size="440px 56px">
+            <Button profile="buttonBack" onClick="onClickBack" id="closeButton" />
+        </BoxLayout>
+    </GuiElement>
+
+    <GUIProfiles>
+        <Profile name="aoPcSeite" extends="emptyPanel" with="anchorTopLeft" />
+
+        <Profile name="aoPcFlaeche" extends="baseReference" with="anchorTopLeft">
+            <size value="10px 10px" />
+            <imageUVs value="0 0 1 1" />
+            <imageColor value="1 1 1 1" />
+            <imageSliceId value="noSlice" />
+        </Profile>
+        <Profile name="aoPcBild" extends="aoPcFlaeche" />
+        <Profile name="aoPcPfeilHoch" extends="aoPcFlaeche" />
+        <Profile name="aoPcPfeilRunter" extends="aoPcFlaeche" />
+
+        <Profile name="aoPcText" extends="fs25_textDefault" with="anchorTopLeft">
+            <textSize value="15px" />
+            <textColor value="1 1 1 1" />
+        </Profile>
+
+        <Profile name="aoPcOptZeile" extends="emptyPanel" with="anchorTopLeft pivotTopLeft">
+            <size value="620px 34px" />
+        </Profile>
+
+        <Profile name="aoPcTab" extends="emptyPanel" with="anchorTopLeft">
+            <focusOnHighlight value="true" />
+            <textSize value="16px" />
+            <textBold value="true" />
+            <textAlignment value="center" />
+            <textColor value="0.88 0.92 0.96 1" />
+            <textHighlightedColor value="$preset_fs25_colorMainHighlight" />
+            <textFocusedColor value="$preset_fs25_colorMainHighlight" />
+            <textPressedColor value="$preset_fs25_colorMainHighlight" />
+            <textSelectedColor value="1 1 1 1" />
+        </Profile>
+
+        <Profile name="aoPcZeile" extends="emptyPanel" with="anchorTopLeft" />
+
+        <Profile name="aoPcKnoepfe" extends="fs25_dialogButtonBox" with="anchorTopLeft" />
+    </GUIProfiles>
+</GUI>

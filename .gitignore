@@ -7,3 +7,7 @@ veroeffentlichung_*.txt
 *.bak
 *.tmp
 __pycache__/
+_vorschau_breit.*
+_hofpc_vorschau.png
+_anschreiben_portal.txt
+beitrag_*.txt

@@ -74,7 +74,13 @@ function AOZins.verzinse()
             if zins > 0 then
                 -- zaehlt nicht als Einnahme fuer die Bremse
                 AOZins.inGutschrift = true
+                if AOKassenbuch ~= nil then
+                    AOKassenbuch.quelle = "Guthabenzins"
+                end
                 g_currentMission:addMoney(zins, farmId, mt, true)
+                if AOKassenbuch ~= nil then
+                    AOKassenbuch.quelle = nil
+                end
                 AOZins.inGutschrift = false
 
                 if g_currentMission.showMoneyChange ~= nil then

@@ -381,6 +381,9 @@ end
 
 function AOBericht.empfange(farmId, paket)
     AOBericht.paket = paket
+    if AOHofPC ~= nil and AOHofPC.aktualisiereOffenes ~= nil then
+        AOHofPC.aktualisiereOffenes()
+    end
 end
 
 -- Speichern je Spielstand -----------------------------------------------------
@@ -484,6 +487,29 @@ function AOBericht.speichern()
     xml:delete()
 end
 
+local function monateDazu(ziel, quelle)
+    for nr, eintrag in pairs(quelle) do
+        local vorhanden = ziel[nr]
+        if vorhanden == nil then
+            ziel[nr] = eintrag
+        else
+            for feld, wert in pairs(eintrag) do
+                vorhanden[feld] = (vorhanden[feld] or 0) + wert
+            end
+        end
+    end
+end
+
+local function hofDazu(ziel, d)
+    ziel.erfasstAb        = math.min(ziel.erfasstAb, d.erfasstAb)
+    ziel.vorjahrErfasstAb = math.min(ziel.vorjahrErfasstAb, d.vorjahrErfasstAb)
+    ziel.hatVorjahr       = ziel.hatVorjahr or d.hatVorjahr
+    monateDazu(ziel.jahr,         d.jahr)
+    monateDazu(ziel.vorjahr,      d.vorjahr)
+    monateDazu(ziel.stand,        d.stand)
+    monateDazu(ziel.vorjahrStand, d.vorjahrStand)
+end
+
 function AOBericht.laden()
     AOBericht.daten         = {}
     AOBericht.letztePeriode = nil
@@ -504,6 +530,7 @@ function AOBericht.laden()
         AOBericht.letztePeriode = lp
     end
 
+    local spHof = AgrarOekonomie.einzelspielerHof()
     local i = 0
     while true do
         local fk = string.format("%s.farm(%d)", wurzel, i)
@@ -511,7 +538,7 @@ function AOBericht.laden()
         if id == nil then
             break
         end
-        AOBericht.daten[id] = {
+        local d = {
             erfasstAb        = xml:getInt(fk .. "#erfasstAb", 1),
             vorjahrErfasstAb = xml:getInt(fk .. "#vorjahrErfasstAb", 1),
             hatVorjahr       = xml:getBool(fk .. "#hatVorjahr", false),
@@ -520,6 +547,12 @@ function AOBericht.laden()
             stand            = leseMonate(xml, fk .. ".stand",        AOBericht.STAND),
             vorjahrStand     = leseMonate(xml, fk .. ".vorjahrStand", AOBericht.STAND),
         }
+        id = spHof or id
+        if AOBericht.daten[id] == nil then
+            AOBericht.daten[id] = d
+        else
+            hofDazu(AOBericht.daten[id], d)
+        end
         i = i + 1
     end
     xml:delete()

@@ -73,6 +73,10 @@ AgrarOekonomie.CFG = {
     buchAktiv          = true,
     buchSchwelle       = 50,
 
+    -- Maschinenkosten (AOMaschinen.lua) --------------------------------
+    -- zaehlt nur, veraendert keine Kosten
+    mkAktiv            = true,
+
     meldungen          = true,
     debug              = false,
 }
@@ -88,6 +92,18 @@ function AgrarOekonomie.istServer()
         return g_currentMission:getIsServer() == true
     end
     return g_server ~= nil
+end
+
+function AgrarOekonomie.einzelspielerHof()
+    local mission = g_currentMission
+    if mission == nil or mission.missionDynamicInfo == nil
+            or mission.missionDynamicInfo.isMultiplayer ~= false then
+        return nil
+    end
+    if FarmManager ~= nil and FarmManager.SINGLEPLAYER_FARM_ID ~= nil then
+        return FarmManager.SINGLEPLAYER_FARM_ID
+    end
+    return 1
 end
 
 function AgrarOekonomie.getTag()
@@ -353,6 +369,9 @@ end
 -- ist. Die Steuern haengen an verschiedenen update-Schleifen, deren
 -- Reihenfolge nicht feststeht.
 function AgrarOekonomie:update(dt)
+    if AOHofPC ~= nil and AOHofPC.stallWache ~= nil then
+        AOHofPC.stallZurueck(dt)
+    end
     if #AgrarOekonomie.warteschlange == 0 then
         return
     end
@@ -437,6 +456,9 @@ function AgrarOekonomie.installiereHooks()
                 end
                 if AOKassenbuch ~= nil and AOKassenbuch.buche ~= nil then
                     AOKassenbuch.buche(farmId, moneyType, amount)
+                end
+                if AOMaschinen ~= nil and AOMaschinen.buche ~= nil then
+                    AOMaschinen.buche(farmId, moneyType, amount)
                 end
             end
             return superFunc(mission, amount, farmId, moneyType, ...)

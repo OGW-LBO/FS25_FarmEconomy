@@ -12,17 +12,18 @@ Ab Werk aus, aber dabei: Spritverbrauch stufenlos statt Wenig/Normal/Hoch, getre
 
 Damit kein Spielstand kaputtgeht, gibt es eine Bremse. Die Mod darf pro Tag nur einen Teil der üblichen Einnahmen abbuchen, und unter einem Mindestkontostand zieht sie gar nichts mehr ab.
 
-Wohin das Geld fließt, zeigt das Kassenbuch: Strg+K öffnet es im Spiel, mit einer Rangliste der größten Posten und den letzten Buchungen, Monat für Monat und Jahr für Jahr. Die Buchungen dieses und des vorigen Spieljahres landen mit Spielmonat, Gruppe und Betrag in einer Datei im Ordner des Spielstands: als Tabelle für die Tabellenkalkulation und als fertige Seite mit Diagrammen, die sich im Browser öffnen lässt. Posten, die im Sekundentakt anfallen, etwa Sprit und laufende Kosten, stehen als Tagessumme darin, sonst wäre die Datei nach einer Stunde nicht mehr lesbar.
+Wohin das Geld fließt, zeigt der Hof-PC: Strg+K schaltet ihn ein, zu Fuß wie im Fahrzeug. Das Kassenbuch darin hat eine Rangliste der größten Posten und die letzten Buchungen, Monat für Monat und Jahr für Jahr. Der Fuhrpark führt für jede Maschine ein eigenes Konto mit Wertverlust, Reparaturen, Diesel und Steuer, dazu Kosten je Betriebsstunde. Unter Abgaben & Helfer stehen Steuern, Zinsen, Helferlöhne und wie viel Luft die Bremse noch lässt. Die Buchungen dieses und des vorigen Spieljahres landen mit Spielmonat, Gruppe und Betrag in einer Datei im Ordner des Spielstands: als Tabelle für die Tabellenkalkulation und als fertige Seite mit Diagrammen, die sich im Browser öffnen lässt. Posten, die im Sekundentakt anfallen, etwa Sprit und laufende Kosten, stehen als Tagessumme darin, sonst wäre die Datei nach einer Stunde nicht mehr lesbar.
 
-Eingestellt wird im ESC-Menü unter Einstellungen, Reiter Agrar-Ökonomie, im Multiplayer nur von Admins. Die Hilfe im Spiel erklärt jeden Teil. Läuft auf jeder Karte, auch mit Früchten, die das Grundspiel nicht kennt. Zusammen mit der Mod Betriebsübersicht (Farm Overview) bekommst du außerdem einen Jahresvergleich deiner Finanzen.
+Eingestellt wird im ESC-Menü unter Einstellungen, Reiter Agrar-Ökonomie, im Multiplayer nur von Admins. Die Hilfe im Spiel erklärt jeden Teil. Läuft auf jeder Karte, auch mit Früchten, die das Grundspiel nicht kennt. Zusammen mit der Mod Betriebsübersicht (Farm Overview) bekommst du außerdem einen Jahresvergleich deiner Finanzen, und deren Übersicht über Felder, Tiere und Lager steht dann auch im Hof-PC.
 
 Nur PC/Mac.
 
-Changelog 1.1.0.0:
-- Kassenbuch: Strg+K zeigt im Spiel, wofür das Geld weggeht, als Rangliste mit Balken und mit den letzten Buchungen. Monate und Jahre lassen sich bis zum Anfang des vorigen Spieljahres zurückblättern, unten steht der Vergleich mit dem Monat davor oder dem Vorjahr. Grundsteuer und Fuhrpark-Steuer stehen als eigene Buchung drin. Im Spielstand-Ordner liegen dazu eine CSV-Tabelle und eine HTML-Seite mit Diagrammen. Der Konsolenbefehl aoKassenbuch schreibt sie sofort.
-- Sicherheitsbremse: Wenn Grundsteuer und Fuhrpark-Steuer am selben Tag fällig sind und das Budget nicht für beide reicht, werden beide um denselben Anteil gekürzt. Bisher bekam der Posten, der als zweiter abgerechnet wurde, oft gar nichts mehr ab. Eine Kürzung meldet die Mod jetzt oben rechts, aoStatus zeigt die letzte je Hof.
-- Produktionsgeschwindigkeit: Die laufenden Kosten haben drei Stufen statt an/aus: voll mit, Wurzel des Faktors oder gleich bleibend. Wer vorher an hatte, landet bei voll mit, aus wird zu gleich bleibend.
-- Hilfeseiten und Beschreibung sind überarbeitet.
+Changelog 1.2.0.0:
+- Hof-PC: Strg+K öffnet jetzt statt des Kassenbuch-Fensters einen Hof-PC, auch im Fahrzeug. Darauf laufen Start, Kassenbuch, Fuhrpark, Abgaben & Helfer und, wenn Farm Overview geladen ist, die Betriebsübersicht. Lange Listen blättern mit dem Mausrad oder über die Pfeile am Rand.
+- Fuhrpark: Jede Maschine führt ein eigenes Konto mit Wertverlust, Reparaturen, Diesel, Fuhrpark-Steuer und Unterhalt, für das laufende Spieljahr und seit dem Kauf. Die Liste lässt sich nach Kosten sortieren und zeigt die Kosten je Betriebsstunde. Für Maschinen, die schon vor dem Update auf dem Hof standen, rechnet die Mod Betriebsstunden und Wertverlust seit dem Kauf nach. Die Maschinenkonten lassen sich in den Einstellungen abschalten.
+- Diesel, den ein Helfer verfährt, landet beim richtigen Fahrzeug. Guthabenzinsen stehen im Kassenbuch als eigener Posten.
+- Kassenbuch: Kleinstbeträge unter 10 € stehen nicht mehr in der Liste der letzten Buchungen. In der Datei im Spielstand bleiben sie erhalten.
+- Einzelspieler: Kassenbuch und Jahresvergleich werden immer dem eigenen Hof zugeordnet.
 
 ## Installation
 
@@ -35,7 +36,7 @@ Auf einem Dedicated Server gehoert sie in dessen Mods-Ordner.
 
 ## Stand
 
-Version 1.1.0.0, gebaut gegen descVersion 116.
+Version 1.2.0.0, gebaut gegen descVersion 116.
 
 ## Lizenz
 

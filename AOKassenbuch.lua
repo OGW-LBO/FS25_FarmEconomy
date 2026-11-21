@@ -32,14 +32,17 @@ AOKassenbuch.DAUERPOSTEN = {
 AOKassenbuch.EIGENE = {
     Fuhrparksteuer = "fleetTax",
     Grundsteuer    = "propertyTax",
+    Guthabenzins   = "interestCredit",
 }
 AOKassenbuch.KATEGORIE_TEXT = {
-    fleetTax    = "ao_sec_fuhrpark",
-    propertyTax = "ao_sec_grundsteuer",
+    fleetTax       = "ao_sec_fuhrpark",
+    propertyTax    = "ao_sec_grundsteuer",
+    interestCredit = "ao_sec_zins",
 }
 
 AOKassenbuch.KOPFZEILE  = "Jahr;Monat;Tag;Zeit;Hof;Gruppe;Kategorie;Text;Betrag;Kontostand;Art"
-AOKassenbuch.MAX_LETZTE = 12
+AOKassenbuch.MAX_LETZTE = 30
+AOKassenbuch.KLEINBETRAG = 10
 -- Behalten werden das laufende und das vorige Spieljahr. Die Obergrenze
 -- bleibt trotzdem, auf einem Server mit vielen Hoefen wird die Datei sonst
 -- zu gross, um sie jede Minute neu zu schreiben.
@@ -493,6 +496,7 @@ function AOKassenbuch.laden()
     end
 
     local wurzel = "farmEconomyKassenbuch"
+    local spHof  = AgrarOekonomie.einzelspielerHof()
     local i = 0
     while true do
         local k      = string.format("%s.buchung(%d)", wurzel, i)
@@ -501,7 +505,7 @@ function AOKassenbuch.laden()
             break
         end
         table.insert(AOKassenbuch.zeilen, {
-            farmId    = xml:getInt(k .. "#hof", 1),
+            farmId    = spHof or xml:getInt(k .. "#hof", 1),
             jahr      = xml:getInt(k .. "#jahr", 1),
             monat     = xml:getInt(k .. "#monat", 1),
             tag       = xml:getInt(k .. "#tag", 0),
@@ -523,7 +527,7 @@ function AOKassenbuch.laden()
         if jahr == nil then
             break
         end
-        local farmId = xml:getInt(k .. "#hof", 1)
+        local farmId = spHof or xml:getInt(k .. "#hof", 1)
         local monat  = xml:getInt(k .. "#monat", 1)
         local n = 0
         while true do
@@ -539,8 +543,6 @@ function AOKassenbuch.laden()
     end
     xml:delete()
 
-    -- Aeltere Kassenbuecher haben nur Zeilen, die Summen werden einmal daraus
-    -- nachgerechnet.
     if m == 0 then
         for _, z in ipairs(AOKassenbuch.zeilen) do
             AOKassenbuch.monatAddieren(z.farmId, z.jahr, z.monat, z.gruppe, z.betrag)
@@ -624,7 +626,7 @@ function AOKassenbuch.erstellePaket(farmId)
 
     for i = #AOKassenbuch.zeilen, 1, -1 do
         local z = AOKassenbuch.zeilen[i]
-        if z.farmId == farmId then
+        if z.farmId == farmId and math.abs(z.betrag or 0) >= AOKassenbuch.KLEINBETRAG then
             local m = proSchluessel[(z.jahr or 1) * 100 + (z.monat or 1)]
             if m ~= nil and #m.letzte < AOKassenbuch.MAX_LETZTE then
                 local kategorie = ""
@@ -675,8 +677,8 @@ end
 
 function AOKassenbuch.empfange(farmId, paket)
     AOKassenbuch.paket = paket
-    if AOKassenbuchDialog ~= nil and AOKassenbuchDialog.aktualisiereOffenes ~= nil then
-        AOKassenbuchDialog.aktualisiereOffenes()
+    if AOHofPC ~= nil and AOHofPC.aktualisiereOffenes ~= nil then
+        AOHofPC.aktualisiereOffenes()
     end
 end
 
@@ -728,11 +730,11 @@ function AOKassenbuch:loadMap(name)
             "befehlStatus", AOKassenbuch)
     end
 
-    if AOKassenbuchDialog ~= nil and g_dedicatedServerInfo == nil then
-        AOKassenbuchDialog.installiereTastenHook()
-        AOKassenbuchDialog.registriereTaste()
+    if AOHofPC ~= nil and g_dedicatedServerInfo == nil then
+        AOHofPC.installiereTastenHook()
+        AOHofPC.registriereTaste()
         if g_client ~= nil then
-            AOKassenbuchDialog.laden()
+            AOHofPC.laden()
         end
     end
 

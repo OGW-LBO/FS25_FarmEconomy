@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <modDesc descVersion="116" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/modDesc.xsd">
     <author>OGW</author>
-    <version>1.1.0.0</version>
+    <version>1.2.0.0</version>
 
     <title>
         <de>Agrar-Ökonomie</de>
@@ -20,17 +20,18 @@ Ab Werk aus, aber dabei: Spritverbrauch stufenlos statt Wenig/Normal/Hoch, getre
 
 Damit kein Spielstand kaputtgeht, gibt es eine Bremse. Die Mod darf pro Tag nur einen Teil der üblichen Einnahmen abbuchen, und unter einem Mindestkontostand zieht sie gar nichts mehr ab.
 
-Wohin das Geld fließt, zeigt das Kassenbuch: Strg+K öffnet es im Spiel, mit einer Rangliste der größten Posten und den letzten Buchungen, Monat für Monat und Jahr für Jahr. Die Buchungen dieses und des vorigen Spieljahres landen mit Spielmonat, Gruppe und Betrag in einer Datei im Ordner des Spielstands: als Tabelle für die Tabellenkalkulation und als fertige Seite mit Diagrammen, die sich im Browser öffnen lässt. Posten, die im Sekundentakt anfallen, etwa Sprit und laufende Kosten, stehen als Tagessumme darin, sonst wäre die Datei nach einer Stunde nicht mehr lesbar.
+Wohin das Geld fließt, zeigt der Hof-PC: Strg+K schaltet ihn ein, zu Fuß wie im Fahrzeug. Das Kassenbuch darin hat eine Rangliste der größten Posten und die letzten Buchungen, Monat für Monat und Jahr für Jahr. Der Fuhrpark führt für jede Maschine ein eigenes Konto mit Wertverlust, Reparaturen, Diesel und Steuer, dazu Kosten je Betriebsstunde. Unter Abgaben & Helfer stehen Steuern, Zinsen, Helferlöhne und wie viel Luft die Bremse noch lässt. Die Buchungen dieses und des vorigen Spieljahres landen mit Spielmonat, Gruppe und Betrag in einer Datei im Ordner des Spielstands: als Tabelle für die Tabellenkalkulation und als fertige Seite mit Diagrammen, die sich im Browser öffnen lässt. Posten, die im Sekundentakt anfallen, etwa Sprit und laufende Kosten, stehen als Tagessumme darin, sonst wäre die Datei nach einer Stunde nicht mehr lesbar.
 
-Eingestellt wird im ESC-Menü unter Einstellungen, Reiter Agrar-Ökonomie, im Multiplayer nur von Admins. Die Hilfe im Spiel erklärt jeden Teil. Läuft auf jeder Karte, auch mit Früchten, die das Grundspiel nicht kennt. Zusammen mit der Mod Betriebsübersicht (Farm Overview) bekommst du außerdem einen Jahresvergleich deiner Finanzen.
+Eingestellt wird im ESC-Menü unter Einstellungen, Reiter Agrar-Ökonomie, im Multiplayer nur von Admins. Die Hilfe im Spiel erklärt jeden Teil. Läuft auf jeder Karte, auch mit Früchten, die das Grundspiel nicht kennt. Zusammen mit der Mod Betriebsübersicht (Farm Overview) bekommst du außerdem einen Jahresvergleich deiner Finanzen, und deren Übersicht über Felder, Tiere und Lager steht dann auch im Hof-PC.
 
 Nur PC/Mac.
 
-Changelog 1.1.0.0:
-- Kassenbuch: Strg+K zeigt im Spiel, wofür das Geld weggeht, als Rangliste mit Balken und mit den letzten Buchungen. Monate und Jahre lassen sich bis zum Anfang des vorigen Spieljahres zurückblättern, unten steht der Vergleich mit dem Monat davor oder dem Vorjahr. Grundsteuer und Fuhrpark-Steuer stehen als eigene Buchung drin. Im Spielstand-Ordner liegen dazu eine CSV-Tabelle und eine HTML-Seite mit Diagrammen. Der Konsolenbefehl aoKassenbuch schreibt sie sofort.
-- Sicherheitsbremse: Wenn Grundsteuer und Fuhrpark-Steuer am selben Tag fällig sind und das Budget nicht für beide reicht, werden beide um denselben Anteil gekürzt. Bisher bekam der Posten, der als zweiter abgerechnet wurde, oft gar nichts mehr ab. Eine Kürzung meldet die Mod jetzt oben rechts, aoStatus zeigt die letzte je Hof.
-- Produktionsgeschwindigkeit: Die laufenden Kosten haben drei Stufen statt an/aus: voll mit, Wurzel des Faktors oder gleich bleibend. Wer vorher an hatte, landet bei voll mit, aus wird zu gleich bleibend.
-- Hilfeseiten und Beschreibung sind überarbeitet.]]></de>
+Changelog 1.2.0.0:
+- Hof-PC: Strg+K öffnet jetzt statt des Kassenbuch-Fensters einen Hof-PC, auch im Fahrzeug. Darauf laufen Start, Kassenbuch, Fuhrpark, Abgaben & Helfer und, wenn Farm Overview geladen ist, die Betriebsübersicht. Lange Listen blättern mit dem Mausrad oder über die Pfeile am Rand.
+- Fuhrpark: Jede Maschine führt ein eigenes Konto mit Wertverlust, Reparaturen, Diesel, Fuhrpark-Steuer und Unterhalt, für das laufende Spieljahr und seit dem Kauf. Die Liste lässt sich nach Kosten sortieren und zeigt die Kosten je Betriebsstunde. Für Maschinen, die schon vor dem Update auf dem Hof standen, rechnet die Mod Betriebsstunden und Wertverlust seit dem Kauf nach. Die Maschinenkonten lassen sich in den Einstellungen abschalten.
+- Diesel, den ein Helfer verfährt, landet beim richtigen Fahrzeug. Guthabenzinsen stehen im Kassenbuch als eigener Posten.
+- Kassenbuch: Kleinstbeträge unter 10 € stehen nicht mehr in der Liste der letzten Buchungen. In der Datei im Spielstand bleiben sie erhalten.
+- Einzelspieler: Kassenbuch und Jahresvergleich werden immer dem eigenen Hof zugeordnet.]]></de>
         <en><![CDATA[In the base game, money stops mattering after a few harvests. Crops sell high, and a tractor you have paid off never costs you anything but diesel again. Farm Economy pushes back on both sides.
 
 You get less for your crops and for goods from your productions. Milk, animals, wood, bales and contracts are left alone. An optional automatic mode looks at what your farm earned per hectare once a year and nudges the price factor until it matches the difficulty you picked.
@@ -41,17 +42,18 @@ Off by default but ready when you are: fuel use set freely instead of low/normal
 
 A safety brake makes sure none of this wrecks a save. What the mod charges per day is capped at a share of your usual income, and below a minimum balance it stops charging at all.
 
-Where the money goes is what the cash book shows: Ctrl+K opens it in the game, with a ranking of the largest items and the latest bookings, month by month or year by year. This year's and last year's bookings are written to a file in the savegame folder with game month, group and amount: as a table for your spreadsheet and as a finished page with charts that opens in the browser. Items that are booked every few seconds, such as fuel and running costs, appear as a daily sum, otherwise the file would be unreadable after an hour.
+Where the money goes is what the farm PC shows: Ctrl+K switches it on, on foot or in a vehicle. Its cash book has a ranking of the largest items and the latest bookings, month by month or year by year. The fleet program keeps an account for every machine with depreciation, repairs, diesel and tax, plus the cost per operating hour. Charges & helpers lists taxes, interest, helper wages and how much room the safety brake still leaves. This year's and last year's bookings are written to a file in the savegame folder with game month, group and amount: as a table for your spreadsheet and as a finished page with charts that opens in the browser. Items that are booked every few seconds, such as fuel and running costs, appear as a daily sum, otherwise the file would be unreadable after an hour.
 
-You will find the settings in the ESC menu under Settings, tab Farm Economy. In multiplayer only admins can change them. The in-game help covers every part. Works on any map, including crops the base game does not know. Pair it with Farm Overview to get a year-on-year look at your finances.
+You will find the settings in the ESC menu under Settings, tab Farm Economy. In multiplayer only admins can change them. The in-game help covers every part. Works on any map, including crops the base game does not know. Pair it with Farm Overview to get a year-on-year look at your finances, and its overview of fields, animals and storage shows up on the farm PC as well.
 
 PC/Mac only.
 
-Changelog 1.1.0.0:
-- Cash book: press Ctrl+K to see where your money goes, as a ranking with bars plus the latest bookings. You can page back through months and years as far as the start of last game year, and the bottom line compares with the month before or with last year. Property tax and fleet tax appear as bookings of their own. The savegame folder also gets a CSV table and an HTML page with charts; the console command aoKassenbuch writes them right away.
-- Safety brake: when property tax and fleet tax fall on the same day and the daily budget cannot cover both, they are now cut by the same share. Before, whichever was billed second often got nothing at all. A cut now shows up as a notification in the top right, and aoStatus lists the last one per farm.
-- Production speed: running costs have three options instead of on/off: full, square root or unchanged. If you had it on, you get full; off becomes unchanged.
-- Help pages and store text reworked.]]></en>
+Changelog 1.2.0.0:
+- Farm PC: Ctrl+K now opens a farm PC instead of the cash book window, in vehicles too. It runs Home, Cash book, Fleet, Charges & helpers and, when Farm Overview is loaded, the farm overview. Long lists scroll with the mouse wheel or the arrows at the side.
+- Fleet: every machine keeps its own account with depreciation, repairs, diesel, fleet tax and upkeep, for the current game year and since purchase. The list can be sorted by cost and shows the cost per operating hour. For machines that were on the farm before the update, the mod works out hours and depreciation since purchase. Machine accounts can be switched off in the settings.
+- Diesel used by a helper is booked to the right vehicle. Interest on savings is its own item in the cash book.
+- Cash book: tiny amounts below 10 € no longer clutter the list of latest bookings. The file in the savegame still has them.
+- Single player: cash book and year comparison always belong to your own farm.]]></en>
         <fr><![CDATA[Dans le jeu de base, l'argent ne compte plus après quelques récoltes. Économie Agricole rééquilibre les recettes et les dépenses.
 
 Les cultures et les produits de vos productions rapportent moins ; le lait, les animaux, le bois, les balles et les missions ne changent pas. Si vous le souhaitez, un mode automatique fait le point une fois par an sur ce que votre ferme gagne à l'hectare et ajuste le facteur de prix selon la difficulté choisie.
@@ -62,17 +64,18 @@ Désactivés par défaut : une consommation de carburant réglable librement, s�
 
 Un frein de sécurité évite de ruiner une partie : ce que le mod prélève par jour reste limité à une part des revenus habituels, et sous un solde minimum il ne prélève plus rien.
 
-Le livre de caisse montre où va l'argent : Ctrl+K l'ouvre dans le jeu, avec un classement des plus gros postes et les dernières opérations, mois par mois ou année par année. Les opérations de l'année de jeu en cours et de la précédente sont écrites dans un fichier du dossier de sauvegarde avec le mois de jeu, le groupe et le montant : sous forme de tableau pour le tableur et sous forme de page avec graphiques qui s'ouvre dans le navigateur. Les postes comptabilisés à chaque seconde, comme le carburant et les frais courants, y figurent comme somme journalière, sinon le fichier deviendrait illisible au bout d'une heure.
+Le PC de la ferme montre où va l'argent : Ctrl+K l'allume, à pied comme en véhicule. Son livre de caisse présente un classement des plus gros postes et les dernières opérations, mois par mois ou année par année. Le parc tient un compte pour chaque machine avec la dépréciation, les réparations, le gazole et la taxe, ainsi que le coût par heure de travail. Charges et ouvriers regroupe les impôts, les intérêts, les salaires et la marge que laisse encore le frein de sécurité. Les opérations de l'année de jeu en cours et de la précédente sont écrites dans un fichier du dossier de sauvegarde avec le mois de jeu, le groupe et le montant : sous forme de tableau pour le tableur et sous forme de page avec graphiques qui s'ouvre dans le navigateur. Les postes comptabilisés à chaque seconde, comme le carburant et les frais courants, y figurent comme somme journalière, sinon le fichier deviendrait illisible au bout d'une heure.
 
-Les réglages se trouvent dans le menu ESC, Paramètres, onglet Économie Agricole ; en multijoueur, seuls les administrateurs peuvent les modifier. L'aide du jeu décrit chaque module. Compatible avec toutes les cartes. Avec le mod Aperçu de l'exploitation (Farm Overview), vous obtenez aussi une comparaison annuelle de vos finances.
+Les réglages se trouvent dans le menu ESC, Paramètres, onglet Économie Agricole ; en multijoueur, seuls les administrateurs peuvent les modifier. L'aide du jeu décrit chaque module. Compatible avec toutes les cartes. Avec le mod Aperçu de l'exploitation (Farm Overview), vous obtenez aussi une comparaison annuelle de vos finances, et son aperçu des champs, des animaux et des stocks apparaît aussi sur le PC de la ferme.
 
 PC/Mac uniquement.
 
-Changelog 1.1.0.0 :
-- Livre de caisse : Ctrl+K montre dans le jeu où part l'argent, avec un classement en barres et les dernières opérations. On remonte mois par mois ou année par année jusqu'au début de l'année de jeu précédente, et la ligne du bas compare avec le mois d'avant ou avec l'année précédente. L'impôt foncier et la taxe de flotte apparaissent comme des opérations à part. Le dossier de sauvegarde reçoit aussi un tableau CSV et une page HTML avec graphiques ; la commande aoKassenbuch les écrit tout de suite.
-- Frein de sécurité : quand l'impôt foncier et la taxe de flotte tombent le même jour et que le budget ne suffit pas, les deux sont réduits dans la même proportion. Avant, celui qui passait en second n'obtenait souvent plus rien. Une réduction s'affiche désormais en haut à droite, et aoStatus indique la dernière par exploitation.
-- Vitesse de production : les frais de fonctionnement proposent trois choix au lieu de oui/non : plein, racine du facteur ou inchangés. Activé devient plein, désactivé devient inchangés.
-- Pages d'aide et description retravaillées.]]></fr>
+Changelog 1.2.0.0 :
+- PC de la ferme : Ctrl+K ouvre désormais un PC de la ferme à la place de la fenêtre du livre de caisse, aussi en véhicule. On y trouve Accueil, Livre de caisse, Parc, Charges et ouvriers et, si Farm Overview est chargé, l'aperçu de l'exploitation. Les longues listes défilent avec la molette ou avec les flèches sur le côté.
+- Parc : chaque machine tient son propre compte avec la dépréciation, les réparations, le gazole, la taxe de flotte et l'entretien, pour l'année de jeu en cours et depuis l'achat. La liste se trie par coût et indique le coût par heure de travail. Pour les machines déjà présentes avant la mise à jour, le mod recalcule les heures et la dépréciation depuis l'achat. Les comptes machines peuvent être désactivés dans les réglages.
+- Le gazole consommé par un ouvrier est imputé au bon véhicule. Les intérêts de l'épargne forment un poste à part dans le livre de caisse.
+- Livre de caisse : les très petits montants sous 10 € n'encombrent plus la liste des dernières opérations. Le fichier de la sauvegarde les conserve.
+- Solo : le livre de caisse et la comparaison annuelle sont toujours attribués à votre propre exploitation.]]></fr>
     </description>
 
     <iconFilename>icon_mod.dds</iconFilename>
@@ -83,6 +86,7 @@ Changelog 1.1.0.0 :
     <specializations>
         <specialization name="fuhrparkSteuerInfo" className="FuhrparkSteuerInfo" filename="FuhrparkSteuerInfo.lua"/>
         <specialization name="reparaturOekonomie" className="ReparaturOekonomie" filename="ReparaturOekonomie.lua"/>
+        <specialization name="aoMaschinen" className="AOMaschinen" filename="AOMaschinen.lua"/>
     </specializations>
 
     <extraSourceFiles>
@@ -108,7 +112,14 @@ Changelog 1.1.0.0 :
         <sourceFile filename="AOKassenbuchEvent.lua"/>
         <sourceFile filename="AOKassenbuchSeite.lua"/>
         <sourceFile filename="AOKassenbuch.lua"/>
-        <sourceFile filename="AOKassenbuchDialog.lua"/>
+        <sourceFile filename="AOMaschinenEvent.lua"/>
+        <sourceFile filename="AOAbgaben.lua"/>
+        <sourceFile filename="AOAbgabenEvent.lua"/>
+        <sourceFile filename="AOHofPC.lua"/>
+        <sourceFile filename="AOHofPCKasse.lua"/>
+        <sourceFile filename="AOHofPCFuhrpark.lua"/>
+        <sourceFile filename="AOHofPCAbgaben.lua"/>
+        <sourceFile filename="AOMaschinenMain.lua"/>
         <sourceFile filename="AOBerichtEvent.lua"/>
         <sourceFile filename="AOUIHelper.lua"/>
         <sourceFile filename="AOSettingsPage.lua"/>
@@ -658,9 +669,9 @@ Les coûts de réparation cumulés atteignent %d %% de la valeur du véhicule. U
             <fr>Encore une option : Consommables gratuits pendant le travail de l'ouvrier, ou Carburant et intrants gratuits aussi dans la fenêtre des ouvriers. Tant qu'un ouvrier travaille, le carburant et les intrants comme les semences ou l'engrais ne coûtent rien non plus. Le mod entier fonctionne en multijoueur : le serveur fait foi, il envoie les réglages à tous les joueurs, et seuls les administrateurs peuvent les modifier.</fr>
         </text>
         <text name="input_AO_BUCH">
-            <de>Kassenbuch öffnen</de>
-            <en>Open cash book</en>
-            <fr>Ouvrir le livre de caisse</fr>
+            <de>Hof-PC öffnen</de>
+            <en>Open farm PC</en>
+            <fr>Ouvrir le PC de la ferme</fr>
         </text>
         <text name="ao_buch_zeitraum">
             <de>Zeitraum</de>
@@ -907,6 +918,16 @@ Les coûts de réparation cumulés atteignent %d %% de la valeur du véhicule. U
             <en>Smaller amounts appear as one sum per game day and category. 0 writes every booking on its own line.</en>
             <fr>Les montants plus petits apparaissent comme une somme par jour de jeu et catégorie. 0 écrit chaque opération séparément.</fr>
         </text>
+        <text name="ao_ui_mkAktiv">
+            <de>Maschinenkosten erfassen</de>
+            <en>Track machine costs</en>
+            <fr>Suivre les coûts des machines</fr>
+        </text>
+        <text name="ao_ui_mkAktiv_t">
+            <de>An: Für jedes Fahrzeug und Gerät des Hofs werden Stunden, Kraftstoff, Fläche und Kosten gezählt. Daraus entstehen Euro je Stunde und je Hektar. Die Mod verändert dabei keine Kosten.</de>
+            <en>On: hours, fuel, area and costs are counted for every vehicle and implement of the farm, giving cost per hour and per hectare. This does not change any costs.</en>
+            <fr>Activé : heures, carburant, surface et coûts sont comptés pour chaque véhicule et outil de la ferme, d'où un coût par heure et par hectare. Aucun coût n'est modifié.</fr>
+        </text>
         <text name="ao_buch_kredit">
             <de>Kredit</de>
             <en>Loan</en>
@@ -923,14 +944,14 @@ Les coûts de réparation cumulés atteignent %d %% de la valeur du véhicule. U
             <fr>En plus des sommes mensuelles, le mod note chaque mouvement d'argent séparément. Une ligne contient le mois de jeu, le jour, l'heure, l'exploitation, le groupe, par exemple recette de récolte, consommables ou achat de véhicule, puis la catégorie du jeu, le montant et le solde qui en résulte. Ventes, achats, investissements, salaires et taxes apparaissent opération par opération. Pour le carburant, les semences, l'engrais, les frais courants des véhicules et des bâtiments et les revenus horaires des bâtiments, c'est différent : le jeu les comptabilise en continu. Ligne par ligne, cela ferait des milliers de lignes par heure de jeu, alors le fichier n'en garde qu'une somme par jour de jeu et par catégorie. Les montants sous le seuil que vous avez réglé y passent aussi. Quelle marchandise a été vendue, le fichier ne peut pas le dire. Le jeu ne transmet que le montant, l'exploitation et la catégorie, ni la culture ni le point de vente.</fr>
         </text>
         <text name="ao_help_buchFensterTitle">
-            <de>Das Fenster im Spiel</de>
-            <en>The window in the game</en>
-            <fr>La fenêtre dans le jeu</fr>
+            <de>Der Hof-PC</de>
+            <en>The farm PC</en>
+            <fr>Le PC de la ferme</fr>
         </text>
         <text name="ao_help_buchFenster">
-            <de>Keine Lust, im Spielstand-Ordner nach der Datei zu suchen? Strg+K öffnet das Kassenbuch direkt im Spiel. In der ersten Zeile wählst du, ob du Monate oder Jahre sehen willst, in der zweiten blätterst du mit den Pfeilen zurück, bis zum Anfang des vorigen Spieljahres. Oben stehen Einnahmen, Ausgaben, Investitionen und der Saldo für den gewählten Zeitraum. Links darunter zeigt eine Rangliste mit Balken, wofür das Geld weggeht. Der größte Posten steht oben, Investitionen sind grün, laufende Kosten orange. Rechts stehen die letzten Buchungen mit Uhrzeit, Gruppe und Betrag, Grundsteuer und Fuhrpark-Steuer unter ihrem eigenen Namen. Die Zeile ganz unten vergleicht mit dem Monat davor, beim laufenden Jahr mit denselben Monaten des Vorjahres. Im Mehrspieler bekommt jeder die Zahlen seines eigenen Hofes zu sehen. Gerechnet wird auf dem Server, der Client fragt beim Öffnen dort nach. Die Taste kannst du in den Spieleinstellungen umlegen.</de>
-            <en>Ctrl+K brings up the cash book in the game, so there's no need to dig through the savegame folder. The first row switches between months and years, the second lets you page back with the arrows, as far as the start of last game year. At the top you see income, expenses, investments and the balance for that period. Bottom left is a bar ranking of where your money goes, biggest item first, with investments in green and running costs in orange. On the right you get the latest bookings with time, group and amount, and property tax and fleet tax show up under their own names. The line at the very bottom compares with the month before, or for the current year with the same months of last year. In multiplayer each player sees their own farm's figures. The server does the maths and the client asks for them when the window opens. You can rebind the key in the game settings.</en>
-            <fr>Pas besoin de connaître le dossier de sauvegarde : Ctrl+K ouvre le livre de caisse en plein jeu. La première ligne choisit entre mois et années, la seconde permet de remonter avec les flèches jusqu'au début de l'année de jeu précédente. En haut figurent les revenus, les dépenses, les investissements et le solde de la période choisie. En bas à gauche, un classement en barres montre où part l'argent, le poste le plus lourd en premier ; les investissements sont en vert, les frais courants en orange. La partie droite liste les dernières opérations avec l'heure, le groupe et le montant, l'impôt foncier et la taxe de flotte sous leur propre nom. Tout en bas, la fenêtre compare avec le mois précédent, ou pour l'année en cours avec les mêmes mois de l'année d'avant. En multijoueur, chacun ne voit que les chiffres de sa propre exploitation : le serveur fait le calcul et le client le lui demande à l'ouverture. La touche se change dans les réglages du jeu.</fr>
+            <de>Strg+K schaltet den Hof-PC ein, zu Fuß wie im Fahrzeug. Oben in der Leiste liegen die Programme. Start zeigt Kontostand, Vermögen, das Ergebnis von Monat und Jahr und die letzten sechs Monate als Balken. Im Kassenbuch wählst du Monate oder Jahre und blätterst mit den Pfeilen zurück bis zum Anfang des vorigen Spieljahres. Links siehst du, wofür das Geld weggeht, rechts die letzten Buchungen. Unter Fuhrpark steht jedes Fahrzeug und Gerät mit Stunden, Kosten nach Art und Kosten je Stunde, ein Klick auf eine Zeile zeigt rechts die Einzelheiten samt Vergleich mit Leasing. Abgaben &amp; Helfer sammelt Steuern, Zinsen, Helferlöhne und den Stand der Sicherheitsbremse. Ist die Betriebsübersicht installiert, gibt es deren Felder, Aufgaben, Lager, Tiere und Produktion als eigenes Programm dazu. Im Mehrspieler sieht jeder nur seinen Hof, gerechnet wird auf dem Server. Die Taste kannst du in den Spieleinstellungen umlegen.</de>
+            <en>Ctrl+K switches on the farm PC, on foot or in a vehicle. The programs sit in the bar at the top. Home shows your balance, net worth, the result for month and year and the last six months as bars. In the cash book you pick months or years and page back with the arrows as far as the start of last game year; on the left you see where the money goes, on the right the latest bookings. Fleet lists every vehicle and tool with hours, costs by type and cost per hour, and a click on a row shows the details on the right, including a comparison with leasing. Charges &amp; helpers gathers taxes, interest, helper wages and the state of the safety brake. If Farm Overview is installed, its fields, tasks, storage, animals and production come along as a program of their own. In multiplayer everyone only sees their own farm, the server does the maths. You can rebind the key in the game settings.</en>
+            <fr>Ctrl+K allume le PC de la ferme, à pied comme en véhicule. Les programmes se trouvent dans la barre du haut. Accueil affiche le solde, le patrimoine, le résultat du mois et de l'année et les six derniers mois en barres. Dans le livre de caisse, vous choisissez mois ou années et remontez avec les flèches jusqu'au début de l'année de jeu précédente ; à gauche, où part l'argent, à droite les dernières opérations. Parc liste chaque véhicule et outil avec heures, coûts par type et coût par heure ; un clic sur une ligne affiche le détail à droite, avec une comparaison au leasing. Charges et ouvriers regroupe impôts, intérêts, salaires des ouvriers et l'état du frein de sécurité. Si Aperçu Exploitation est installé, ses champs, tâches, stocks, animaux et productions s'ajoutent comme programme à part. En multijoueur, chacun ne voit que sa ferme et le serveur fait le calcul. La touche se change dans les réglages du jeu.</fr>
         </text>
         <text name="ao_help_buchDateiTitle">
             <de>Wo die Datei liegt</de>
@@ -2106,6 +2127,856 @@ Les coûts de réparation cumulés atteignent %d %% de la valeur du véhicule. U
             <de>Im Juli ein halbes Jahr gegen ein ganzes Vorjahr zu stellen, wäre Unsinn. Deshalb stehen immer dieselben Monate beider Jahre nebeneinander, also etwa März bis Juli gegen März bis Juli. Den Stand des Betriebs vergleicht die Mod mit dem Beginn desselben Monats im Vorjahr. Aufgezeichnet wird erst ab der Installation, den ersten Vergleich gibt es also im folgenden Spieljahr. Ausgaben stehen als negative Beträge da. Einen Kredit aufnehmen oder tilgen zählt weder als Einnahme noch als Ausgabe.</de>
             <en>Putting half a year up against a whole one would tell you nothing, so both years are always cut to the same months, say March to July against March to July. Your farm's position is held up against the start of the same month last year. Recording only begins once the mod is installed, which means the first comparison shows up in the following in-game year. Expenses appear as negative amounts. Taking out a loan or paying it back counts as neither income nor expense.</en>
             <fr>La rubrique compare toujours les mêmes mois des deux années, par exemple de mars à juillet cette année face à mars à juillet l'an dernier. En plein été, vous ne mettez donc pas une demi-année en face d'une année entière. Pour la situation de l'exploitation, la référence est le début du même mois de l'année précédente. Le mod n'enregistre qu'à partir de son installation ; il faut donc attendre l'année de jeu suivante pour la première comparaison. Les dépenses apparaissent en montants négatifs. Emprunter ou rembourser le prêt ne compte ni comme revenu ni comme dépense.</fr>
+        </text>
+        <text name="ao_pc_titel">
+            <de>Hof-PC</de>
+            <en>Farm PC</en>
+            <fr>PC de la ferme</fr>
+        </text>
+        <text name="ao_pc_tab1">
+            <de>Start</de>
+            <en>Home</en>
+            <fr>Accueil</fr>
+        </text>
+        <text name="ao_pc_tab2">
+            <de>Kassenbuch</de>
+            <en>Cash book</en>
+            <fr>Livre de caisse</fr>
+        </text>
+        <text name="ao_pc_tab3">
+            <de>Fuhrpark</de>
+            <en>Fleet</en>
+            <fr>Parc</fr>
+        </text>
+        <text name="ao_pc_tab4">
+            <de>Abgaben &amp; Helfer</de>
+            <en>Charges &amp; helpers</en>
+            <fr>Charges et ouvriers</fr>
+        </text>
+        <text name="ao_pc_tab5">
+            <de>Betriebsübersicht</de>
+            <en>Farm Overview</en>
+            <fr>Aperçu Exploitation</fr>
+        </text>
+        <text name="ao_pc_uhr">
+            <de>%s. %s, Jahr %s, %s Uhr</de>
+            <en>%s %s, year %s, %s</en>
+            <fr>%s %s, année %s, %s</fr>
+        </text>
+        <text name="ao_pc_laedt">
+            <de>Zahlen werden geholt …</de>
+            <en>Fetching figures …</en>
+            <fr>Récupération des chiffres …</fr>
+        </text>
+        <text name="ao_pc_an">
+            <de>an</de>
+            <en>on</en>
+            <fr>activé</fr>
+        </text>
+        <text name="ao_pc_aus">
+            <de>aus</de>
+            <en>off</en>
+            <fr>désactivé</fr>
+        </text>
+        <text name="ao_pc_heuteNacht">
+            <de>heute Nacht</de>
+            <en>tonight</en>
+            <fr>cette nuit</fr>
+        </text>
+        <text name="ao_pc_inTagen">
+            <de>in %s Tagen</de>
+            <en>in %s days</en>
+            <fr>dans %s jours</fr>
+        </text>
+        <text name="ao_pc_monate">
+            <de>%s Monate</de>
+            <en>%s months</en>
+            <fr>%s mois</fr>
+        </text>
+        <text name="ao_pc_monatlich">
+            <de>monatlich</de>
+            <en>monthly</en>
+            <fr>mensuelle</fr>
+        </text>
+        <text name="ao_pc_jaehrlichIn">
+            <de>jährlich, nächste in %s Monaten</de>
+            <en>yearly, next in %s months</en>
+            <fr>annuelle, prochaine dans %s mois</fr>
+        </text>
+        <text name="ao_pc_stKonto">
+            <de>Kontostand</de>
+            <en>Balance</en>
+            <fr>Solde</fr>
+        </text>
+        <text name="ao_pc_stKredit">
+            <de>Kredit: %s</de>
+            <en>Loan: %s</en>
+            <fr>Prêt : %s</fr>
+        </text>
+        <text name="ao_pc_stNetto">
+            <de>Vermögen</de>
+            <en>Net worth</en>
+            <fr>Patrimoine</fr>
+        </text>
+        <text name="ao_pc_stNettoSub">
+            <de>Geld, Maschinen, Gebäude und Land, abzüglich Kredit</de>
+            <en>Cash, machines, buildings and land, minus loan</en>
+            <fr>Argent, machines, bâtiments et terrains, moins le prêt</fr>
+        </text>
+        <text name="ao_pc_stVorjahr">
+            <de>%s zum Vorjahr</de>
+            <en>%s on last year</en>
+            <fr>%s par rapport à l'an dernier</fr>
+        </text>
+        <text name="ao_pc_stMonat">
+            <de>Ergebnis dieser Monat</de>
+            <en>Result this month</en>
+            <fr>Résultat ce mois-ci</fr>
+        </text>
+        <text name="ao_pc_stJahr">
+            <de>Ergebnis dieses Jahr</de>
+            <en>Result this year</en>
+            <fr>Résultat cette année</fr>
+        </text>
+        <text name="ao_pc_stEinAus">
+            <de>Einnahmen %s, Ausgaben %s</de>
+            <en>Income %s, expenses %s</en>
+            <fr>Revenus %s, dépenses %s</fr>
+        </text>
+        <text name="ao_pc_stInvest">
+            <de>dazu Investitionen %s</de>
+            <en>plus investments of %s</en>
+            <fr>plus %s d'investissements</fr>
+        </text>
+        <text name="ao_pc_stVermoegen">
+            <de>Was der Hof wert ist</de>
+            <en>What the farm is worth</en>
+            <fr>Ce que vaut la ferme</fr>
+        </text>
+        <text name="ao_pc_stGeld">
+            <de>Geld</de>
+            <en>Cash</en>
+            <fr>Argent</fr>
+        </text>
+        <text name="ao_pc_stFahrzeuge">
+            <de>Fahrzeuge</de>
+            <en>Vehicles</en>
+            <fr>Véhicules</fr>
+        </text>
+        <text name="ao_pc_stGebaeude">
+            <de>Gebäude</de>
+            <en>Buildings</en>
+            <fr>Bâtiments</fr>
+        </text>
+        <text name="ao_pc_stLand">
+            <de>Land</de>
+            <en>Land</en>
+            <fr>Terrains</fr>
+        </text>
+        <text name="ao_pc_stKreditPosten">
+            <de>Kredit</de>
+            <en>Loan</en>
+            <fr>Prêt</fr>
+        </text>
+        <text name="ao_pc_stBlick">
+            <de>Auf einen Blick</de>
+            <en>At a glance</en>
+            <fr>En un coup d'œil</fr>
+        </text>
+        <text name="ao_pc_stFelder">
+            <de>Fläche</de>
+            <en>Area</en>
+            <fr>Surface</fr>
+        </text>
+        <text name="ao_pc_stFelderWert">
+            <de>%s ha Feld, %s ha Land</de>
+            <en>%s ha fields, %s ha land</en>
+            <fr>%s ha de champs, %s ha de terrain</fr>
+        </text>
+        <text name="ao_pc_stMaschinen">
+            <de>Fahrzeuge und Geräte</de>
+            <en>Vehicles and tools</en>
+            <fr>Véhicules et outils</fr>
+        </text>
+        <text name="ao_pc_stMaschinenWert">
+            <de>%s, davon %s geleast</de>
+            <en>%s, %s of them leased</en>
+            <fr>%s, dont %s en leasing</fr>
+        </text>
+        <text name="ao_pc_stMkJahr">
+            <de>Maschinenkosten dieses Jahr</de>
+            <en>Machine costs this year</en>
+            <fr>Coûts machines cette année</fr>
+        </text>
+        <text name="ao_pc_stTeuer">
+            <de>Teuerste je Stunde</de>
+            <en>Most expensive per hour</en>
+            <fr>La plus chère par heure</fr>
+        </text>
+        <text name="ao_pc_stTeuerWert">
+            <de>%s, %s/h</de>
+            <en>%s, %s/h</en>
+            <fr>%s, %s/h</fr>
+        </text>
+        <text name="ao_pc_stAbgaben">
+            <de>Abgaben nächster Monat</de>
+            <en>Charges next month</en>
+            <fr>Charges le mois prochain</fr>
+        </text>
+        <text name="ao_pc_stWechsel">
+            <de>Nächster Monatswechsel</de>
+            <en>Next month change</en>
+            <fr>Prochain changement de mois</fr>
+        </text>
+        <text name="ao_pc_stHelfer">
+            <de>Helfer gerade im Einsatz</de>
+            <en>Helpers working now</en>
+            <fr>Ouvriers au travail</fr>
+        </text>
+        <text name="ao_pc_stLohn">
+            <de>Helferlöhne dieses Jahr</de>
+            <en>Helper wages this year</en>
+            <fr>Salaires des ouvriers cette année</fr>
+        </text>
+        <text name="ao_pc_stVerlauf">
+            <de>Die letzten sechs Monate</de>
+            <en>The last six months</en>
+            <fr>Les six derniers mois</fr>
+        </text>
+        <text name="ao_pc_abTitel">
+            <de>Abgaben und Zinsen</de>
+            <en>Charges and interest</en>
+            <fr>Charges et intérêts</fr>
+        </text>
+        <text name="ao_pc_abPosten">
+            <de>Posten</de>
+            <en>Item</en>
+            <fr>Poste</fr>
+        </text>
+        <text name="ao_pc_abNaechste">
+            <de>Nächste Abrechnung</de>
+            <en>Next billing</en>
+            <fr>Prochaine facture</fr>
+        </text>
+        <text name="ao_pc_abJahr">
+            <de>Dieses Jahr</de>
+            <en>This year</en>
+            <fr>Cette année</fr>
+        </text>
+        <text name="ao_pc_abVorjahr">
+            <de>Vorjahr</de>
+            <en>Last year</en>
+            <fr>Année dernière</fr>
+        </text>
+        <text name="ao_pc_abFs">
+            <de>Fuhrpark-Steuer</de>
+            <en>Fleet tax</en>
+            <fr>Taxe de flotte</fr>
+        </text>
+        <text name="ao_pc_abGs">
+            <de>Grundsteuer</de>
+            <en>Property tax</en>
+            <fr>Impôt foncier</fr>
+        </text>
+        <text name="ao_pc_abKredit">
+            <de>Kreditzinsen</de>
+            <en>Loan interest</en>
+            <fr>Intérêts du prêt</fr>
+        </text>
+        <text name="ao_pc_abLohn">
+            <de>Helferlöhne</de>
+            <en>Helper wages</en>
+            <fr>Salaires des ouvriers</fr>
+        </text>
+        <text name="ao_pc_abZins">
+            <de>Guthabenzins (Gutschrift)</de>
+            <en>Interest on savings (credit)</en>
+            <fr>Intérêts créditeurs (crédit)</fr>
+        </text>
+        <text name="ao_pc_abSumme">
+            <de>Kosten zusammen</de>
+            <en>Total costs</en>
+            <fr>Total des coûts</fr>
+        </text>
+        <text name="ao_pc_abStrich">
+            <de>Unterm Strich, nach Zins</de>
+            <en>Bottom line after interest</en>
+            <fr>Bilan après intérêts</fr>
+        </text>
+        <text name="ao_pc_abGrundlagen">
+            <de>Womit gerechnet wird</de>
+            <en>What it is based on</en>
+            <fr>Sur quoi repose le calcul</fr>
+        </text>
+        <text name="ao_pc_abFsInfo">
+            <de>Fuhrpark</de>
+            <en>Fleet</en>
+            <fr>Parc</fr>
+        </text>
+        <text name="ao_pc_abFsInfoWert">
+            <de>%s besteuert, %s ruhend, %s unter Dach</de>
+            <en>%s taxed, %s idle, %s under a roof</en>
+            <fr>%s taxés, %s à l'arrêt, %s à l'abri</fr>
+        </text>
+        <text name="ao_pc_abFsAbrechnung">
+            <de>Abrechnung Fuhrpark-Steuer</de>
+            <en>Fleet tax billing</en>
+            <fr>Facturation de la taxe de flotte</fr>
+        </text>
+        <text name="ao_pc_abKarenz">
+            <de>Neufahrzeuge steuerfrei</de>
+            <en>New vehicles tax free for</en>
+            <fr>Véhicules neufs exonérés</fr>
+        </text>
+        <text name="ao_pc_abGsInfo">
+            <de>Grundsteuer</de>
+            <en>Property tax</en>
+            <fr>Impôt foncier</fr>
+        </text>
+        <text name="ao_pc_abGsInfoWert">
+            <de>Landwert %s, %s ha, %s im Jahr</de>
+            <en>land value %s, %s ha, %s a year</en>
+            <fr>valeur %s, %s ha, %s par an</fr>
+        </text>
+        <text name="ao_pc_abZiInfo">
+            <de>Guthabenzins</de>
+            <en>Interest on savings</en>
+            <fr>Intérêts créditeurs</fr>
+        </text>
+        <text name="ao_pc_abZiInfoWert">
+            <de>auf %s, %s im Jahr</de>
+            <en>on %s, %s a year</en>
+            <fr>sur %s, %s par an</fr>
+        </text>
+        <text name="ao_pc_abZiLetzte">
+            <de>Letzte Zinsgutschrift</de>
+            <en>Last interest credit</en>
+            <fr>Dernier crédit d'intérêts</fr>
+        </text>
+        <text name="ao_pc_abKreditStand">
+            <de>Kredit offen</de>
+            <en>Loan outstanding</en>
+            <fr>Prêt restant</fr>
+        </text>
+        <text name="ao_pc_abFuss">
+            <de>Die nächste Abrechnung ist eine Schätzung mit dem heutigen Stand. Die Bremse kann sie noch kürzen.</de>
+            <en>The next billing is an estimate based on today. The safety brake may still reduce it.</en>
+            <fr>La prochaine facture est une estimation à partir de la situation actuelle. Le frein peut encore la réduire.</fr>
+        </text>
+        <text name="ao_pc_abHelfer">
+            <de>Helfer</de>
+            <en>Helpers</en>
+            <fr>Ouvriers</fr>
+        </text>
+        <text name="ao_pc_hlModul">
+            <de>Helferlohn</de>
+            <en>Helper wages</en>
+            <fr>Salaire des ouvriers</fr>
+        </text>
+        <text name="ao_pc_hlModus">
+            <de>Bezahlung</de>
+            <en>Payment</en>
+            <fr>Paiement</fr>
+        </text>
+        <text name="ao_pc_hlStunde">
+            <de>Stundenlohn</de>
+            <en>Hourly wage</en>
+            <fr>Salaire horaire</fr>
+        </text>
+        <text name="ao_pc_hlFest">
+            <de>Festpreis je Auftrag</de>
+            <en>Fixed price per job</en>
+            <fr>Prix fixe par mission</fr>
+        </text>
+        <text name="ao_pc_hlStufe">
+            <de>Lohn</de>
+            <en>Wage</en>
+            <fr>Salaire</fr>
+        </text>
+        <text name="ao_pc_hlStufeWert">
+            <de>%s, Faktor %s</de>
+            <en>%s, factor %s</en>
+            <fr>%s, facteur %s</fr>
+        </text>
+        <text name="ao_pc_hlFestWert">
+            <de>je nach Aufgabe, siehe Helferfenster</de>
+            <en>depends on the task, see helper window</en>
+            <fr>selon la tâche, voir la fenêtre des ouvriers</fr>
+        </text>
+        <text name="ao_pc_hlZufall">
+            <de>Verfügbarkeit</de>
+            <en>Availability</en>
+            <fr>Disponibilité</fr>
+        </text>
+        <text name="ao_pc_hlZufallAn">
+            <de>nicht immer jemand frei</de>
+            <en>not always someone free</en>
+            <fr>pas toujours quelqu'un de libre</fr>
+        </text>
+        <text name="ao_pc_hlZufallAus">
+            <de>immer jemand da</de>
+            <en>always someone there</en>
+            <fr>toujours quelqu'un</fr>
+        </text>
+        <text name="ao_pc_hlGratis">
+            <de>Sprit und Material beim Helfer</de>
+            <en>Fuel and supplies for helpers</en>
+            <fr>Carburant et intrants des ouvriers</fr>
+        </text>
+        <text name="ao_pc_hlGratisAn">
+            <de>gratis</de>
+            <en>free</en>
+            <fr>gratuits</fr>
+        </text>
+        <text name="ao_pc_hlGratisAus">
+            <de>zahlt der Hof</de>
+            <en>paid by the farm</en>
+            <fr>payés par la ferme</fr>
+        </text>
+        <text name="ao_pc_hlEinsatz">
+            <de>Gerade im Einsatz</de>
+            <en>Working now</en>
+            <fr>Au travail</fr>
+        </text>
+        <text name="ao_pc_hlMonat">
+            <de>Lohn diesen Monat</de>
+            <en>Wages this month</en>
+            <fr>Salaires ce mois-ci</fr>
+        </text>
+        <text name="ao_pc_abBremse">
+            <de>Sicherheitsbremse</de>
+            <en>Safety brake</en>
+            <fr>Frein de sécurité</fr>
+        </text>
+        <text name="ao_pc_brModul">
+            <de>Bremse</de>
+            <en>Brake</en>
+            <fr>Frein</fr>
+        </text>
+        <text name="ao_pc_brDeckel">
+            <de>Deckel je Spieltag</de>
+            <en>Cap per game day</en>
+            <fr>Plafond par jour</fr>
+        </text>
+        <text name="ao_pc_brDeckelWert">
+            <de>%s der Einnahmen</de>
+            <en>%s of income</en>
+            <fr>%s des revenus</fr>
+        </text>
+        <text name="ao_pc_brSchnitt">
+            <de>Einnahmen je Tag im Schnitt</de>
+            <en>Average income per day</en>
+            <fr>Revenus moyens par jour</fr>
+        </text>
+        <text name="ao_pc_brBudget">
+            <de>Tagesbudget für Abgaben</de>
+            <en>Daily budget for charges</en>
+            <fr>Budget journalier des charges</fr>
+        </text>
+        <text name="ao_pc_brKeinBudget">
+            <de>noch keine Einnahmen, kein Deckel</de>
+            <en>no income yet, no cap</en>
+            <fr>pas encore de revenus, pas de plafond</fr>
+        </text>
+        <text name="ao_pc_brHeute">
+            <de>Heute abgebucht</de>
+            <en>Charged today</en>
+            <fr>Prélevé aujourd'hui</fr>
+        </text>
+        <text name="ao_pc_brMindest">
+            <de>Mindestkontostand</de>
+            <en>Minimum balance</en>
+            <fr>Solde minimum</fr>
+        </text>
+        <text name="ao_pc_brSpielraum">
+            <de>Luft bis zum Mindestkontostand</de>
+            <en>Room above the minimum balance</en>
+            <fr>Marge au-dessus du solde minimum</fr>
+        </text>
+        <text name="ao_pc_brKappung">
+            <de>Letzte Kürzung</de>
+            <en>Last reduction</en>
+            <fr>Dernière réduction</fr>
+        </text>
+        <text name="ao_pc_brKeine">
+            <de>keine</de>
+            <en>none</en>
+            <fr>aucune</fr>
+        </text>
+        <text name="ao_pc_brKappungWert">
+            <de>vor %s Tagen %s statt %s, %s</de>
+            <en>%s days ago %s instead of %s, %s</en>
+            <fr>il y a %s jours %s au lieu de %s, %s</fr>
+        </text>
+        <text name="ao_pc_brGrundDeckel">
+            <de>Deckel</de>
+            <en>cap</en>
+            <fr>plafond</fr>
+        </text>
+        <text name="ao_pc_brGrundKonto">
+            <de>Mindestkonto</de>
+            <en>minimum balance</en>
+            <fr>solde minimum</fr>
+        </text>
+        <text name="ao_pc_brBalken">
+            <de>Heute %s von %s Tagesbudget verbraucht</de>
+            <en>%s of the %s daily budget used today</en>
+            <fr>%s du budget journalier de %s utilisés aujourd'hui</fr>
+        </text>
+        <text name="ao_pc_foBereich">
+            <de>Bereich</de>
+            <en>Section</en>
+            <fr>Section</fr>
+        </text>
+        <text name="ao_pc_foFelder">
+            <de>Felder</de>
+            <en>Fields</en>
+            <fr>Champs</fr>
+        </text>
+        <text name="ao_pc_foAufgaben">
+            <de>Aufgaben</de>
+            <en>Tasks</en>
+            <fr>Tâches</fr>
+        </text>
+        <text name="ao_pc_foLager">
+            <de>Lager</de>
+            <en>Storage</en>
+            <fr>Stocks</fr>
+        </text>
+        <text name="ao_pc_foTiere">
+            <de>Tiere</de>
+            <en>Animals</en>
+            <fr>Animaux</fr>
+        </text>
+        <text name="ao_pc_foProduktion">
+            <de>Produktion</de>
+            <en>Production</en>
+            <fr>Production</fr>
+        </text>
+        <text name="ao_pc_foFehlt">
+            <de>Die Betriebsübersicht ist nicht geladen.</de>
+            <en>Farm Overview is not loaded.</en>
+            <fr>Aperçu Exploitation n'est pas chargé.</fr>
+        </text>
+        <text name="ao_pc_foLeer">
+            <de>Die Betriebsübersicht hat hier noch nichts zu zeigen.</de>
+            <en>Farm Overview has nothing to show here yet.</en>
+            <fr>Aperçu Exploitation n'a encore rien à afficher ici.</fr>
+        </text>
+        <text name="ao_pc_foHinweis">
+            <de>Aufgabe anklicken zum Übernehmen, Feld anklicken zum Aufklappen, öffnen führt zum Stall. Fruchtwahl und Einstellungen im ESC-Menü.</de>
+            <en>Click a task to take it over, a field to expand it, open takes you to the barn. Crop choice and settings are in the ESC menu.</en>
+            <fr>Cliquez une tâche pour la prendre, un champ pour le déplier, ouvrir mène à l'étable. Cultures et réglages dans le menu Échap.</fr>
+        </text>
+        <text name="ao_mk_zeitraum">
+            <de>Zeitraum</de>
+            <en>Period</en>
+            <fr>Période</fr>
+        </text>
+        <text name="ao_mk_jahr">
+            <de>Dieses Spieljahr</de>
+            <en>This game year</en>
+            <fr>Cette année de jeu</fr>
+        </text>
+        <text name="ao_mk_vorjahr">
+            <de>Voriges Spieljahr</de>
+            <en>Last game year</en>
+            <fr>Année de jeu précédente</fr>
+        </text>
+        <text name="ao_mk_gesamt">
+            <de>Gesamt</de>
+            <en>Total</en>
+            <fr>Total</fr>
+        </text>
+        <text name="ao_mk_sortieren">
+            <de>Sortieren</de>
+            <en>Sort by</en>
+            <fr>Trier par</fr>
+        </text>
+        <text name="ao_mk_sortEh">
+            <de>Kosten je Stunde</de>
+            <en>Cost per hour</en>
+            <fr>Coût par heure</fr>
+        </text>
+        <text name="ao_mk_sortSumme">
+            <de>Kosten gesamt</de>
+            <en>Total cost</en>
+            <fr>Coût total</fr>
+        </text>
+        <text name="ao_mk_sortStd">
+            <de>Betriebsstunden</de>
+            <en>Operating hours</en>
+            <fr>Heures de service</fr>
+        </text>
+        <text name="ao_mk_sortAusl">
+            <de>Wenig genutzt zuerst</de>
+            <en>Least used first</en>
+            <fr>Les moins utilisés d'abord</fr>
+        </text>
+        <text name="ao_mk_sortName">
+            <de>Name</de>
+            <en>Name</en>
+            <fr>Nom</fr>
+        </text>
+        <text name="ao_mk_zeigen">
+            <de>Zeigen</de>
+            <en>Show</en>
+            <fr>Afficher</fr>
+        </text>
+        <text name="ao_mk_zeigAlle">
+            <de>Alles</de>
+            <en>Everything</en>
+            <fr>Tout</fr>
+        </text>
+        <text name="ao_mk_zeigMotor">
+            <de>Nur Fahrzeuge mit Motor</de>
+            <en>Only motor vehicles</en>
+            <fr>Véhicules à moteur seulement</fr>
+        </text>
+        <text name="ao_mk_zeigGeraete">
+            <de>Nur Geräte</de>
+            <en>Only tools</en>
+            <fr>Outils seulement</fr>
+        </text>
+        <text name="ao_mk_zeigLeasing">
+            <de>Nur geleaste</de>
+            <en>Only leased</en>
+            <fr>En leasing seulement</fr>
+        </text>
+        <text name="ao_mk_zeigKaum">
+            <de>Kaum genutzt</de>
+            <en>Hardly used</en>
+            <fr>Peu utilisés</fr>
+        </text>
+        <text name="ao_mk_seite">
+            <de>Seite</de>
+            <en>Page</en>
+            <fr>Page</fr>
+        </text>
+        <text name="ao_mk_seiteVon">
+            <de>%s von %s</de>
+            <en>%s of %s</en>
+            <fr>%s sur %s</fr>
+        </text>
+        <text name="ao_mk_hName">
+            <de>Fahrzeug oder Gerät</de>
+            <en>Vehicle or tool</en>
+            <fr>Véhicule ou outil</fr>
+        </text>
+        <text name="ao_mk_hStd">
+            <de>Std.</de>
+            <en>Hrs</en>
+            <fr>H</fr>
+        </text>
+        <text name="ao_mk_hKosten">
+            <de>Kosten nach Art</de>
+            <en>Costs by type</en>
+            <fr>Coûts par type</fr>
+        </text>
+        <text name="ao_mk_hSumme">
+            <de>Summe</de>
+            <en>Total</en>
+            <fr>Total</fr>
+        </text>
+        <text name="ao_mk_hEh">
+            <de>je Std.</de>
+            <en>per hr</en>
+            <fr>par h</fr>
+        </text>
+        <text name="ao_mk_hZustand">
+            <de>Zustand</de>
+            <en>Condition</en>
+            <fr>État</fr>
+        </text>
+        <text name="ao_mk_lWert">
+            <de>Wertverlust</de>
+            <en>Depreciation</en>
+            <fr>Dépréciation</fr>
+        </text>
+        <text name="ao_mk_lRep">
+            <de>Reparaturen</de>
+            <en>Repairs</en>
+            <fr>Réparations</fr>
+        </text>
+        <text name="ao_mk_lSprit">
+            <de>Kraftstoffkosten</de>
+            <en>Fuel cost</en>
+            <fr>Coût du carburant</fr>
+        </text>
+        <text name="ao_mk_lUnterhalt">
+            <de>Unterhalt und Leasing</de>
+            <en>Upkeep and leasing</en>
+            <fr>Entretien et leasing</fr>
+        </text>
+        <text name="ao_mk_lFuhrpark">
+            <de>Fuhrpark-Kosten</de>
+            <en>Fleet costs</en>
+            <fr>Frais de flotte</fr>
+        </text>
+        <text name="ao_mk_kKosten">
+            <de>Kosten</de>
+            <en>Costs</en>
+            <fr>Coûts</fr>
+        </text>
+        <text name="ao_mk_kKostenSub">
+            <de>für %s Fahrzeuge und Geräte</de>
+            <en>for %s vehicles and tools</en>
+            <fr>pour %s véhicules et outils</fr>
+        </text>
+        <text name="ao_mk_kStunden">
+            <de>Betriebsstunden</de>
+            <en>Operating hours</en>
+            <fr>Heures de service</fr>
+        </text>
+        <text name="ao_mk_kStundenSub">
+            <de>nur Fahrzeuge mit Motor</de>
+            <en>motor vehicles only</en>
+            <fr>véhicules à moteur seulement</fr>
+        </text>
+        <text name="ao_mk_kEh">
+            <de>Kosten je Stunde</de>
+            <en>Cost per hour</en>
+            <fr>Coût par heure</fr>
+        </text>
+        <text name="ao_mk_kEhSub">
+            <de>Schnitt der Fahrzeuge mit Motor</de>
+            <en>average of motor vehicles</en>
+            <fr>moyenne des véhicules à moteur</fr>
+        </text>
+        <text name="ao_mk_kSprit">
+            <de>Kraftstoff</de>
+            <en>Fuel</en>
+            <fr>Carburant</fr>
+        </text>
+        <text name="ao_mk_kSpritSub">
+            <de>für %s</de>
+            <en>costing %s</en>
+            <fr>pour %s</fr>
+        </text>
+        <text name="ao_mk_kFlaeche">
+            <de>Bearbeitete Fläche</de>
+            <en>Area worked</en>
+            <fr>Surface travaillée</fr>
+        </text>
+        <text name="ao_mk_kFlaecheSub">
+            <de>%s je Hektar</de>
+            <en>%s per hectare</en>
+            <fr>%s par hectare</fr>
+        </text>
+        <text name="ao_mk_eigentum">
+            <de>Eigentum</de>
+            <en>Owned</en>
+            <fr>En propriété</fr>
+        </text>
+        <text name="ao_mk_geleast">
+            <de>Geleast</de>
+            <en>Leased</en>
+            <fr>En leasing</fr>
+        </text>
+        <text name="ao_mk_nameGeleast">
+            <de>%s (Leasing)</de>
+            <en>%s (leased)</en>
+            <fr>%s (leasing)</fr>
+        </text>
+        <text name="ao_mk_dStatus">
+            <de>%s, Zeitwert %s</de>
+            <en>%s, current value %s</en>
+            <fr>%s, valeur actuelle %s</fr>
+        </text>
+        <text name="ao_mk_dLeasingBesser">
+            <de>Geleast hätte das nur %s gekostet statt %s. Leasing wäre hier günstiger.</de>
+            <en>Leasing would have cost only %s instead of %s. Leasing would be cheaper here.</en>
+            <fr>En leasing, cela n'aurait coûté que %s au lieu de %s. Le leasing serait moins cher ici.</fr>
+        </text>
+        <text name="ao_mk_dLeasingVgl">
+            <de>Geleast hätte das %s gekostet, als Eigentum %s (ohne Kraftstoff).</de>
+            <en>Leased it would have cost %s, owned it cost %s (fuel not included).</en>
+            <fr>En leasing : %s, en propriété : %s (hors carburant).</fr>
+        </text>
+        <text name="ao_mk_dAltbestand">
+            <de>Stunden und Wertverlust seit dem Kauf, Reparaturen und Kraftstoff erst ab der Erfassung.</de>
+            <en>Hours and depreciation since purchase, repairs and fuel only since tracking began.</en>
+            <fr>Heures et dépréciation depuis l'achat, réparations et carburant seulement depuis le début du suivi.</fr>
+        </text>
+        <text name="ao_mk_dStunden">
+            <de>Betriebsstunden</de>
+            <en>Operating hours</en>
+            <fr>Heures de service</fr>
+        </text>
+        <text name="ao_mk_dStundenWert">
+            <de>%s h an %s Tagen</de>
+            <en>%s h over %s days</en>
+            <fr>%s h sur %s jours</fr>
+        </text>
+        <text name="ao_mk_dAuslastung">
+            <de>Auslastung</de>
+            <en>Utilisation</en>
+            <fr>Utilisation</fr>
+        </text>
+        <text name="ao_mk_dAuslastungWert">
+            <de>%s h je Monat</de>
+            <en>%s h per month</en>
+            <fr>%s h par mois</fr>
+        </text>
+        <text name="ao_mk_dZustand">
+            <de>Zustand</de>
+            <en>Condition</en>
+            <fr>État</fr>
+        </text>
+        <text name="ao_mk_dKraftstoff">
+            <de>Kraftstoff</de>
+            <en>Fuel</en>
+            <fr>Carburant</fr>
+        </text>
+        <text name="ao_mk_dFlaeche">
+            <de>Fläche</de>
+            <en>Area</en>
+            <fr>Surface</fr>
+        </text>
+        <text name="ao_mk_dUnterhalt">
+            <de>Unterhalt</de>
+            <en>Upkeep</en>
+            <fr>Entretien</fr>
+        </text>
+        <text name="ao_mk_dLeasing">
+            <de>Leasing</de>
+            <en>Leasing</en>
+            <fr>Leasing</fr>
+        </text>
+        <text name="ao_mk_dSumme">
+            <de>Kosten zusammen</de>
+            <en>Total costs</en>
+            <fr>Total des coûts</fr>
+        </text>
+        <text name="ao_mk_dJe">
+            <de>Je Stunde und Hektar</de>
+            <en>Per hour and hectare</en>
+            <fr>Par heure et hectare</fr>
+        </text>
+        <text name="ao_mk_dJeWert">
+            <de>%s/h, %s/ha</de>
+            <en>%s/h, %s/ha</en>
+            <fr>%s/h, %s/ha</fr>
+        </text>
+        <text name="ao_mk_hinweis">
+            <de>Zeile anklicken für Einzelheiten. Gezählt wird ab dem Laden der Mod, unter Gesamt zählen Stunden und Wertverlust ab dem Kauf.</de>
+            <en>Click a row for details. Counting starts when the mod is loaded; under Total, hours and depreciation count from purchase.</en>
+            <fr>Cliquez sur une ligne pour le détail. Le comptage commence au chargement du mod ; sous Total, heures et dépréciation comptent depuis l'achat.</fr>
+        </text>
+        <text name="ao_mk_aus">
+            <de>Die Maschinenkosten sind in den Einstellungen ausgeschaltet.</de>
+            <en>Machine costs are switched off in the settings.</en>
+            <fr>Les coûts machines sont désactivés dans les réglages.</fr>
+        </text>
+        <text name="ao_mk_keineDaten">
+            <de>Für diesen Zeitraum und diese Auswahl gibt es noch keine Zahlen.</de>
+            <en>No figures yet for this period and selection.</en>
+            <fr>Pas encore de chiffres pour cette période et cette sélection.</fr>
+        </text>
+        <text name="ao_pc_morgenNacht">
+            <de>morgen Nacht</de>
+            <en>tomorrow night</en>
+            <fr>demain soir</fr>
         </text>
     </l10n>
 </modDesc>

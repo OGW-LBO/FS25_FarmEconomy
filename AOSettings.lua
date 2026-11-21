@@ -50,6 +50,7 @@ AOSettings.MODULE = {
             { key = "prodKosten",         min = 0,    max = 2,       step = 1 },
             { key = "buchAktiv",          bool = true },
             { key = "buchSchwelle",       min = 0,    max = 5000,    step = 50 },
+            { key = "mkAktiv",            bool = true },
             { key = "meldungen",          bool = true },
             { key = "debug",              bool = true },
             { key = "autoAktiv",          bool = true },

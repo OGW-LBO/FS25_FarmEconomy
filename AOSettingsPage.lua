@@ -201,6 +201,8 @@ AOSettingsPage.ABSCHNITTE = {
               label = "ao_ui_buchAktiv",    tipp = "ao_ui_buchAktiv_t" },
             { modul = "ao", key = "buchSchwelle", art = "geld", min = 0, max = 2000, step = 50,
               label = "ao_ui_buchSchwelle", tipp = "ao_ui_buchSchwelle_t" },
+            { modul = "ao", key = "mkAktiv",      art = "bool",
+              label = "ao_ui_mkAktiv",      tipp = "ao_ui_mkAktiv_t" },
         },
     },
     {

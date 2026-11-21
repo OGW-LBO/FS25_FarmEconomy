@@ -267,7 +267,19 @@ end
 
 -- Hook ------------------------------------------------------------------------
 
+local verbrauchen
+
 function DieselVerbrauch.updateConsumers(self, superFunc, dt, accInput)
+    if AOMaschinen ~= nil then
+        AOMaschinen.imVerbrauch = self
+    end
+    verbrauchen(self, superFunc, dt, accInput)
+    if AOMaschinen ~= nil then
+        AOMaschinen.imVerbrauch = nil
+    end
+end
+
+verbrauchen = function(self, superFunc, dt, accInput)
     local cfg = getCfg()
     if cfg == nil or cfg.dieselAktiv ~= true then
         superFunc(self, dt, accInput)

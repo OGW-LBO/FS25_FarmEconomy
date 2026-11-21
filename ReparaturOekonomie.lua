@@ -400,6 +400,10 @@ function ReparaturOekonomie:repairVehicle(superFunc, atSellingPoint)
     daten.anzahlReparaturen = daten.anzahlReparaturen + 1
     daten.kostenGesamt = daten.kostenGesamt + preis
     daten.warnStufe = 0
+
+    if self.isServer and AOMaschinen ~= nil and AOMaschinen.buchen ~= nil then
+        AOMaschinen.buchen(self, "reparatur", preis)
+    end
 end
 
 function ReparaturOekonomie:updateDamageAmount(superFunc, dt)
